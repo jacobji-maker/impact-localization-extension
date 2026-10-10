@@ -1,0 +1,27 @@
+# Local dependencies and generated delivery/evidence (preserve on disk)
+node_modules/
+artifacts/
+dist/
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+
+# Credentials, session exports and browser profiles
+.env
+.env.*
+.auth/
+playwright/.auth/
+storage-state*.json
+storageState*.json
+cookies*.json
+browser-profile*/
+chrome-profile*/
+user-data-dir*/
+*.har
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.webm
