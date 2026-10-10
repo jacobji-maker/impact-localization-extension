@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "mode": "SYNTHETIC_HEADER_MECHANISM_ONLY",
+  "version": "0.5.3",
+  "capturedDefinitions": 32,
+  "dictionaryEntries": 32,
+  "results": [
+    {
+      "name": "All 32 header entries match the captured source selector and advertiser scope",
+      "status": "PASS",
+      "evidence": "6 Help + 26 Finance fixed labels; two date-prefix entries; no finance-body widening"
+    },
+    {
+      "name": "Dynamic Help and three Finance submenus translate all captured labels in open Shadow DOM",
+      "status": "PASS",
+      "evidence": "Native-style opener/expander events dynamically mount 32 labels; no static demo acceptance"
+    },
+    {
+      "name": "Translation preserves original Text nodes, link destinations, native events, amounts and date suffixes",
+      "status": "PASS",
+      "evidence": "32 original Text identities and attributes; native parent/link events; 3 untouched amounts and 2 date suffixes"
+    },
+    {
+      "name": "Same labels in body, wrong menu and wrong Shadow host remain English",
+      "status": "PASS",
+      "evidence": "98 negative nodes retain source text and identity"
+    },
+    {
+      "name": "Translation off restores source labels and on reuses the same Text nodes",
+      "status": "PASS",
+      "evidence": "32 labels restore and translate without node replacement, date/amount mutation or AI sends"
+    },
+    {
+      "name": "Recreated native dropdowns and page reload are discovered and localized again",
+      "status": "PASS",
+      "evidence": "Second fresh dropdown mount and independent document reload both translate the captured menu structure"
+    }
+  ],
+  "credentialsSaved": false,
+  "realSiteAcceptance": false
+}

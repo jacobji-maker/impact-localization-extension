@@ -1,0 +1,96 @@
+{
+  "mode": "SYNTHETIC_CAPTURE_FORM_READINESS",
+  "realNetworkAcceptance": false,
+  "sourceModule": "scripts/finance-extra-capture.mjs",
+  "sourceSHA256": "488c3616dd4a14a8d3388ff591c0fbbdab913ce724312ac5436fbd2a97e0a8b6",
+  "collectorModule": "scripts/finance-session.mjs",
+  "collectorSHA256": "6eae667f16d8ce8edc016c41b440ad0e5b3e01f40dc85a3a66eeef70547d84ab",
+  "date": "2026-10-10T18:11:18.715Z",
+  "status": "PASS",
+  "clicksPerformedByReadiness": 0,
+  "submissionsPerformed": 0,
+  "privateValuesSaved": false,
+  "frameDocumentsRead": false,
+  "results": [
+    {
+      "name": "Delayed form heading and native field must arrive after navigation shell",
+      "status": "PASS"
+    },
+    {
+      "name": "A correct heading alone cannot finish before the delayed native field",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact resulting document and authorized origin are required",
+      "status": "PASS"
+    },
+    {
+      "name": "Only one visible heading with the complete observed fixed text is accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "Navigation, AI, hidden fields and submit controls cannot supply finance form readiness",
+      "status": "PASS"
+    },
+    {
+      "name": "Observed Braintree hosted iframe structure is accepted without inspecting its document",
+      "status": "PASS"
+    },
+    {
+      "name": "A visible credit-card section requires all four exact hosted frames and complete local labels",
+      "status": "PASS"
+    },
+    {
+      "name": "Native Name cannot bypass missing, hidden, duplicate or incorrectly labelled credit-card hydration",
+      "status": "PASS"
+    },
+    {
+      "name": "Credit-card hydration waits for delayed local labels and four iframe elements without entering frames",
+      "status": "PASS"
+    },
+    {
+      "name": "Bounded timeout returns only readiness counts and never repeats a click or submits",
+      "status": "PASS"
+    },
+    {
+      "name": "Current-form-only capture rejects wrong or ambiguous requests before switches, navigation or file writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Current-form-only reuses the actual collector, performs no navigation or click and restores both switches",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual collector preserves the observed fixed $100 credit-card description only in its exact local document element",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown heading Text and heading controls are omitted without business-name hardcoding",
+      "status": "PASS"
+    },
+    {
+      "name": "Observed fixed headings remain capturable only for their observed route and document",
+      "status": "PASS"
+    },
+    {
+      "name": "Observed Funding Account heading prefix preserves its fixed fragment and omits the dynamic suffix",
+      "status": "PASS"
+    },
+    {
+      "name": "Native duplicate description IDs select the one exact fixed source rather than the first ID",
+      "status": "PASS"
+    },
+    {
+      "name": "Fixed charge exception rejects changed source, private amounts, other scope, ambiguity and Shadow DOM",
+      "status": "PASS"
+    },
+    {
+      "name": "Description diagnostics distinguish direct and split fixed Text without exposing any text or values",
+      "status": "PASS"
+    },
+    {
+      "name": "Description diagnostics return only safe ordinary-DOM structure and skip private surfaces, Shadow and child documents",
+      "status": "PASS"
+    }
+  ]
+}

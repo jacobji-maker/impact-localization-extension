@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "mode": "SYNTHETIC_CURRENT_SHIPPED_FINANCE_MENUS_MV3",
+  "date": "2026-10-10T18:12:58.636Z",
+  "version": "0.5.3",
+  "dictionaryEntries": 699,
+  "entryIds": [
+    "finance-billing-groups-actions-edit-observed",
+    "finance-billing-groups-actions-partner-fees-document-settings-observed",
+    "finance-billing-groups-actions-impact-com-fees-document-settings-observed",
+    "finance-funding-accounts-actions-edit-observed",
+    "finance-funding-accounts-actions-funding-account-document-settings-observed"
+  ],
+  "actualUnpackedMV3": true,
+  "unchangedShippedDictionary": true,
+  "unchangedShippedAdapter": true,
+  "unchangedShippedEngine": true,
+  "unchangedAssets": {
+    "manifest.json": true,
+    "dict.js": true,
+    "site-config.js": true,
+    "content.js": true,
+    "content.css": true,
+    "background.js": true,
+    "popup.html": true,
+    "popup.js": true,
+    "popup.css": true
+  },
+  "realSiteAcceptance": false,
+  "realNetworkQueries": false,
+  "userBrowserOperated": false,
+  "credentialsSaved": false,
+  "fullConversationSaved": false,
+  "financialOperations": 0,
+  "settingsSaved": 0,
+  "assetSHA256": {
+    "manifest.json": "6ed3278a5c2715c6de0241bc70a4f248b06a6910ca7b53bfadd325ae72b8a356",
+    "dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+    "site-config.js": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+    "content.js": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd",
+    "content.css": "7da0ac591f4d7a06ba353d9988892b503f70139d168fb5602049f0f5fe7b5cfb",
+    "background.js": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+    "popup.html": "598bf19ab6a8917d4b00075123565e4231a2b422f151c5cfc6ec0c2686e75945",
+    "popup.js": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+    "popup.css": "0719286c4485a25c1bc1a5a9ae489e8179c1ca26f5ec9bbfb9b11a092389cfb0"
+  },
+  "passed": 10,
+  "total": 10,
+  "results": [
+    {
+      "name": "Current full 0.5.3 dictionary and MV3 assets are copied unchanged",
+      "status": "PASS",
+      "evidence": {
+        "actualUnpackedMV3": true,
+        "dictionaryEntries": 699,
+        "topics": 66,
+        "menuEntries": 5
+      }
+    },
+    {
+      "name": "billing-groups: actual menu labels preserve identity and events through OFF→ON→OFF on demo/app",
+      "status": "PASS",
+      "evidence": [
+        {
+          "host": "demo.impact.com",
+          "labelCount": 3,
+          "identity": {
+            "elementsPreserved": true,
+            "labelNodesPreserved": true,
+            "privateTextsPreserved": true,
+            "inputValuesPreserved": true,
+            "linksPreserved": true,
+            "elementCount": 32,
+            "textNodeCount": 11,
+            "inputCount": 1,
+            "linkCount": 1,
+            "inlineHelpCount": 0,
+            "submits": 0
+          },
+          "events": {
+            "clicks": {
+              "finance-billing-groups-actions-edit-observed": 1,
+              "finance-billing-groups-actions-partner-fees-document-settings-observed": 1,
+              "finance-billing-groups-actions-impact-com-fees-document-settings-observed": 1
+            },
+            "trustedClicks": {
+              "finance-billing-groups-actions-edit-observed": 1,
+              "finance-billing-groups-actions-partner-fees-document-settings-observed": 1,
+              "finance-billing-groups-actions-impact-com-fees-document-settings-observed": 1
+            },
+            "linkClicks": 1,
+            "trustedLinkClicks": 1,
+            "submits": 0
+          },
+          "cycle": [
+            "OFF",
+            "ON",
+            "OFF"
+          ],
+          "aiEnabled": true
+        },
+        {
+          "host": "app.impact.com",
+          "labelCount": 3,
+          "identity": {
+            "elementsPreserved": true,
+            "labelNodesPreserved": true,
+            "privateTextsPreserved": true,
+            "inputValuesPreserved": true,
+            "linksPreserved": true,
+            "elementCount": 32,
+            "textNodeCount": 11,
+            "inputCount": 1,
+            "linkCount": 1,
+            "inlineHelpCount": 0,
+            "submits": 0
+          },
+          "events": {
+            "clicks": {
+              "finance-billing-groups-actions-edit-observed": 1,
+              "finance-billing-groups-actions-partner-fees-document-settings-observed": 1,
+              "finance-billing-groups-actions-impact-com-fees-document-settings-observed": 1
+            },
+            "trustedClicks": {
+              "finance-billing-groups-actions-edit-observed": 1,
+              "finance-billing-groups-actions-partner-fees-document-settings-observed": 1,
+              "finance-billing-groups-actions-impact-com-fees-document-settings-observed": 1
+            },
+            "linkClicks": 1,
+            "trustedLinkClicks": 1,
+            "submits": 0
+          },
+          "cycle": [
+            "OFF",
+            "ON",
+            "OFF"
+          ],
+          "aiEnabled": true
+        }
+      ]
+    },
+    {
+      "name": "billing-groups: exact document/top/host and unique u scope rejects unrelated contexts",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          "wrong-body",
+          "body-suffix",
+          "wrong-top",
+          "top-suffix",
+          "missing-u",
+          "wrong-u",
+          "duplicate-correct-u",
+          "duplicate-wrong-u",
+          "unsupported-host"
+        ],
+        "allFixedTextAndPrivateIdentityPreserved": true,
+        "nativeEventsPreserved": true
+      }
+    },
+    {
+      "name": "billing-groups: portal hierarchy, component, roles, actual owner chain and nth reject lookalikes",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          "wrong-popup-class",
+          "wrong-menu-component",
+          "wrong-row-component",
+          "wrong-list-class",
+          "wrong-list-role",
+          "wrong-option-role",
+          "wrong-list-hierarchy",
+          "non-body-popup",
+          "wrong-owner-chain",
+          "wrong-nth"
+        ],
+        "allFixedTextAndPrivateIdentityPreserved": true,
+        "nativeEventsPreserved": true
+      }
+    },
+    {
+      "name": "billing-groups: lightDOMOnly rejects matching menu chains in open Shadow roots",
+      "status": "PASS",
+      "evidence": {
+        "shadowHosts": [
+          "impact-style-isolator",
+          "fixture-shadow-host"
+        ],
+        "matchingComponentScopeRejectedByLightDOM": true,
+        "nativeEventsPreserved": true
+      }
+    },
+    {
+      "name": "funding-accounts: actual menu labels preserve identity and events through OFF→ON→OFF on demo/app",
+      "status": "PASS",
+      "evidence": [
+        {
+          "host": "demo.impact.com",
+          "labelCount": 2,
+          "identity": {
+            "elementsPreserved": true,
+            "labelNodesPreserved": true,
+            "privateTextsPreserved": true,
+            "inputValuesPreserved": true,
+            "linksPreserved": true,
+            "elementCount": 24,
+            "textNodeCount": 9,
+            "inputCount": 1,
+            "linkCount": 1,
+            "inlineHelpCount": 0,
+            "submits": 0
+          },
+          "events": {
+            "clicks": {
+              "finance-funding-accounts-actions-edit-observed": 1,
+              "finance-funding-accounts-actions-funding-account-document-settings-observed": 1
+            },
+            "trustedClicks": {
+              "finance-funding-accounts-actions-edit-observed": 1,
+              "finance-funding-accounts-actions-funding-account-document-settings-observed": 1
+            },
+            "linkClicks": 1,
+            "trustedLinkClicks": 1,
+            "submits": 0
+          },
+          "cycle": [
+            "OFF",
+            "ON",
+            "OFF"
+          ],
+          "aiEnabled": true
+        },
+        {
+          "host": "app.impact.com",
+          "labelCount": 2,
+          "identity": {
+            "elementsPreserved": true,
+            "labelNodesPreserved": true,
+            "privateTextsPreserved": true,
+            "inputValuesPreserved": true,
+            "linksPreserved": true,
+            "elementCount": 24,
+            "textNodeCount": 9,
+            "inputCount": 1,
+            "linkCount": 1,
+            "inlineHelpCount": 0,
+            "submits": 0
+          },
+          "events": {
+            "clicks": {
+              "finance-funding-accounts-actions-edit-observed": 1,
+              "finance-funding-accounts-actions-funding-account-document-settings-observed": 1
+            },
+            "trustedClicks": {
+              "finance-funding-accounts-actions-edit-observed": 1,
+              "finance-funding-accounts-actions-funding-account-document-settings-observed": 1
+            },
+            "linkClicks": 1,
+            "trustedLinkClicks": 1,
+            "submits": 0
+          },
+          "cycle": [
+            "OFF",
+            "ON",
+            "OFF"
+          ],
+          "aiEnabled": true
+        }
+      ]
+    },
+    {
+      "name": "funding-accounts: exact document/top/host and unique u scope rejects unrelated contexts",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          "wrong-body",
+          "body-suffix",
+          "wrong-top",
+          "top-suffix",
+          "missing-u",
+          "wrong-u",
+          "duplicate-correct-u",
+          "duplicate-wrong-u",
+          "unsupported-host"
+        ],
+        "allFixedTextAndPrivateIdentityPreserved": true,
+        "nativeEventsPreserved": true
+      }
+    },
+    {
+      "name": "funding-accounts: portal hierarchy, component, roles, actual owner chain and nth reject lookalikes",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          "wrong-popup-class",
+          "wrong-menu-component",
+          "wrong-row-component",
+          "wrong-list-class",
+          "wrong-list-role",
+          "wrong-option-role",
+          "wrong-list-hierarchy",
+          "non-body-popup",
+          "wrong-owner-chain",
+          "wrong-nth"
+        ],
+        "allFixedTextAndPrivateIdentityPreserved": true,
+        "nativeEventsPreserved": true
+      }
+    },
+    {
+      "name": "funding-accounts: lightDOMOnly rejects matching menu chains in open Shadow roots",
+      "status": "PASS",
+      "evidence": {
+        "shadowHosts": [
+          "impact-style-isolator",
+          "fixture-shadow-host"
+        ],
+        "matchingComponentScopeRejectedByLightDOM": true,
+        "nativeEventsPreserved": true
+      }
+    },
+    {
+      "name": "All shipped test-loaded assets remain identical to current source",
+      "status": "PASS",
+      "evidence": {
+        "dictionaryAndRuntimeUnchanged": true
+      }
+    }
+  ]
+}

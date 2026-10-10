@@ -1,0 +1,113 @@
+{
+  "mode": "SYNTHETIC_FINANCE_CAPTURE_REPLAY_ONLY",
+  "status": "PASS",
+  "date": "2026-10-10T17:09:24.959Z",
+  "realSiteAcceptance": false,
+  "realNetworkQueries": false,
+  "results": [
+    {
+      "name": "Completion flags stay false for running, failed, partial and incomplete evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Fifteen pages and two AI replies cannot complete acceptance without five structured deep captures",
+      "status": "PASS"
+    },
+    {
+      "name": "Report queries require the exact two routes, single handle and observed option evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Dynamic navigation uses only the observed resulting document/query and cannot certify a nav-only payment form",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact captured native control waits for a delayed same-scope mount and clicks once after observed English or localized fixed Text proof",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact captured native control visibility timeout rejects without a click, fallback or private-value diagnostics",
+      "status": "PASS"
+    },
+    {
+      "name": "A delayed pair of matching fixed-label native controls remains ambiguous and receives zero clicks",
+      "status": "PASS"
+    },
+    {
+      "name": "A delayed native control with changed fixed Text receives zero clicks and no business-value diagnostics",
+      "status": "PASS"
+    },
+    {
+      "name": "Replay matches one complete fixed Text node beside dynamic values and refuses ambiguity, wrong scope and writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Only scoped observed count prefixes replay English or Chinese integers; private tails, malformed counts, ambiguity and wrong routes remain unclicked",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual document waiter binds initial body/query, permits hidden top navigation and records safe readiness diagnostics",
+      "status": "PASS"
+    },
+    {
+      "name": "Native AI inspection returns structure only without clicking, draft reads or report writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Both report flows replay the unique nested li > a account and only the approved Apply",
+      "status": "PASS"
+    },
+    {
+      "name": "The actual pure account collector retains structural proof and excludes account names",
+      "status": "PASS"
+    },
+    {
+      "name": "Persistent loaders and stale headers cannot complete a read-only query and never retry Apply",
+      "status": "PASS"
+    },
+    {
+      "name": "Fixed Type enums require baseline/control/path evidence and User Initiated never receives an enum exemption",
+      "status": "PASS"
+    },
+    {
+      "name": "Custom account replay rejects tools, changed popup structure, hrefs and duplicate accounts",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy Name disclosure uses verified column structure without matching business names or choosing a row",
+      "status": "PASS"
+    },
+    {
+      "name": "Three entity flows replay verified Name, optional row menu and Edit without a write",
+      "status": "PASS"
+    },
+    {
+      "name": "Intermediate Name-to-Actions menu sequences replay only their observed steps",
+      "status": "PASS"
+    },
+    {
+      "name": "A unique read-only menu in another actual dynamic table is rejected before any menu click",
+      "status": "PASS"
+    },
+    {
+      "name": "The two direct static entity iframe chains are unique and verified against their actual frame objects",
+      "status": "PASS"
+    },
+    {
+      "name": "An unexpected intermediate entity iframe with a private path is rejected without returning or logging its identifier",
+      "status": "PASS"
+    },
+    {
+      "name": "An icon-only row menu needs verified Name-to-menu evidence and rejects changed overlays, write controls, disabled buttons and ambiguity",
+      "status": "PASS"
+    },
+    {
+      "name": "Entity sequences reject missing proofs, wrong shell/query, changed Name header and submit Edit",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent acceptance baseline rejects malformed comma counts",
+      "status": "PASS"
+    }
+  ]
+}

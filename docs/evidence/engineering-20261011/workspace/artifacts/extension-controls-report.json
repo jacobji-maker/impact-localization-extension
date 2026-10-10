@@ -1,0 +1,39 @@
+{
+  "mode": "REAL_EXTENSION_SYNTHETIC_HOST",
+  "realSiteAcceptance": false,
+  "version": "0.5.3",
+  "lastPartialRecheck": null,
+  "status": "PASS",
+  "results": [
+    {
+      "name": "Loaded MV3 isolated content script defaults both independent controls to on",
+      "status": "PASS",
+      "evidence": "Real unpacked MV3 0.5.3; routed synthetic DOM; original Text and numeric values preserved"
+    },
+    {
+      "name": "Popup AI toggle and page AI toggle synchronize through real storage/runtime events",
+      "status": "PASS",
+      "evidence": "Popup -> page and page -> popup; AI setting persisted independently of translation"
+    },
+    {
+      "name": "Runtime messages enforce all four translation/AI combinations independently",
+      "status": "PASS",
+      "evidence": "English+question, Chinese without question, English without question, Chinese+question all verified"
+    },
+    {
+      "name": "Direct storage changes synchronize both UIs and both settings survive page reload",
+      "status": "PASS",
+      "evidence": "chrome.storage.onChanged updates live page and open popup; reload retains independent settings"
+    },
+    {
+      "name": "Translation-off English term question uses the native shadow editor once",
+      "status": "PASS",
+      "evidence": "One native input/send event path; original English term preserved; no synthetic assistant reply used"
+    },
+    {
+      "name": "Dragging is memory-only, survives setting changes, and reload restores the default location",
+      "status": "PASS",
+      "evidence": "Dedicated pointer drag moved assistant; settings did not reposition it; refresh resets 140px bottom without persisting coordinates"
+    }
+  ]
+}

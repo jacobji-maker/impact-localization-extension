@@ -1,0 +1,67 @@
+{
+  "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+  "date": "2026-10-10T17:08:49.001Z",
+  "version": "0.5.3",
+  "dictionarySha256": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+  "operation": "attribute-writer",
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "savedSettings": 0,
+  "privateValuesReturned": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "initialSettingsSource": "coordinator verified initial runtime report",
+  "sessionRuntime": {
+    "runtime": {
+      "manifestVersion": "0.5.3",
+      "contentVersion": "0.5.3",
+      "translationEnabled": true,
+      "aiEnabled": true,
+      "errorPresent": false,
+      "extensionIdMatches": true,
+      "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml"
+    },
+    "loadedExtension": {
+      "cardCount": 1,
+      "expectedCardCount": 1,
+      "cards": [
+        {
+          "expectedId": true,
+          "version": "0.5.3",
+          "sourcePathMatches": true,
+          "enabled": true,
+          "unpacked": true,
+          "pathFieldPresent": true
+        }
+      ]
+    }
+  },
+  "currentToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  },
+  "pageId": "billing-groups",
+  "attributeWriter": {
+    "mode": "READ_ONLY_CDP_ATTRIBUTE_BREAKPOINT",
+    "pauseCount": 1,
+    "pauses": [
+      {
+        "reason": "DOM",
+        "frames": [
+          {
+            "source": "native-impact",
+            "line": 3,
+            "column": 122455
+          }
+        ]
+      }
+    ],
+    "directExtensionWrites": 0,
+    "directNativeImpactWrites": 1,
+    "sourceURLsReturned": false,
+    "pageTextReturned": false
+  },
+  "status": "OBSERVED"
+}

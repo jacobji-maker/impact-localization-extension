@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "mode": "NEW_TEST_PACKAGE_SOURCE_BYTE_VERIFICATION",
+  "version": "0.5.3",
+  "zip": "dist/impact-cn-mod-0.5.3.zip",
+  "extracted": "dist/impact-cn-mod-0.5.3",
+  "bytes": 132785,
+  "sha256": "513d77a17235a5ddec56145e0653fed8d483783a1c8298f120d022b1e9987d41",
+  "fileCount": 12,
+  "manifestAtRoot": true,
+  "resourceCountIncludingManifest": 9,
+  "crcValid": true,
+  "sourceZipExtractedBytesEqual": true,
+  "frozenSourceHashes": {
+    "popup.js": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+    "site-config.js": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+    "content.css": "7da0ac591f4d7a06ba353d9988892b503f70139d168fb5602049f0f5fe7b5cfb",
+    "CHANGELOG.md": "1e6960a02c1fec1e95faa4f83f4afd78ade21eade46b9238bd464bae1790807c",
+    "background.js": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+    "popup.html": "598bf19ab6a8917d4b00075123565e4231a2b422f151c5cfc6ec0c2686e75945",
+    "LOCALIZATION_GUIDE.md": "2cfa70b74c75af1746b807bf164aa36ae0bb37f7d845411c4efc1cb6e0056138",
+    "INSTALL.md": "110103aabf6d45eb6eb873a601f8f33ec800a85d25de6f014670a678e9d1ece0",
+    "dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+    "manifest.json": "6ed3278a5c2715c6de0241bc70a4f248b06a6910ca7b53bfadd325ae72b8a356",
+    "popup.css": "0719286c4485a25c1bc1a5a9ae489e8179c1ca26f5ec9bbfb9b11a092389cfb0",
+    "content.js": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd"
+  },
+  "previousZipHashesRetained": 8,
+  "realNetworkLoadedPath": "impact-cn-mod",
+  "actualMV3SyntheticLoadedExactSourceBytes": true,
+  "extractedPackageRealNetworkLoginNotPerformed": true,
+  "completeAcceptance": false
+}

@@ -1,0 +1,3102 @@
+{
+  "status": "FAIL",
+  "mode": "REAL_NETWORK_FINANCE",
+  "version": "0.5.2",
+  "date": "2026-10-10T14:46:19.622Z",
+  "selectedPages": [
+    "overview",
+    "make-deposit",
+    "transfers",
+    "subscription",
+    "monthly-close",
+    "upcoming-partner-payments",
+    "cash-flow-history",
+    "partner-payments-invoices",
+    "impact-com-invoices",
+    "general",
+    "legal-entities",
+    "billing-groups",
+    "funding-accounts",
+    "payment-methods",
+    "automatic-payments"
+  ],
+  "expectedPages": 15,
+  "expectedPageIds": [
+    "overview",
+    "make-deposit",
+    "transfers",
+    "subscription",
+    "monthly-close",
+    "upcoming-partner-payments",
+    "cash-flow-history",
+    "partner-payments-invoices",
+    "impact-com-invoices",
+    "general",
+    "legal-entities",
+    "billing-groups",
+    "funding-accounts",
+    "payment-methods",
+    "automatic-payments"
+  ],
+  "unverifiedDeepStates": [
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "deep-selected-funding-account-report"
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "deep-selected-funding-account-report"
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-edit-form"
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-edit-form"
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-edit-form"
+    }
+  ],
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "selectedAICases": [],
+  "aiSelected": false,
+  "routesOrFixtures": false,
+  "noMoneyOperations": true,
+  "noSettingsWrites": true,
+  "credentialsSaved": false,
+  "fullConversationSaved": false,
+  "results": [
+    {
+      "pageId": "overview",
+      "status": "PASS",
+      "evidence": "11 observed Text nodes; 0 monetary/date data nodes; 1 links retained; 2 documents; 2 read-only dynamic states",
+      "textNodes": 11,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 1,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-overview-overview-51d7b17",
+        "finance-overview-reports-3513ccb",
+        "finance-overview-make-deposit-bc32cd9",
+        "finance-overview-transfers-b3cc48a",
+        "finance-overview-documents-d7a2ce1",
+        "finance-overview-subscription-0718f64",
+        "finance-overview-settings-3839ca0",
+        "finance-overview-settings-062f451",
+        "finance-overview-overview-5c98c62",
+        "finance-overview-payment-request-form-fa4d87a",
+        "finance-overview-make-deposit-3f49295",
+        "finance-overview-funding-account-57e1771",
+        "finance-overview-show-balance-forecast-ca9bced",
+        "finance-overview-past-due-a035255",
+        "finance-overview-payments-due-since-fbc65e9",
+        "finance-overview-pending-payments-d19ca43",
+        "finance-overview-required-funding-3228d65",
+        "finance-overview-transaction-summary-ec2e936",
+        "finance-overview-description-0978379",
+        "finance-overview-amount-f525c46",
+        "finance-overview-current-balance-82979d4",
+        "finance-overview-deposit-993f68e",
+        "finance-overview-pending-e821989",
+        "finance-overview-partner-payments-e71e415",
+        "finance-overview-past-due-b9fc98c",
+        "finance-overview-required-funding-6c7d2c1",
+        "finance-overview-funds-required-through-2b0d6f1",
+        "finance-overview-transaction-summary-b4f6f73"
+      ],
+      "dynamicStates": 2,
+      "visibleCapturedCandidateNodes": 11,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "make-deposit",
+      "status": "PASS",
+      "evidence": "22 observed Text nodes; 3 monetary/date data nodes; 1 links retained; 1 documents; 4 read-only dynamic states",
+      "textNodes": 22,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 3,
+      "privateDataNodes": 0,
+      "links": 1,
+      "translatedFrames": 1,
+      "entryIds": [
+        "finance-make-deposit-make-deposit-94015ca",
+        "finance-make-deposit-fund-your-account-through-ach-transfer-cre-4fba39f",
+        "finance-make-deposit-payment-type-482c062",
+        "finance-make-deposit-credit-card-6328d40",
+        "finance-make-deposit-ach-376811a",
+        "finance-make-deposit-wire-5988420",
+        "finance-make-deposit-payment-method-6411e3c",
+        "finance-make-deposit-view-63120c8",
+        "finance-make-deposit-required-funding-26f0b57",
+        "finance-make-deposit-enter-amount-52b644d",
+        "finance-make-deposit-processing-fee-fe3ae81",
+        "finance-make-deposit-funds-will-appear-within-05fdd61",
+        "finance-make-deposit-3-5-business-days-38d9b6c",
+        "finance-make-deposit-pay-a04e65f",
+        "finance-make-deposit-overview-8af5291",
+        "finance-make-deposit-reports-0c4096b",
+        "finance-make-deposit-make-deposit-8e0c1ca",
+        "finance-make-deposit-transfers-9cda8d1",
+        "finance-make-deposit-documents-c4b2ada",
+        "finance-make-deposit-subscription-ec1dcfb",
+        "finance-make-deposit-settings-7324b53",
+        "finance-make-deposit-settings-4f3dcc5",
+        "finance-make-deposit-payment-methods-b3e91df",
+        "finance-make-deposit-add-payment-method-158de5c",
+        "finance-make-deposit-rows-2ba5f96",
+        "finance-payment-methods-name-2ad7349",
+        "finance-payment-methods-type-3b6f130",
+        "finance-payment-methods-account-card-b448ef4",
+        "finance-payment-methods-funding-account-b474cc2",
+        "finance-make-deposit-wire-transfer-details-bc27509",
+        "finance-make-deposit-initiate-a-wire-transfer-to-impact-com-usi-55c81b4",
+        "finance-make-deposit-reference-your-account-id-039c372",
+        "finance-make-deposit-account-name-06392e5",
+        "finance-make-deposit-bank-name-0172e3e",
+        "finance-make-deposit-bank-country-c683ab1",
+        "finance-make-deposit-account-number-30a5430",
+        "finance-make-deposit-swift-bic-code-15b7ab5",
+        "finance-make-deposit-reference-241888d",
+        "finance-make-deposit-download-payment-instructions-761f847",
+        "finance-make-deposit-add-credit-card-09e3eb8"
+      ],
+      "dynamicStates": 4,
+      "visibleCapturedCandidateNodes": 23,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "transfers",
+      "status": "PASS",
+      "evidence": "28 observed Text nodes; 0 monetary/date data nodes; 1 links retained; 2 documents; 7 read-only dynamic states",
+      "textNodes": 28,
+      "prefixNodes": 1,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 1,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-transfers-overview-a9e5279",
+        "finance-transfers-reports-6060e95",
+        "finance-transfers-make-deposit-4c1e725",
+        "finance-transfers-transfers-51dc5f8",
+        "finance-transfers-documents-74b5474",
+        "finance-transfers-subscription-c52589c",
+        "finance-transfers-settings-55cdd2a",
+        "finance-transfers-settings-03e09e4",
+        "finance-transfers-transfers-49e11f1",
+        "finance-transfers-bulk-upload-transfers-f842091",
+        "finance-transfers-create-transfer-06b5b5a",
+        "finance-transfers-partner-bf7529e",
+        "finance-transfers-program-1083db3",
+        "finance-transfers-type-9f36f79",
+        "finance-transfers-user-initiated-3250b6d",
+        "finance-transfers-funding-status-3385a8d",
+        "finance-transfers-invoice-status-6c51997",
+        "finance-transfers-clear-filters-4a8d417",
+        "finance-transfers-rows-b943cb1",
+        "finance-transfers-transfer-to-1d1ab8c",
+        "finance-transfers-program-24d4dcf",
+        "finance-transfers-type-c9908c1",
+        "finance-transfers-user-initiated-b81b3d6",
+        "finance-transfers-date-created-10cb951",
+        "finance-transfers-transfer-date-502a6de",
+        "finance-transfers-amount-adeed3d",
+        "finance-transfers-funding-status-7b359b3",
+        "finance-transfers-sorry-there-s-no-data-to-show-de58e1f",
+        "finance-transfers-create-transfer-9f43877",
+        "finance-transfers-transfer-to-28f1b2d",
+        "finance-transfers-select-which-partner-should-receive-this-t-b12f3df",
+        "finance-transfers-select-d38ec8c",
+        "finance-transfers-program-093aa65",
+        "finance-transfers-select-f36ad88",
+        "finance-transfers-event-type-2572adc",
+        "finance-transfers-associate-transfer-with-an-event-type-811ef01",
+        "finance-transfers-select-event-type-9c211c3",
+        "finance-transfers-transaction-details-1a7dabd",
+        "finance-transfers-select-the-transaction-type-and-amount-you-009f5c0",
+        "finance-transfers-type-ec7ef41",
+        "finance-transfers-amount-ce20cef",
+        "finance-transfers-you-pay-e567897",
+        "finance-transfers-partner-receives-3063971",
+        "finance-transfers-invoice-details-e60bcc6",
+        "finance-transfers-here-you-can-schedule-when-the-transfer-sh-2f8b2a4",
+        "finance-transfers-invoice-month-9870f26",
+        "finance-transfers-specify-invoice-month-aa92952",
+        "finance-transfers-send-this-transfer-immediately-7aaa200",
+        "finance-transfers-activity-period-60625f5",
+        "finance-transfers-to-28b5223",
+        "finance-transfers-transfer-date-aab3fb8",
+        "finance-transfers-reporting-details-f9e05ad",
+        "finance-transfers-add-details-you-would-like-to-see-in-repor-92b862e",
+        "finance-transfers-comments-4f3032f",
+        "finance-transfers-next-2c9b0d5",
+        "finance-transfers-clear-893105f",
+        "finance-transfers-all-1b5b216",
+        "finance-transfers-overdue-funding-status-observed"
+      ],
+      "dynamicStates": 7,
+      "visibleCapturedCandidateNodes": 28,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "subscription",
+      "status": "PASS",
+      "evidence": "11 observed Text nodes; 0 monetary/date data nodes; 1 links retained; 2 documents; 0 read-only dynamic states",
+      "textNodes": 11,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 1,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-subscription-overview-684574f",
+        "finance-subscription-reports-85e37e1",
+        "finance-subscription-make-deposit-2476e85",
+        "finance-subscription-transfers-d0e68c4",
+        "finance-subscription-documents-9954455",
+        "finance-subscription-subscription-d5ee09e",
+        "finance-subscription-settings-c0d97dd",
+        "finance-subscription-settings-7f63f73",
+        "finance-subscription-subscription-information-not-available-d12d3d4",
+        "finance-subscription-we-are-currently-not-able-to-display-the-t-2acb3f3",
+        "finance-subscription-please-try-again-later-thank-you-for-your--09773e9"
+      ],
+      "dynamicStates": 0,
+      "visibleCapturedCandidateNodes": 11,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "monthly-close",
+      "status": "PASS",
+      "evidence": "6 observed Text nodes; 0 monetary/date data nodes; 0 links retained; 1 documents; 1 read-only dynamic states",
+      "textNodes": 6,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 0,
+      "translatedFrames": 1,
+      "entryIds": [
+        "finance-monthly-close-monthly-close-by-event-date-b609620",
+        "finance-monthly-close-show-de89c70",
+        "finance-monthly-close-none-5be4c37",
+        "finance-monthly-close-apply-93c436f",
+        "finance-monthly-close-partner-fees-4d00f2a",
+        "finance-monthly-close-clicks-and-impressions-received-in-the-las-8b2e960",
+        "finance-monthly-close-month-34aa774",
+        "finance-monthly-close-currency-691e23b",
+        "finance-monthly-close-actions-paid-69c6d4d",
+        "finance-monthly-close-other-costs-paid-fcacae1",
+        "finance-monthly-close-action-cost-b6986e3",
+        "finance-monthly-close-action-revenue-c325d64",
+        "finance-monthly-close-click-cost-c6ca2ea",
+        "finance-monthly-close-other-cost-ed9806a",
+        "finance-monthly-close-net-amount-1509396",
+        "finance-monthly-close-tax-de6781e",
+        "finance-monthly-close-total-bdef802",
+        "finance-monthly-close-displaying-start-end-of-total-dfebf6d",
+        "finance-monthly-close-clear-all-3c6c781",
+        "finance-monthly-close-sortable-month-f43c81e",
+        "finance-monthly-close-overview-00e8ffe",
+        "finance-monthly-close-reports-854bedc",
+        "finance-monthly-close-monthly-close-53af4b7",
+        "finance-monthly-close-upcoming-partner-payments-78d0af9",
+        "finance-monthly-close-cash-flow-history-a75eec0",
+        "finance-monthly-close-make-deposit-74613bf",
+        "finance-monthly-close-transfers-769df91",
+        "finance-monthly-close-documents-61df58e",
+        "finance-monthly-close-subscription-0463a91",
+        "finance-monthly-close-settings-440741d",
+        "finance-monthly-close-settings-986afbc"
+      ],
+      "dynamicStates": 1,
+      "visibleCapturedCandidateNodes": 6,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "status": "PASS",
+      "evidence": "1 observed Text nodes; 0 monetary/date data nodes; 0 links retained; 1 documents; 3 read-only dynamic states",
+      "textNodes": 1,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 0,
+      "translatedFrames": 1,
+      "entryIds": [
+        "finance-upcoming-partner-payments-clicks-and-impressions-received-in-the-las-f328c8d",
+        "finance-upcoming-partner-payments-upcoming-partner-payments-7c47fc0",
+        "finance-upcoming-partner-payments-prediction-range-a6edb9a",
+        "finance-upcoming-partner-payments-45-days-750f5fa",
+        "finance-upcoming-partner-payments-funding-account-3bdd045",
+        "finance-upcoming-partner-payments-none-e77268a",
+        "finance-upcoming-partner-payments-partner-d4df743",
+        "finance-upcoming-partner-payments-all-04efac4",
+        "finance-upcoming-partner-payments-apply-b31c1fd",
+        "finance-upcoming-partner-payments-30-days-b862894",
+        "finance-upcoming-partner-payments-45-days-0ec9792",
+        "finance-upcoming-partner-payments-60-days-21e81ed",
+        "finance-upcoming-partner-payments-90-days-35fc5f6",
+        "finance-upcoming-partner-payments-overview-76a45f8",
+        "finance-upcoming-partner-payments-reports-1e011fe",
+        "finance-upcoming-partner-payments-monthly-close-f98921f",
+        "finance-upcoming-partner-payments-upcoming-partner-payments-fd01f3e",
+        "finance-upcoming-partner-payments-cash-flow-history-9ed0129",
+        "finance-upcoming-partner-payments-make-deposit-7281d06",
+        "finance-upcoming-partner-payments-transfers-b0f01ce",
+        "finance-upcoming-partner-payments-documents-fd08b02",
+        "finance-upcoming-partner-payments-subscription-89104a6",
+        "finance-upcoming-partner-payments-settings-d92b686",
+        "finance-upcoming-partner-payments-settings-217ed62",
+        "finance-upcoming-partner-payments-all-a822baf",
+        "finance-upcoming-partner-payments-all-e8eb9f9"
+      ],
+      "dynamicStates": 3,
+      "visibleCapturedCandidateNodes": 1,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "cash-flow-history",
+      "status": "PASS",
+      "evidence": "16 observed Text nodes; 0 monetary/date data nodes; 4 links retained; 1 documents; 1 read-only dynamic states",
+      "textNodes": 16,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 4,
+      "translatedFrames": 1,
+      "entryIds": [
+        "finance-cash-flow-history-cash-flow-history-3daa00f",
+        "finance-cash-flow-history-funding-account-69d5086",
+        "finance-cash-flow-history-none-43d8cf2",
+        "finance-cash-flow-history-apply-b30fe8b",
+        "finance-cash-flow-history-clicks-and-impressions-received-in-the-las-20d345f",
+        "finance-cash-flow-history-overview-d796d58",
+        "finance-cash-flow-history-reports-0ab388e",
+        "finance-cash-flow-history-monthly-close-412ab2e",
+        "finance-cash-flow-history-upcoming-partner-payments-8df5f07",
+        "finance-cash-flow-history-cash-flow-history-b46d1c0",
+        "finance-cash-flow-history-make-deposit-3489c4e",
+        "finance-cash-flow-history-transfers-6484f6d",
+        "finance-cash-flow-history-documents-c87372e",
+        "finance-cash-flow-history-subscription-61b55b8",
+        "finance-cash-flow-history-settings-848116f",
+        "finance-cash-flow-history-settings-7504a9a",
+        "finance-cash-flow-history-all-b1918aa"
+      ],
+      "dynamicStates": 1,
+      "visibleCapturedCandidateNodes": 16,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "status": "PASS",
+      "evidence": "17 observed Text nodes; 0 monetary/date data nodes; 3 links retained; 2 documents; 1 read-only dynamic states",
+      "textNodes": 17,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 3,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-partner-payments-invoices-overview-b5a7da8",
+        "finance-partner-payments-invoices-reports-4fad5ab",
+        "finance-partner-payments-invoices-make-deposit-28a9414",
+        "finance-partner-payments-invoices-transfers-0633775",
+        "finance-partner-payments-invoices-documents-b1b4855",
+        "finance-partner-payments-invoices-partner-payments-invoices-3957ce5",
+        "finance-partner-payments-invoices-impact-com-invoices-2ce6ec9",
+        "finance-partner-payments-invoices-subscription-0148bdc",
+        "finance-partner-payments-invoices-settings-8a69ed5",
+        "finance-partner-payments-invoices-settings-74dc201",
+        "finance-partner-payments-invoices-partner-payments-invoice-summary-70bed61",
+        "finance-partner-payments-invoices-month-b90f5a1",
+        "finance-partner-payments-invoices-month-50a5b33",
+        "finance-partner-payments-invoices-invoices-d2c0214",
+        "finance-partner-payments-invoices-generated-on-a512fe0",
+        "finance-partner-payments-invoices-total-due-0b83304",
+        "finance-partner-payments-invoices-status-9a873ad",
+        "finance-partner-payments-invoices-row-7e511f6",
+        "finance-partner-payments-invoices-past-due-7cab379",
+        "finance-partner-payments-invoices-clear-138c83d"
+      ],
+      "dynamicStates": 1,
+      "visibleCapturedCandidateNodes": 17,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "status": "PASS",
+      "evidence": "21 observed Text nodes; 0 monetary/date data nodes; 3 links retained; 2 documents; 1 read-only dynamic states",
+      "textNodes": 21,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 3,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-impact-com-invoices-overview-ef802b1",
+        "finance-impact-com-invoices-reports-52f2d61",
+        "finance-impact-com-invoices-make-deposit-7c91bb7",
+        "finance-impact-com-invoices-transfers-6374db7",
+        "finance-impact-com-invoices-documents-1b5fe54",
+        "finance-impact-com-invoices-partner-payments-invoices-34544fd",
+        "finance-impact-com-invoices-impact-com-invoices-b3f42fb",
+        "finance-impact-com-invoices-subscription-d6e9cc5",
+        "finance-impact-com-invoices-settings-8829753",
+        "finance-impact-com-invoices-settings-0c1667a",
+        "finance-impact-com-invoices-impact-com-invoices-5712aeb",
+        "finance-impact-com-invoices-month-c393a70",
+        "finance-impact-com-invoices-rows-ae655a1",
+        "finance-impact-com-invoices-generated-on-c813835",
+        "finance-impact-com-invoices-document-c1ac0b0",
+        "finance-impact-com-invoices-type-fd8bc69",
+        "finance-impact-com-invoices-subscription-fee-2fe4d5b",
+        "finance-impact-com-invoices-incremental-growth-fee-14cd2d9",
+        "finance-impact-com-invoices-other-fees-7ff9d5a",
+        "finance-impact-com-invoices-total-5f40232",
+        "finance-impact-com-invoices-status-cfa735c",
+        "finance-impact-com-invoices-sorry-there-s-no-data-to-show-7c92cbb",
+        "finance-impact-com-invoices-all-afa4bfa",
+        "finance-impact-com-invoices-clear-90f864e"
+      ],
+      "dynamicStates": 1,
+      "visibleCapturedCandidateNodes": 21,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "general",
+      "status": "PASS",
+      "evidence": "33 observed Text nodes; 0 monetary/date data nodes; 7 links retained; 2 documents; 1 read-only dynamic states",
+      "textNodes": 33,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 7,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-general-overview-56463bd",
+        "finance-general-reports-e2a647e",
+        "finance-general-make-deposit-009719c",
+        "finance-general-transfers-9e674a6",
+        "finance-general-documents-7d138b2",
+        "finance-general-subscription-1979ef8",
+        "finance-general-settings-496c7c9",
+        "finance-general-general-1433738",
+        "finance-general-legal-entities-d55b846",
+        "finance-general-billing-groups-679f22d",
+        "finance-general-funding-accounts-8cc034a",
+        "finance-general-payment-methods-706ddcb",
+        "finance-general-automatic-payments-96fab69",
+        "finance-general-settings-51ff4d3",
+        "finance-general-general-4788f9d",
+        "finance-general-finance-contacts-78aeb29",
+        "finance-general-select-a-contact-for-finance-updates-and-e-7af6399",
+        "finance-general-primary-contact-5dfad5a",
+        "finance-general-existing-account-user-c2d9811",
+        "finance-general-other-contact-2b72ecb",
+        "finance-general-additional-contacts-0db6c05",
+        "finance-general-specify-additional-contacts-email-address--1cd7415",
+        "finance-general-monthly-closing-report-1596486",
+        "finance-general-specify-either-action-reporting-date-or-ac-c24fe11",
+        "finance-general-revenue-recognition-method-dfc5828",
+        "finance-general-use-the-month-when-actions-are-b2cc4db",
+        "finance-general-reported-f24c069",
+        "finance-general-as-the-month-for-revenue-recognition-aa06efd",
+        "finance-general-funder-type-8600f50",
+        "finance-general-not-indicated-no-restrictions-931bba3",
+        "finance-general-invoicing-method-3e6507f",
+        "finance-general-direct-invoicing-to-partner-accounts-with--6b4b948",
+        "finance-general-save-f76250f"
+      ],
+      "dynamicStates": 1,
+      "visibleCapturedCandidateNodes": 33,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "legal-entities",
+      "status": "PASS",
+      "evidence": "19 observed Text nodes; 0 monetary/date data nodes; 7 links retained; 2 documents; 2 read-only dynamic states",
+      "textNodes": 19,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 7,
+      "translatedFrames": 2,
+      "entryIds": [
+        "finance-legal-entities-overview-6e2cd72",
+        "finance-legal-entities-reports-09b2e92",
+        "finance-legal-entities-make-deposit-7fb2128",
+        "finance-legal-entities-transfers-0cf2da8",
+        "finance-legal-entities-documents-4020758",
+        "finance-legal-entities-subscription-933f589",
+        "finance-legal-entities-settings-929135e",
+        "finance-legal-entities-general-f2d00d2",
+        "finance-legal-entities-legal-entities-9652cb7",
+        "finance-legal-entities-billing-groups-72dc848",
+        "finance-legal-entities-funding-accounts-504555f",
+        "finance-legal-entities-payment-methods-96c5851",
+        "finance-legal-entities-automatic-payments-48b98fd",
+        "finance-legal-entities-settings-503ef12",
+        "finance-legal-entities-legal-entities-2db2616",
+        "finance-legal-entities-name-ac432db",
+        "finance-legal-entities-billing-groups-be0648d",
+        "finance-legal-entities-funding-accounts-5fad94f",
+        "finance-legal-entities-indirect-tax-country-region-1889886",
+        "finance-legal-entities-row-6c08c28",
+        "finance-legal-entities-edit-ff80f07"
+      ],
+      "dynamicStates": 2,
+      "visibleCapturedCandidateNodes": 19,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "billing-groups",
+      "status": "FAIL",
+      "evidence": "Browser check failed (TimeoutError); private browser detail suppressed",
+      "phase": "translation-verify",
+      "state": "deep-existing-entity-actions-menu",
+      "errorType": "TimeoutError"
+    },
+    {
+      "pageId": "funding-accounts",
+      "status": "FAIL",
+      "evidence": "Browser check failed (TimeoutError); private browser detail suppressed",
+      "phase": "translation-verify",
+      "state": "deep-existing-entity-actions-menu",
+      "errorType": "TimeoutError"
+    },
+    {
+      "pageId": "payment-methods",
+      "status": "PASS",
+      "evidence": "21 observed Text nodes; 0 monetary/date data nodes; 8 links retained; 1 documents; 1 read-only dynamic states",
+      "textNodes": 21,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 8,
+      "translatedFrames": 1,
+      "entryIds": [
+        "finance-make-deposit-payment-methods-b3e91df",
+        "finance-make-deposit-add-payment-method-158de5c",
+        "finance-make-deposit-rows-2ba5f96",
+        "finance-payment-methods-name-2ad7349",
+        "finance-payment-methods-type-3b6f130",
+        "finance-payment-methods-account-card-b448ef4",
+        "finance-payment-methods-funding-account-b474cc2",
+        "finance-make-deposit-overview-5b7dda7",
+        "finance-make-deposit-reports-6c23e63",
+        "finance-make-deposit-make-deposit-f17d4f8",
+        "finance-make-deposit-transfers-414625c",
+        "finance-make-deposit-documents-745d94b",
+        "finance-make-deposit-subscription-20e0944",
+        "finance-make-deposit-settings-818b84f",
+        "finance-payment-methods-general-0af5eb9",
+        "finance-payment-methods-legal-entities-e28c701",
+        "finance-payment-methods-billing-groups-2ba2c54",
+        "finance-payment-methods-funding-accounts-96796ea",
+        "finance-payment-methods-payment-methods-1ba2e80",
+        "finance-payment-methods-automatic-payments-68b148a",
+        "finance-make-deposit-settings-5b3e162",
+        "finance-payment-methods-new-add-payment-method-observed",
+        "finance-payment-methods-new-name-observed",
+        "finance-payment-methods-new-payment-type-observed",
+        "finance-payment-methods-new-credit-card-observed",
+        "finance-payment-methods-new-credit-card-description-observed",
+        "finance-payment-methods-new-ach-observed",
+        "finance-payment-methods-new-ach-description-observed",
+        "finance-payment-methods-new-credit-card-details-observed",
+        "finance-payment-methods-new-credit-card-fees-observed",
+        "finance-payment-methods-new-cardholder-name-observed",
+        "finance-payment-methods-new-card-number-observed",
+        "finance-payment-methods-new-expiration-date-observed",
+        "finance-payment-methods-new-expiration-format-observed",
+        "finance-payment-methods-new-cvv-observed",
+        "finance-payment-methods-new-cvv-format-observed",
+        "finance-payment-methods-new-save-observed",
+        "finance-payment-methods-new-engage-reports-navigation-observed",
+        "finance-payment-methods-settings-c92c1d0"
+      ],
+      "dynamicStates": 1,
+      "visibleCapturedCandidateNodes": 20,
+      "longEnglishResidues": 0
+    },
+    {
+      "pageId": "automatic-payments",
+      "status": "PASS",
+      "evidence": "18 observed Text nodes; 0 monetary/date data nodes; 8 links retained; 1 documents; 0 read-only dynamic states",
+      "textNodes": 18,
+      "prefixNodes": 0,
+      "suffixNodes": 0,
+      "numericTemplateNodes": 0,
+      "valueNodes": 0,
+      "privateDataNodes": 0,
+      "links": 8,
+      "translatedFrames": 1,
+      "entryIds": [
+        "finance-automatic-payments-automatic-payments-7ffa71e",
+        "finance-automatic-payments-you-have-a-pending-deposit-you-ll-be-able--79119dc",
+        "finance-automatic-payments-to-learn-more-visit-our-help-doc-on-b124c33",
+        "finance-automatic-payments-automatic-payments-1ac71ee",
+        "finance-automatic-payments-overview-38434a6",
+        "finance-automatic-payments-reports-d3671c8",
+        "finance-automatic-payments-make-deposit-df8098f",
+        "finance-automatic-payments-transfers-1505838",
+        "finance-automatic-payments-documents-9d5ef28",
+        "finance-automatic-payments-subscription-2232093",
+        "finance-automatic-payments-settings-1d87913",
+        "finance-automatic-payments-general-7df2e8b",
+        "finance-automatic-payments-legal-entities-df54f3f",
+        "finance-automatic-payments-billing-groups-7db1193",
+        "finance-automatic-payments-funding-accounts-9c151f3",
+        "finance-automatic-payments-payment-methods-348d17b",
+        "finance-automatic-payments-automatic-payments-ea16787",
+        "finance-automatic-payments-settings-145ac2b"
+      ],
+      "dynamicStates": 0,
+      "visibleCapturedCandidateNodes": 18,
+      "longEnglishResidues": 0
+    }
+  ],
+  "aiCases": [],
+  "longEnglishBodyScans": [
+    {
+      "pageId": "overview",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 0,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/brand-overview-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 3,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/brand-overview-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 34,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 1,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/brand-overview-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 29,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 19,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:View",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 8,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:ACH",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 17,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Wire",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 24,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Credit Card",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 14,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 22,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/advertiser-create-transfer-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 30,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 23,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 23,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 23,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 23,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 23,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 23,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "subscription",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/finance-subscription.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/view-subscription-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 3,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 6,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "opened:Show:",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 21,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 1,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Prediction Range:",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 13,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Funding Account:",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 12,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Partner:",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 11,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 6,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "opened:Funding Account:",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+          "applicable": true,
+          "scannedTextNodes": 9,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-invoices.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 1,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 9,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/partner-invoices.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 1,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 10,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/finance-impact-invoices.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 12,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/finance-impact-invoices.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 1,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 14,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "general",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/customer-settings-general-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/customer-settings-general-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 18,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/customer-settings-general-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/customer-settings-general-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 18,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 1,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/legal-entities-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 7,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/legal-entities-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 8,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/legal-entities-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 8,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/billing-groups-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 7,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/billing-groups-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 7,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/billing-groups-view.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 7,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 9,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 9,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 2,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        },
+        {
+          "framePath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 9,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 10,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "opened:Add Payment Method",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/payment-method/new/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 16,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    },
+    {
+      "pageId": "automatic-payments",
+      "state": "initial",
+      "documents": [
+        {
+          "framePath": "/secure/advertiser/finance/fr/automatic-payments/ui.ihtml",
+          "applicable": true,
+          "scannedTextNodes": 5,
+          "staticEnglishNodes": 0,
+          "dynamicMixedEnglishNodes": 0,
+          "selectors": []
+        }
+      ],
+      "staticEnglishNodes": 0,
+      "dynamicMixedEnglishNodes": 0
+    }
+  ],
+  "pageErrors": 0,
+  "diagnostics": [
+    {
+      "pageId": "overview",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#overview-header > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "button[data-testid=\"uicl-button-menu\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Show balance forecast",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#overview-header > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#overview-header > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-overview.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "overview",
+      "state": "opened:Payment Request Form",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/brand-overview-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#overview-header > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:View",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:View",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:View",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:View",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "h1[data-testid=\"payment-method-listing-header\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:ACH",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:ACH",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:ACH",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:ACH",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Wire",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Wire",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Wire",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Wire",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Credit Card",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Credit Card",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Credit Card",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "make-deposit",
+      "state": "opened:Credit Card",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.screen > div.make-deposit-form > div.make-deposit-form > div.make-deposit-header:nth-of-type(1) > h1.make-deposit-title",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "button[data-testid=\"uicl-button\"]",
+      "visibleCandidateCount": 4
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "span.filter:nth-of-type(4) > div.iui-component.iui-multiselect-input > div.btn-container > button.responsive.outline > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/advertiser-create-transfer-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "opened:Create Transfer",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/advertiser-create-transfer-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "header-text[data-testid=\"uicl-page-header-title\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "button[data-testid=\"uicl-button\"]",
+      "visibleCandidateCount": 4
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:User Initiated",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "button[data-testid=\"uicl-button\"]",
+      "visibleCandidateCount": 4
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Invoice Status",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "button[data-testid=\"uicl-button\"]",
+      "visibleCandidateCount": 4
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Partner",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Program",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Type",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "span[data-testid=\"uicl-data-table-column-label-0\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "transfers",
+      "state": "deep-opened:Funding Status ·",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/manage-partner-funds-transfer-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "subscription",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-subscription.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "subscription",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/view-subscription-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "subscription",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/view-subscription-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#vueInstance > div.app-page > div.container > div.description:nth-of-type(2) > p",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "opened:Show:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "opened:Show:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "#templateContainer > p.reportingDisclaimer:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "opened:Show:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "monthly-close",
+      "state": "opened:Show:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "#templateContainer > p.reportingDisclaimer:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Prediction Range:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Prediction Range:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "#templateContainer > p.reportingDisclaimer:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Prediction Range:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Prediction Range:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "#templateContainer > p.reportingDisclaimer:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Partner:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Partner:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "#templateContainer > p.reportingDisclaimer:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Partner:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "upcoming-partner-payments",
+      "state": "opened:Partner:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "#templateContainer > p.reportingDisclaimer:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "cash-flow-history",
+      "state": "opened:Funding Account:",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report",
+      "matchingDocumentCount": 1,
+      "selector": "div > div > div.titleContainer--q4uoJ:nth-of-type(2) > div.reportTitle--klMti:nth-of-type(1) > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-invoices.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "span.filter > div.iui-component.iui-multiselect-input > div.btn-container > button.responsive.outline > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-invoices.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/partner-invoices.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "partner-payments-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-invoices-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-impact-invoices.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.bulk-actions-and-sort:nth-of-type(3) > span.num-records-container",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-impact-invoices.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "span.filter > div.iui-component.iui-multiselect-input > div.btn-container > button.responsive.outline > span",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/finance-impact-invoices.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "impact-com-invoices",
+      "state": "opened:Month",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-adv-impact-invoices-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#app > div.customer-settings-general > div.screen-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#additional-contacts > div._4-71-1_EdXeI:nth-of-type(1) > label._4-71-1_ryDSx._4-71-1_GHORB:nth-of-type(2)",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "general",
+      "state": "opened:Revenue Recognition Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/customer-settings-general-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#app > div.customer-settings-general > div.screen-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#legal-entities > div > div.screen-content > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#legal-entities > div > div.screen-content > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#legal-entities > div > div.screen-content > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#legal-entities > div > div.screen-content > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "legal-entities",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/legal-entities-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#legal-entities > div > div.screen-content > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#billing-groups > div > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#billing-groups > div > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#billing-groups > div > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#billing-groups > div > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#billing-groups > div > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-actions-menu",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-actions-menu",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "billing-groups",
+      "state": "deep-existing-entity-actions-menu",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "#billing-groups > div > div.upper-content:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.bulk-actions-and-sort:nth-of-type(2) > span.num-records-container",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-detail",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "span[data-testid=\"uicl-data-table-column-label-3\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-disclosure",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-actions-menu",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-actions-menu",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "funding-accounts",
+      "state": "deep-existing-entity-actions-menu",
+      "phase": "doc-ready",
+      "documentPath": "/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "div.iui-component.iui-data-view > div > div.data-header:nth-of-type(1) > div.top-info:nth-of-type(1) > h1",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "h1[data-testid=\"payment-method-listing-header\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "opened:Add Payment Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "opened:Add Payment Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "h1[data-testid=\"payment-method-listing-header\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "opened:Add Payment Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-method/new/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "payment-methods",
+      "state": "opened:Add Payment Method",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/payment-method/new/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "h1[data-testid=\"header-title\"]",
+      "visibleCandidateCount": 1
+    },
+    {
+      "pageId": "automatic-payments",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/automatic-payments/ui.ihtml",
+      "matchingDocumentCount": 1
+    },
+    {
+      "pageId": "automatic-payments",
+      "state": "initial",
+      "phase": "doc-ready",
+      "documentPath": "/secure/advertiser/finance/fr/automatic-payments/ui.ihtml",
+      "matchingDocumentCount": 1,
+      "selector": "section.automatic-payments-section > main.automatic-payment-top-content > div.automatic-payment-main-content > header.automatic-payment-header-container > h2.automatic-payment-header",
+      "visibleCandidateCount": 1
+    }
+  ],
+  "currentPhase": {
+    "pageId": "automatic-payments",
+    "state": "initial",
+    "phase": "translation-verify"
+  }
+}

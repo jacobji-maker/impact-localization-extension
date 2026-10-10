@@ -1,0 +1,1064 @@
+{
+  "mode": "REAL_NETWORK_ACH_LAYOUT",
+  "version": "0.5.2",
+  "date": "2026-10-10T15:00:03.602Z",
+  "dictionarySha256": "d1dc3b519bf396f7ac359b941d526df59f17e1440cd382e638c8617daddcf868",
+  "states": [
+    {
+      "state": "OFF",
+      "origin": "https://demo.impact.com",
+      "path": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "topDocument": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "devicePixelRatio": 1,
+        "visualScale": 1
+      },
+      "matches": 1,
+      "records": [
+        {
+          "entryId": "finance-make-deposit-ach-376811a",
+          "selector": "#selector-label",
+          "fixedLabel": "ACH",
+          "textRect": {
+            "x": 576.49,
+            "y": 275.5,
+            "left": 576.49,
+            "top": 275.5,
+            "right": 599.57,
+            "bottom": 291.5,
+            "width": 23.08,
+            "height": 16
+          },
+          "textLineRects": [
+            {
+              "x": 576.49,
+              "y": 275.5,
+              "left": 576.49,
+              "top": 275.5,
+              "right": 599.57,
+              "bottom": 291.5,
+              "width": 23.08,
+              "height": 16
+            }
+          ],
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_label_1h0as_17"
+              ],
+              "rect": {
+                "x": 576.49,
+                "y": 273.5,
+                "left": 576.49,
+                "top": 273.5,
+                "right": 621.57,
+                "bottom": 293.5,
+                "width": 45.08,
+                "height": 20
+              },
+              "clientWidth": 45,
+              "scrollWidth": 45,
+              "clientHeight": 20,
+              "scrollHeight": 20,
+              "font": "",
+              "fontSize": "12px",
+              "lineHeight": "20px",
+              "whiteSpace": "nowrap",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "block",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "normal",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_labelContainer_1h0as_17"
+              ],
+              "rect": {
+                "x": 536.49,
+                "y": 268.5,
+                "left": 536.49,
+                "top": 268.5,
+                "right": 621.57,
+                "bottom": 298.5,
+                "width": 85.08,
+                "height": 30
+              },
+              "clientWidth": 85,
+              "scrollWidth": 85,
+              "clientHeight": 30,
+              "scrollHeight": 30,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "10px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [],
+              "rect": {
+                "x": 536.49,
+                "y": 268.5,
+                "left": 536.49,
+                "top": 268.5,
+                "right": 621.57,
+                "bottom": 298.5,
+                "width": 85.08,
+                "height": 30
+              },
+              "clientWidth": 85,
+              "scrollWidth": 85,
+              "clientHeight": 30,
+              "scrollHeight": 30,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "5px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_base_1h0as_1",
+                "_selected_1h0as_74"
+              ],
+              "rect": {
+                "x": 518.99,
+                "y": 251,
+                "left": 518.99,
+                "top": 251,
+                "right": 646.98,
+                "bottom": 316,
+                "width": 127.99,
+                "height": 65
+              },
+              "clientWidth": 125,
+              "scrollWidth": 125,
+              "clientHeight": 62,
+              "scrollHeight": 62,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "16px",
+              "paddingRight": "16px",
+              "gap": "4px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "selectors"
+              ],
+              "rect": {
+                "x": 383,
+                "y": 251,
+                "left": 383,
+                "top": 251,
+                "right": 783,
+                "bottom": 316,
+                "width": 400,
+                "height": 65
+              },
+              "clientWidth": 400,
+              "scrollWidth": 400,
+              "clientHeight": 65,
+              "scrollHeight": 65,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "8px",
+              "cursor": "auto",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "payment-types"
+              ],
+              "rect": {
+                "x": 383,
+                "y": 251,
+                "left": 383,
+                "top": 251,
+                "right": 783,
+                "bottom": 316,
+                "width": 400,
+                "height": 65
+              },
+              "clientWidth": 400,
+              "scrollWidth": 400,
+              "clientHeight": 65,
+              "scrollHeight": 65,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "normal",
+              "cursor": "auto",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "identity": {
+        "textNodesRetained": true,
+        "originalChildrenRetained": true,
+        "elementAttributesUnchanged": true,
+        "inputsUnchanged": true,
+        "linksUnchanged": true,
+        "originalTextRestored": true,
+        "inputCount": 3,
+        "linkCount": 4
+      },
+      "privateValuesReturned": false,
+      "inputValuesReturned": false,
+      "conversationTextReturned": false
+    },
+    {
+      "state": "ON",
+      "origin": "https://demo.impact.com",
+      "path": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "topDocument": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "devicePixelRatio": 1,
+        "visualScale": 1
+      },
+      "matches": 1,
+      "records": [
+        {
+          "entryId": "finance-make-deposit-ach-376811a",
+          "selector": "#selector-label",
+          "fixedLabel": "ACH扣款",
+          "textRect": {
+            "x": 576.49,
+            "y": 275.5,
+            "left": 576.49,
+            "top": 275.5,
+            "right": 623.57,
+            "bottom": 291.5,
+            "width": 47.08,
+            "height": 16
+          },
+          "textLineRects": [
+            {
+              "x": 576.49,
+              "y": 275.5,
+              "left": 576.49,
+              "top": 275.5,
+              "right": 623.57,
+              "bottom": 291.5,
+              "width": 47.08,
+              "height": 16
+            }
+          ],
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_label_1h0as_17"
+              ],
+              "rect": {
+                "x": 576.49,
+                "y": 273.5,
+                "left": 576.49,
+                "top": 273.5,
+                "right": 645.57,
+                "bottom": 293.5,
+                "width": 69.08,
+                "height": 20
+              },
+              "clientWidth": 69,
+              "scrollWidth": 69,
+              "clientHeight": 20,
+              "scrollHeight": 20,
+              "font": "",
+              "fontSize": "12px",
+              "lineHeight": "20px",
+              "whiteSpace": "nowrap",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "block",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "normal",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 629.57,
+                    "y": 277.5,
+                    "left": 629.57,
+                    "top": 277.5,
+                    "right": 645.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_labelContainer_1h0as_17"
+              ],
+              "rect": {
+                "x": 536.49,
+                "y": 268.5,
+                "left": 536.49,
+                "top": 268.5,
+                "right": 645.57,
+                "bottom": 298.5,
+                "width": 109.08,
+                "height": 30
+              },
+              "clientWidth": 109,
+              "scrollWidth": 109,
+              "clientHeight": 30,
+              "scrollHeight": 30,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "10px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 629.57,
+                    "y": 277.5,
+                    "left": 629.57,
+                    "top": 277.5,
+                    "right": 645.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [],
+              "rect": {
+                "x": 536.49,
+                "y": 268.5,
+                "left": 536.49,
+                "top": 268.5,
+                "right": 645.57,
+                "bottom": 298.5,
+                "width": 109.08,
+                "height": 30
+              },
+              "clientWidth": 109,
+              "scrollWidth": 109,
+              "clientHeight": 30,
+              "scrollHeight": 30,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "5px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 629.57,
+                    "y": 277.5,
+                    "left": 629.57,
+                    "top": 277.5,
+                    "right": 645.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_base_1h0as_1",
+                "_selected_1h0as_74"
+              ],
+              "rect": {
+                "x": 518.99,
+                "y": 251,
+                "left": 518.99,
+                "top": 251,
+                "right": 646.98,
+                "bottom": 316,
+                "width": 127.99,
+                "height": 65
+              },
+              "clientWidth": 125,
+              "scrollWidth": 125,
+              "clientHeight": 62,
+              "scrollHeight": 62,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "16px",
+              "paddingRight": "16px",
+              "gap": "4px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 629.57,
+                    "y": 277.5,
+                    "left": 629.57,
+                    "top": 277.5,
+                    "right": 645.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "selectors"
+              ],
+              "rect": {
+                "x": 383,
+                "y": 251,
+                "left": 383,
+                "top": 251,
+                "right": 783,
+                "bottom": 316,
+                "width": 400,
+                "height": 65
+              },
+              "clientWidth": 400,
+              "scrollWidth": 400,
+              "clientHeight": 65,
+              "scrollHeight": 65,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "8px",
+              "cursor": "auto",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 629.57,
+                    "y": 277.5,
+                    "left": 629.57,
+                    "top": 277.5,
+                    "right": 645.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "payment-types"
+              ],
+              "rect": {
+                "x": 383,
+                "y": 251,
+                "left": 383,
+                "top": 251,
+                "right": 783,
+                "bottom": 316,
+                "width": 400,
+                "height": 65
+              },
+              "clientWidth": 400,
+              "scrollWidth": 400,
+              "clientHeight": 65,
+              "scrollHeight": 65,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "normal",
+              "cursor": "auto",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 629.57,
+                    "y": 277.5,
+                    "left": 629.57,
+                    "top": 277.5,
+                    "right": 645.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "identity": {
+        "textNodesRetained": true,
+        "originalChildrenRetained": true,
+        "elementAttributesUnchanged": true,
+        "inputsUnchanged": true,
+        "linksUnchanged": true,
+        "originalTextRestored": false,
+        "inputCount": 3,
+        "linkCount": 4
+      },
+      "privateValuesReturned": false,
+      "inputValuesReturned": false,
+      "conversationTextReturned": false
+    },
+    {
+      "state": "OFF_RESTORED",
+      "origin": "https://demo.impact.com",
+      "path": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+      "topDocument": true,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "devicePixelRatio": 1,
+        "visualScale": 1
+      },
+      "matches": 1,
+      "records": [
+        {
+          "entryId": "finance-make-deposit-ach-376811a",
+          "selector": "#selector-label",
+          "fixedLabel": "ACH",
+          "textRect": {
+            "x": 576.49,
+            "y": 275.5,
+            "left": 576.49,
+            "top": 275.5,
+            "right": 599.57,
+            "bottom": 291.5,
+            "width": 23.08,
+            "height": 16
+          },
+          "textLineRects": [
+            {
+              "x": 576.49,
+              "y": 275.5,
+              "left": 576.49,
+              "top": 275.5,
+              "right": 599.57,
+              "bottom": 291.5,
+              "width": 23.08,
+              "height": 16
+            }
+          ],
+          "ancestors": [
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_label_1h0as_17"
+              ],
+              "rect": {
+                "x": 576.49,
+                "y": 273.5,
+                "left": 576.49,
+                "top": 273.5,
+                "right": 621.57,
+                "bottom": 293.5,
+                "width": 45.08,
+                "height": 20
+              },
+              "clientWidth": 45,
+              "scrollWidth": 45,
+              "clientHeight": 20,
+              "scrollHeight": 20,
+              "font": "",
+              "fontSize": "12px",
+              "lineHeight": "20px",
+              "whiteSpace": "nowrap",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "block",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "normal",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_labelContainer_1h0as_17"
+              ],
+              "rect": {
+                "x": 536.49,
+                "y": 268.5,
+                "left": 536.49,
+                "top": 268.5,
+                "right": 621.57,
+                "bottom": 298.5,
+                "width": 85.08,
+                "height": 30
+              },
+              "clientWidth": 85,
+              "scrollWidth": 85,
+              "clientHeight": 30,
+              "scrollHeight": 30,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "10px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [],
+              "rect": {
+                "x": 536.49,
+                "y": 268.5,
+                "left": 536.49,
+                "top": 268.5,
+                "right": 621.57,
+                "bottom": 298.5,
+                "width": 85.08,
+                "height": 30
+              },
+              "clientWidth": 85,
+              "scrollWidth": 85,
+              "clientHeight": 30,
+              "scrollHeight": 30,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "5px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "_base_1h0as_1",
+                "_selected_1h0as_74"
+              ],
+              "rect": {
+                "x": 518.99,
+                "y": 251,
+                "left": 518.99,
+                "top": 251,
+                "right": 646.98,
+                "bottom": 316,
+                "width": 127.99,
+                "height": 65
+              },
+              "clientWidth": 125,
+              "scrollWidth": 125,
+              "clientHeight": 62,
+              "scrollHeight": 62,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "16px",
+              "paddingRight": "16px",
+              "gap": "4px",
+              "cursor": "pointer",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "selectors"
+              ],
+              "rect": {
+                "x": 383,
+                "y": 251,
+                "left": 383,
+                "top": 251,
+                "right": 783,
+                "bottom": 316,
+                "width": 400,
+                "height": 65
+              },
+              "clientWidth": 400,
+              "scrollWidth": 400,
+              "clientHeight": 65,
+              "scrollHeight": 65,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "8px",
+              "cursor": "auto",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            },
+            {
+              "tag": "DIV",
+              "classNames": [
+                "payment-types"
+              ],
+              "rect": {
+                "x": 383,
+                "y": 251,
+                "left": 383,
+                "top": 251,
+                "right": 783,
+                "bottom": 316,
+                "width": 400,
+                "height": 65
+              },
+              "clientWidth": 400,
+              "scrollWidth": 400,
+              "clientHeight": 65,
+              "scrollHeight": 65,
+              "font": "14px Sarabun, \"Helvetica Neue\", helvetica, sans-serif",
+              "fontSize": "14px",
+              "lineHeight": "normal",
+              "whiteSpace": "normal",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "display": "flex",
+              "position": "static",
+              "paddingLeft": "0px",
+              "paddingRight": "0px",
+              "gap": "normal",
+              "cursor": "auto",
+              "textOutside": false,
+              "helpButtons": [
+                {
+                  "rect": {
+                    "x": 605.57,
+                    "y": 277.5,
+                    "left": 605.57,
+                    "top": 277.5,
+                    "right": 621.57,
+                    "bottom": 293.5,
+                    "width": 16,
+                    "height": 16
+                  },
+                  "outside": false,
+                  "marginLeft": "6px"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "identity": {
+        "textNodesRetained": true,
+        "originalChildrenRetained": true,
+        "elementAttributesUnchanged": true,
+        "inputsUnchanged": true,
+        "linksUnchanged": true,
+        "originalTextRestored": true,
+        "inputCount": 3,
+        "linkCount": 4
+      },
+      "privateValuesReturned": false,
+      "inputValuesReturned": false,
+      "conversationTextReturned": false
+    }
+  ],
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "clickedNativeControls": 0,
+  "screenshotsSaved": 0,
+  "privateValuesReturned": false,
+  "fullConversationSaved": false
+}

@@ -1,0 +1,206 @@
+{
+  "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+  "date": "2026-10-10T17:06:41.535Z",
+  "version": "0.5.3",
+  "dictionarySha256": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+  "operation": "acceptance",
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "savedSettings": 0,
+  "privateValuesReturned": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "initialSettingsSource": "coordinator verified initial runtime report",
+  "sessionRuntime": {
+    "runtime": {
+      "manifestVersion": "0.5.3",
+      "contentVersion": "0.5.3",
+      "translationEnabled": true,
+      "aiEnabled": true,
+      "errorPresent": false,
+      "extensionIdMatches": true,
+      "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml"
+    },
+    "loadedExtension": {
+      "cardCount": 1,
+      "expectedCardCount": 1,
+      "cards": [
+        {
+          "expectedId": true,
+          "version": "0.5.3",
+          "sourcePathMatches": true,
+          "enabled": true,
+          "unpacked": true,
+          "pathFieldPresent": true
+        }
+      ]
+    }
+  },
+  "currentToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  },
+  "candidates": [
+    {
+      "source": "Edit",
+      "text": "Edit",
+      "normalizedText": "Edit",
+      "selector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown > div > div > ul.iui-list[role=\"listbox\"] > li:nth-of-type(1)[role=\"option\"] > div > span > span",
+      "tag": "SPAN",
+      "frameURL": "https://demo.impact.com/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "frameQuery": {},
+      "framePath": [
+        {
+          "selector": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > iframe:nth-of-type(1)",
+          "parentPath": "https://demo.impact.com/secure/advertiser/finance/fr/funding-accounts.ihtml",
+          "framePath": "https://demo.impact.com/secure/finance/app/list-digital-wallets-flow.ihtml"
+        }
+      ],
+      "shadowPath": [],
+      "topPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "topPaths": [
+        "/secure/advertiser/finance/fr/funding-accounts.ihtml"
+      ],
+      "topQuery": {
+        "u": "/secure/finance/app/list-digital-wallets-flow.ihtml"
+      },
+      "route": "funding-accounts",
+      "kind": "control-label",
+      "observedStates": [
+        "deep-existing-entity-actions-menu"
+      ],
+      "menuEvidence": "unique new native Actions portal with fixed option sequence and one trusted opener click",
+      "ruleId": "finance-funding-accounts-actions-edit-observed",
+      "privateValuesSaved": false
+    },
+    {
+      "source": "Funding Account Document Settings",
+      "text": "Funding Account Document Settings",
+      "normalizedText": "Funding Account Document Settings",
+      "selector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown > div > div > ul.iui-list[role=\"listbox\"] > li:nth-of-type(2)[role=\"option\"] > div > span > span",
+      "tag": "SPAN",
+      "frameURL": "https://demo.impact.com/secure/finance/app/list-digital-wallets-flow.ihtml",
+      "frameQuery": {},
+      "framePath": [
+        {
+          "selector": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > iframe:nth-of-type(1)",
+          "parentPath": "https://demo.impact.com/secure/advertiser/finance/fr/funding-accounts.ihtml",
+          "framePath": "https://demo.impact.com/secure/finance/app/list-digital-wallets-flow.ihtml"
+        }
+      ],
+      "shadowPath": [],
+      "topPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml",
+      "topPaths": [
+        "/secure/advertiser/finance/fr/funding-accounts.ihtml"
+      ],
+      "topQuery": {
+        "u": "/secure/finance/app/list-digital-wallets-flow.ihtml"
+      },
+      "route": "funding-accounts",
+      "kind": "control-label",
+      "observedStates": [
+        "deep-existing-entity-actions-menu"
+      ],
+      "menuEvidence": "unique new native Actions portal with fixed option sequence and one trusted opener click",
+      "ruleId": "finance-funding-accounts-actions-funding-account-document-settings-observed",
+      "privateValuesSaved": false
+    }
+  ],
+  "identityStates": [
+    {
+      "state": "OFF",
+      "baselinePresent": true,
+      "menuTextNodes": 2,
+      "entryIds": [
+        "finance-funding-accounts-actions-edit-observed",
+        "finance-funding-accounts-actions-funding-account-document-settings-observed"
+      ],
+      "textNodesRetained": true,
+      "nativeElementsRetained": true,
+      "nativeChildrenRetained": true,
+      "changedNativeAttributes": 0,
+      "attributeChanges": [],
+      "targetMatchedNodes": 0,
+      "originalTextRestored": true,
+      "privateDataNodeCount": 6,
+      "privateDataUnchanged": true,
+      "inputCount": 6,
+      "inputsUnchanged": true,
+      "linkCount": 0,
+      "linksUnchanged": true,
+      "privateValuesReturned": false,
+      "inputValuesReturned": false
+    },
+    {
+      "state": "ON",
+      "baselinePresent": true,
+      "menuTextNodes": 2,
+      "entryIds": [
+        "finance-funding-accounts-actions-edit-observed",
+        "finance-funding-accounts-actions-funding-account-document-settings-observed"
+      ],
+      "textNodesRetained": true,
+      "nativeElementsRetained": true,
+      "nativeChildrenRetained": true,
+      "changedNativeAttributes": 1,
+      "attributeChanges": [
+        {
+          "tag": "DIV",
+          "popupRoot": true,
+          "name": "style",
+          "changedStyleProperties": [
+            "left"
+          ],
+          "valuesReturned": false
+        }
+      ],
+      "targetMatchedNodes": 2,
+      "originalTextRestored": false,
+      "privateDataNodeCount": 6,
+      "privateDataUnchanged": true,
+      "inputCount": 6,
+      "inputsUnchanged": true,
+      "linkCount": 0,
+      "linksUnchanged": true,
+      "privateValuesReturned": false,
+      "inputValuesReturned": false
+    },
+    {
+      "state": "OFF_RESTORED",
+      "baselinePresent": true,
+      "menuTextNodes": 2,
+      "entryIds": [
+        "finance-funding-accounts-actions-edit-observed",
+        "finance-funding-accounts-actions-funding-account-document-settings-observed"
+      ],
+      "textNodesRetained": true,
+      "nativeElementsRetained": true,
+      "nativeChildrenRetained": true,
+      "changedNativeAttributes": 0,
+      "attributeChanges": [],
+      "targetMatchedNodes": 0,
+      "originalTextRestored": true,
+      "privateDataNodeCount": 6,
+      "privateDataUnchanged": true,
+      "inputCount": 6,
+      "inputsUnchanged": true,
+      "linkCount": 0,
+      "linksUnchanged": true,
+      "privateValuesReturned": false,
+      "inputValuesReturned": false
+    }
+  ],
+  "nativeOffComplete": true,
+  "nativeOnComplete": true,
+  "status": "FAIL",
+  "failure": {
+    "errorType": "Error",
+    "reason": "Menu translation changed native identity, attributes or protected data"
+  },
+  "restoredToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  }
+}

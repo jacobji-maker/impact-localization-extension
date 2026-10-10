@@ -1,0 +1,22 @@
+{
+  "mode": "PRIVACY_UNIT_ONLY",
+  "status": "PASS",
+  "results": [
+    {
+      "name": "Welcome name suffix redacted only in audit text fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Failure status, login warning and attempt counter preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Email identifiers redacted while error context, values and official URLs remain",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated redaction is idempotent",
+      "status": "PASS"
+    }
+  ]
+}

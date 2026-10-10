@@ -1,0 +1,240 @@
+{
+  "capturedAt": "2026-10-09T18:07:11.090861+00:00",
+  "captureMethod": "Read-only DOM inspection and normal sidebar clicks in authenticated user IAB. No extension or injected AI used for source capture.",
+  "mode": "REAL_NETWORK_READ_ONLY",
+  "host": "demo.impact.com",
+  "startURL": "https://demo.impact.com/secure/advertiser/engage/aview.ihtml?t=u",
+  "sourceRoot": "#adv-navigation impact-style-isolator::shadow",
+  "selectors": {
+    "productOpener": ".product-item",
+    "expander": ".product-item.expander",
+    "productLabel": ".product-name",
+    "mainLabel": ".subitem-label",
+    "childLabel": ".child-menu-content a,.child-menu-content span",
+    "nestedLabel": ".subchild-label a"
+  },
+  "products": [
+    {
+      "source": "Engage",
+      "mainLabels": [
+        "Dashboard",
+        "Partners",
+        "Campaign Manager",
+        "Amplification",
+        "Reports",
+        "Transactions",
+        "Content",
+        "Contracts",
+        "Refer & Earn"
+      ],
+      "menus": [
+        {
+          "source": "Partners",
+          "labels": [
+            "Partners",
+            "Automation",
+            "Surveys",
+            "Groups",
+            "Contacts",
+            "Applications",
+            "Proposals Sent"
+          ]
+        },
+        {
+          "source": "Partners",
+          "nested": "Automation",
+          "labels": [
+            "Workflows",
+            "Newsletters",
+            "Segments",
+            "Messaging Templates"
+          ]
+        },
+        {
+          "source": "Campaign Manager",
+          "labels": [
+            "Performance"
+          ]
+        },
+        {
+          "source": "Amplification",
+          "labels": [
+            "Recommended by Meta",
+            "Amplified Content"
+          ]
+        },
+        {
+          "source": "Reports",
+          "labels": [
+            "Performance",
+            "Data Lab",
+            "Saved",
+            "Scheduled",
+            "More Reports"
+          ]
+        },
+        {
+          "source": "Reports",
+          "nested": "Performance",
+          "labels": [
+            "by Partner",
+            "by Day",
+            "by Ad",
+            "Advanced Action Listing"
+          ]
+        },
+        {
+          "source": "Transactions",
+          "labels": [
+            "Actions",
+            "Pending Payouts",
+            "Inquiries",
+            "Test Actions"
+          ]
+        },
+        {
+          "source": "Transactions",
+          "nested": "Pending Payouts",
+          "labels": [
+            "Actions",
+            "Outside Terms",
+            "Reversed",
+            "At Risk"
+          ]
+        },
+        {
+          "source": "Content",
+          "labels": [
+            "Ads",
+            "Data Posts",
+            "Widgets",
+            "Resources",
+            "Deals",
+            "Promo Codes",
+            "Products",
+            "Requests"
+          ]
+        },
+        {
+          "source": "Content",
+          "nested": "Products",
+          "labels": [
+            "Product Catalogs",
+            "Product Promotions"
+          ]
+        },
+        {
+          "source": "Contracts",
+          "labels": [
+            "Template Terms",
+            "Custom Terms",
+            "Contracts",
+            "Changes"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Discover",
+      "mainLabels": [
+        "Find Partners",
+        "Prospects",
+        "Extended Search",
+        "Social Listening"
+      ],
+      "menus": [
+        {
+          "source": "Find Partners",
+          "labels": [
+            "Partner Marketplace",
+            "Creator Search"
+          ]
+        },
+        {
+          "source": "Extended Search",
+          "labels": [
+            "My Searches",
+            "All Results"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Optimize",
+      "mainLabels": [
+        "Participation Value",
+        "Payout",
+        "Audience",
+        "Funnels"
+      ],
+      "menus": [
+        {
+          "source": "Participation Value",
+          "labels": [
+            "Contribution"
+          ]
+        },
+        {
+          "source": "Payout",
+          "labels": [
+            "Leapfrogging",
+            "Crediting Concerns"
+          ]
+        },
+        {
+          "source": "Audience",
+          "labels": [
+            "Customer Value",
+            "Behavior"
+          ]
+        },
+        {
+          "source": "Funnels",
+          "labels": [
+            "Top Paths",
+            "Events Funnel"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Protect",
+      "mainLabels": [
+        "Monitoring",
+        "Violations",
+        "Event Risk"
+      ],
+      "menus": [
+        {
+          "source": "Monitoring",
+          "labels": [
+            "Paid Search",
+            "Promo Code",
+            "Policies"
+          ]
+        },
+        {
+          "source": "Event Risk",
+          "labels": [
+            "Reports",
+            "Risk Review",
+            "Scoring & Filtering Settings",
+            "Alerts"
+          ]
+        },
+        {
+          "source": "Event Risk",
+          "nested": "Reports",
+          "labels": [
+            "Risk By Partner",
+            "Action Risk",
+            "Domain Risk Details",
+            "Same IP Actions",
+            "Conversion Spoofing Rules"
+          ]
+        }
+      ]
+    }
+  ],
+  "privateDataSaved": false
+}

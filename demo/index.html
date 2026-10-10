@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Impact 中文工作台 · 插件演示</title>
+  <meta name="description" content="Impact 精细汉化插件的本地交互演示：术语校准、动态内容汉化与 AI 功能引导。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23294537'/%3E%3Cpath d='M10 8h4v16h-4zm8 0h4v4h-4zm0 7h4v9h-4z' fill='%23d9efb7'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="../impact-cn-mod/content.css">
+  <script src="../impact-cn-mod/dict.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body data-impact-cn-demo>
+  <svg class="svg-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3"/></symbol>
+    <symbol id="i-contract" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8m-8 4h5"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-5 4 3 6-8"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 8V5H5a2 2 0 0 1 0-4m0 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h15V8zM20 11h-6v6h6"/><circle cx="17" cy="14" r=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6zM20 2v4m-2-2h4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14m-1-9H3v16h16v-6"/></symbol>
+  </svg>
+
+  <aside class="sidebar" data-impact-page>
+    <a class="brand" href="./" aria-label="Impact 中文插件演示首页"><span class="brand-name" data-impact-cn-ignore>impact<span class="brand-dot">.</span></span><span class="brand-tag" data-impact-cn-ignore>中文增强</span></a>
+    <div class="workspace" data-impact-cn-ignore><div class="workspace-avatar">S</div><div><strong>Studio Collective</strong><span>品牌工作空间 · 演示</span></div><svg class="icon"><use href="#i-chevron"/></svg></div>
+    <p class="nav-caption" data-impact-cn-ignore>工作空间</p>
+    <nav class="main-nav" aria-label="主要功能">
+      <button class="nav-item" data-view="overview"><svg class="icon"><use href="#i-grid"/></svg><span>Overview</span></button>
+      <button class="nav-item active" data-view="partners" aria-current="page"><svg class="icon"><use href="#i-users"/></svg><span>Partners</span><span class="nav-count" data-impact-cn-ignore>6</span></button>
+      <button class="nav-item" data-view="contracts"><svg class="icon"><use href="#i-contract"/></svg><span>Contracts</span></button>
+      <button class="nav-item" data-view="reports"><svg class="icon"><use href="#i-chart"/></svg><span>Reports</span></button>
+      <button class="nav-item" data-view="finance"><svg class="icon"><use href="#i-wallet"/></svg><span>Finance</span></button>
+    </nav>
+    <div class="sidebar-bottom" data-impact-cn-ignore>
+      <div class="sidebar-note"><span class="eyebrow">LESS CONFUSION. MORE IMPACT.</span><p>看懂每个术语，<br>用好每次合作。</p><button id="sidebar-glossary" class="text-button">查看汉化词典 <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <div class="profile"><div class="profile-avatar">DU</div><div><strong>Demo User</strong><span>演示管理员</span></div><span class="online-dot"></span></div>
+    </div>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar" data-impact-cn-ignore>
+      <div class="breadcrumb"><span>工作空间</span><span>/</span><strong id="breadcrumb-current">合作伙伴</strong></div>
+      <div class="topbar-actions"><span class="demo-tag">交互演示</span><button id="language-toggle" class="language-toggle" aria-pressed="true"><span class="toggle-track"><span></span></span><span id="language-label">精细汉化已开启</span></button><button id="ai-open" data-impact-ai-open class="ai-open"><svg class="icon"><use href="#i-spark"/></svg><span>功能助手</span></button></div>
+    </header>
+
+    <nav class="mobile-nav" data-impact-page aria-label="移动端主要功能"><button data-view="overview"><span>Overview</span></button><button data-view="partners" class="active" aria-current="page"><span>Partners</span></button><button data-view="contracts"><span>Contracts</span></button><button data-view="reports"><span>Reports</span></button><button data-view="finance"><span>Finance</span></button></nav>
+    <main data-impact-page>
+      <div class="localization-banner" data-impact-cn-ignore>
+        <div class="banner-icon"><svg class="icon"><use href="#i-check"/></svg></div>
+        <div><strong id="banner-title">让每个功能，都清楚一点。</strong><p id="banner-description">专业术语精细校准 · 动态内容实时汉化 · 官方文档随时可查</p></div>
+        <div class="translation-status"><span class="status-dot"></span><span id="translation-count">正在加载词典</span><span class="version-label">v0.1.0</span></div>
+        <button id="glossary-open" class="banner-link">查看校准词条 <svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+
+      <section id="partners-view" class="view-panel">
+        <div class="page-heading"><div><span class="eyebrow" data-impact-cn-ignore>PARTNERSHIP MANAGEMENT</span><h1>Partners</h1><p data-impact-cn-ignore>从合作关系到实际收益，在一个工作台里看清全貌。</p></div><button class="button primary" id="add-partner"><svg class="icon"><use href="#i-plus"/></svg><span>Add partners</span></button></div>
+        <div class="section-header"><h2>Performance overview</h2><button class="button date-picker" id="date-filter"><svg class="icon"><use href="#i-chart"/></svg><span id="date-label">Last 30 days</span><svg class="icon"><use href="#i-chevron"/></svg></button></div>
+        <div class="metric-grid" data-impact-context="performance">
+          <article class="metric-card"><div class="metric-label"><span>Active partners</span><svg class="icon"><use href="#i-users"/></svg></div><strong id="metric-partners">4<span class="metric-unit" data-impact-cn-ignore>位</span></strong><p><span class="trend">↗ 2</span><span data-impact-cn-ignore>较上一周期</span></p><div class="micro-bars" aria-hidden="true"><i style="--bar:24%"></i><i style="--bar:38%"></i><i style="--bar:31%"></i><i style="--bar:48%"></i><i style="--bar:59%"></i><i style="--bar:51%"></i><i style="--bar:72%"></i><i style="--bar:83%"></i><i style="--bar:77%"></i><i style="--bar:100%"></i></div></article>
+          <article class="metric-card"><div class="metric-label"><span>Actions</span><span class="mini-label" data-impact-cn-ignore>经校准</span></div><strong id="metric-actions">1,284</strong><p><span class="trend">↗ 18.6%</span><span data-impact-cn-ignore>较上一周期</span></p><div class="micro-line" aria-hidden="true"><svg viewBox="0 0 200 35" preserveAspectRatio="none"><path d="M0 30 20 25 40 28 60 17 80 20 100 11 120 15 140 7 160 12 180 4 200 0"/></svg></div></article>
+          <article class="metric-card"><div class="metric-label"><span>Total revenue</span><svg class="icon"><use href="#i-chart"/></svg></div><strong id="metric-revenue"><span class="currency">$</span>86,420<span class="decimal">.00</span></strong><p><span class="trend">↗ 24.8%</span><span data-impact-cn-ignore>较上一周期</span></p><div class="micro-line" aria-hidden="true"><svg viewBox="0 0 200 35" preserveAspectRatio="none"><path d="M0 32 20 30 40 23 60 27 80 14 100 18 120 10 140 14 160 4 180 9 200 0"/></svg></div></article>
+          <article class="metric-card"><div class="metric-label"><span>Total payout</span><span class="mini-label" data-impact-cn-ignore>经校准</span></div><strong id="metric-payout"><span class="currency">$</span>6,913<span class="decimal">.60</span></strong><p data-impact-cn-ignore>按合同条款计算的佣金</p><div class="payout-track" aria-hidden="true"><span></span></div></article>
+        </div>
+
+        <section class="table-card">
+          <div class="table-card-heading"><div><h2>Partner performance</h2><span class="table-subtitle" data-impact-cn-ignore>示例数据 · 不连接真实业务账户</span></div><button class="button subtle" id="export-partners"><svg class="icon"><use href="#i-download"/></svg><span>Export</span></button></div>
+          <div class="table-toolbar"><div class="table-tabs" role="tablist" aria-label="合作伙伴分组"><button class="table-tab selected" id="tab-all" role="tab" aria-selected="true"><span>All partners</span><span class="tab-count" id="partner-total" data-impact-cn-ignore>6</span></button><button class="table-tab" id="tab-active" role="tab" aria-selected="false"><span>Active</span><span class="tab-count" id="partner-active" data-impact-cn-ignore>4</span></button><button class="table-tab" id="tab-pending" role="tab" aria-selected="false"><span>Pending approval</span><span class="tab-count" id="partner-pending" data-impact-cn-ignore>2</span></button></div><div class="search-and-filter"><label class="search-box"><svg class="icon"><use href="#i-search"/></svg><input type="search" id="partner-search" aria-label="搜索合作伙伴" placeholder="搜索合作伙伴名称…"></label><div class="filter-wrapper"><button class="button filter-button" id="filter-button" aria-expanded="false"><svg class="icon"><use href="#i-filter"/></svg><span>Filters</span></button><div id="filter-menu" class="dropdown" hidden></div></div></div></div>
+          <div class="table-scroll"><table id="partner-table" data-impact-context="performance"><thead><tr><th class="partner-column">Partner</th><th>Status</th><th>Clicks</th><th>Actions</th><th>Revenue</th><th>Payout</th><th><span data-impact-cn-ignore>操作</span></th></tr></thead><tbody id="partner-rows"></tbody></table></div>
+          <div class="table-footer" data-impact-cn-ignore><span id="row-count">显示 6 位合作伙伴</span><span>所有金额以 USD 显示 <span class="separator">·</span> 数据更新于今天 09:41</span></div>
+        </section>
+
+        <section class="term-note" data-impact-cn-ignore><div class="term-symbol">Aa</div><div><strong>“动作”其实是“转化记录”。</strong><p>在绩效报表中，Action 指被追踪的购买、注册等转化事件。准确的术语，让数字更有意义。</p></div><button class="text-button" id="explain-action">让助手解释 <svg class="icon"><use href="#i-arrow"/></svg></button></section>
+      </section>
+
+      <section id="overview-view" class="view-panel" hidden><div class="page-heading"><div><span class="eyebrow" data-impact-cn-ignore>YOUR NEXT STEPS</span><h1>Overview</h1><p data-impact-cn-ignore>从看懂界面，到完成一次合作。</p></div></div><div class="journey-grid" data-impact-cn-ignore><article><span class="journey-number">01</span><h2>认识合作伙伴</h2><p>搜索、筛选合作伙伴，查看点击、转化与佣金。</p><button class="button primary" data-navigate="partners">打开合作伙伴工作台 <svg class="icon"><use href="#i-arrow"/></svg></button></article><article><span class="journey-number">02</span><h2>理解合同规则</h2><p>分别确认归因规则、转化锁定期与佣金支付安排。</p><button class="button" data-navigate="contracts">查看合同示例 <svg class="icon"><use href="#i-arrow"/></svg></button></article><article><span class="journey-number">03</span><h2>核对佣金状态</h2><p>待锁定、已锁定与可提现是不同阶段。</p><button class="button" data-navigate="finance">打开佣金视图 <svg class="icon"><use href="#i-arrow"/></svg></button></article></div></section>
+      <section id="contracts-view" class="view-panel" hidden><div class="page-heading"><div><span class="eyebrow" data-impact-cn-ignore>TERMS THAT MAKE SENSE</span><h1>Contracts</h1><p data-impact-cn-ignore>锁定时间与支付时间，分别看清楚。</p></div><button class="button primary" data-ask="contracts"><svg class="icon"><use href="#i-spark"/></svg><span data-impact-cn-ignore>解释合同条款</span></button></div><div id="contract-summary" class="contract-summary"></div></section>
+      <section id="reports-view" class="view-panel" hidden><div class="page-heading"><div><span class="eyebrow" data-impact-cn-ignore>TURN ACTIVITY INTO INSIGHT</span><h1>Reports</h1><p data-impact-cn-ignore>用准确的术语阅读绩效，而不是猜测。</p></div><button class="button" data-navigate="partners"><span>Partner performance</span><svg class="icon"><use href="#i-arrow"/></svg></button></div><div class="report-card" data-impact-cn-ignore><div class="section-header"><h2>近 7 日转化记录</h2><span class="table-subtitle">模拟趋势 · 仅用于功能演示</span></div><div class="report-bars"><div><i style="height:43%"></i><span>10/04</span><strong>126</strong></div><div><i style="height:61%"></i><span>10/05</span><strong>180</strong></div><div><i style="height:54%"></i><span>10/06</span><strong>159</strong></div><div><i style="height:75%"></i><span>10/07</span><strong>222</strong></div><div><i style="height:66%"></i><span>10/08</span><strong>195</strong></div><div><i style="height:87%"></i><span>10/09</span><strong>257</strong></div><div><i style="height:100%"></i><span>10/10</span><strong>295</strong></div></div></div></section>
+      <section id="finance-view" class="view-panel" hidden><div class="page-heading"><div><span class="eyebrow" data-impact-cn-ignore>KNOW WHERE YOUR PAYOUT STANDS</span><h1>Finance</h1><p data-impact-cn-ignore>状态是进度，不是付款承诺。实际规则以合同为准。</p></div><button class="button primary" data-ask="payout"><svg class="icon"><use href="#i-spark"/></svg><span data-impact-cn-ignore>解释佣金流程</span></button></div><div class="finance-grid" data-impact-context="actions"><article class="finance-card"><span>Pending Actions</span><strong>$2,450.00</strong><p data-impact-cn-ignore>仍在锁定期内的转化，可能被修改或撤销。</p></article><article class="finance-card"><span>Locked</span><strong>$3,120.60</strong><p data-impact-cn-ignore>已完成锁定，付款仍依赖支付安排与账户条件。</p></article><article class="finance-card"><span>Available Balance</span><strong>$1,343.00</strong><p data-impact-cn-ignore>当前可用余额。此处金额为模拟数据。</p></article></div></section>
+
+      <footer class="main-footer" data-impact-cn-ignore><span><span class="footer-brand">impact.</span> 中文增强实验室</span><span>本地插件演示 · 非 Impact 官方产品</span><a href="https://help.impact.com/" target="_blank" rel="noopener noreferrer">官方帮助中心 <svg class="icon"><use href="#i-external"/></svg></a></footer>
+    </main>
+  </div>
+
+  <div id="ai-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="ai-panel" class="ai-panel" aria-label="功能助手" hidden data-impact-cn-ignore>
+    <div class="ai-panel-header"><div class="ai-panel-icon"><svg class="icon"><use href="#i-spark"/></svg></div><div><h2>功能助手</h2><p>解释功能 · 查阅官方文档</p></div><button id="ai-close" class="icon-button" aria-label="关闭功能助手"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <div class="simulation-label"><span class="status-dot"></span>本地模拟回复 · 不调用 AI 服务</div>
+    <section class="ai-messages" id="ai-messages" data-impact-ai-messages aria-live="polite"><div class="assistant-welcome"><div class="welcome-mark"><svg class="icon"><use href="#i-spark"/></svg></div><h3>每个术语，都有答案。</h3><p>点击下面的问题，插件会填入这个问答框并发送。也可以直接输入你的问题。</p><div id="ai-suggestions" class="ai-suggestions"></div></div></section>
+    <form id="ai-form" class="ai-form"><label for="ai-input" class="sr-only">输入关于 Impact 功能的问题</label><textarea id="ai-input" data-impact-ai-input rows="3" placeholder="例如：转化锁定期和付款时间有什么区别？"></textarea><div class="ai-form-bottom"><span>回答仅用于流程演示，请核对官方文档。</span><button id="ai-send" data-impact-ai-send type="submit" class="ai-send" aria-label="发送问题" disabled><svg class="icon"><use href="#i-arrow"/></svg></button></div></form>
+  </aside>
+
+  <dialog id="partner-dialog" class="dialog" data-impact-page><form id="invite-form"><div class="dialog-heading"><div><span class="eyebrow" data-impact-cn-ignore>GROW YOUR NETWORK</span><h2>Invite partners</h2></div><button type="button" class="icon-button" data-close-dialog aria-label="关闭邀请窗口"><svg class="icon"><use href="#i-close"/></svg></button></div><p class="dialog-description" data-impact-cn-ignore>添加一位演示合作伙伴，验证动态内容能否自动汉化。不会发送真实邀请。</p><label class="field-label" for="invite-name">Partner name</label><input id="invite-name" class="field-input" required maxlength="80" placeholder="例如：North Studio" autocomplete="organization"><label class="field-label" for="invite-email">Partner email</label><input id="invite-email" class="field-input" type="email" required placeholder="partner@example.com" autocomplete="email"><label class="field-label" for="invite-type">Partner type</label><select id="invite-type" class="field-input"><option value="Content partner">Content partner</option><option value="Affiliate partner">Affiliate partner</option><option value="Creator">Creator</option></select><div class="dialog-actions"><button type="button" class="button" data-close-dialog><span>Cancel</span></button><button type="submit" class="button primary"><span>Send invite</span><svg class="icon"><use href="#i-arrow"/></svg></button></div></form></dialog>
+  <dialog id="contract-dialog" class="dialog contract-dialog" data-impact-page><div class="dialog-heading"><div><span class="eyebrow" data-impact-cn-ignore>CONTRACT PREVIEW</span><h2>View contract</h2></div><button class="icon-button" data-close-dialog aria-label="关闭合同窗口"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="contract-detail"></div><div class="dialog-actions"><button class="button" data-close-dialog><span>Close</span></button><button class="button primary" id="contract-ask"><svg class="icon"><use href="#i-spark"/></svg><span data-impact-cn-ignore>解释这些条款</span></button></div></dialog>
+  <dialog id="glossary-dialog" class="dialog glossary-dialog" data-impact-cn-ignore><div class="dialog-heading"><div><span class="eyebrow">LANGUAGE WITH CONTEXT</span><h2>汉化校准词典</h2></div><button class="icon-button" data-close-dialog aria-label="关闭词典"><svg class="icon"><use href="#i-close"/></svg></button></div><p class="dialog-description">精确匹配文本节点，按业务上下文校准。点击文档链接可查看术语依据。</p><label class="search-box glossary-search"><svg class="icon"><use href="#i-search"/></svg><input id="glossary-search" type="search" placeholder="搜索英文、中文或修改原因…" aria-label="搜索词典"></label><div id="glossary-entries" class="glossary-entries"></div><div class="glossary-footer" id="glossary-footer"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden data-impact-cn-ignore></div>
+</body>
+</html>

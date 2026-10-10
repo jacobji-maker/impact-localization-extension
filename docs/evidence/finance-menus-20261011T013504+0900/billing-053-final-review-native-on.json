@@ -1,0 +1,712 @@
+{
+  "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+  "date": "2026-10-10T17:08:11.725Z",
+  "version": "0.5.3",
+  "dictionarySha256": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+  "operation": "native-flow",
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "savedSettings": 0,
+  "privateValuesReturned": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "initialSettingsSource": "coordinator verified initial runtime report",
+  "sessionRuntime": {
+    "runtime": {
+      "manifestVersion": "0.5.3",
+      "contentVersion": "0.5.3",
+      "translationEnabled": true,
+      "aiEnabled": true,
+      "errorPresent": false,
+      "extensionIdMatches": true,
+      "topPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml"
+    },
+    "loadedExtension": {
+      "cardCount": 1,
+      "expectedCardCount": 1,
+      "cards": [
+        {
+          "expectedId": true,
+          "version": "0.5.3",
+          "sourcePathMatches": true,
+          "enabled": true,
+          "unpacked": true,
+          "pathFieldPresent": true
+        }
+      ]
+    }
+  },
+  "currentToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  },
+  "pageId": "billing-groups",
+  "nativeSteps": [
+    {
+      "operation": "observe",
+      "status": "OBSERVED",
+      "nameEvents": {
+        "trustedClicks": 1,
+        "untrustedClicks": 0
+      }
+    },
+    {
+      "operation": "replay-menu",
+      "status": "OBSERVED",
+      "menuReplay": {
+        "pageId": "billing-groups",
+        "nameColumnVerified": true,
+        "nameColumnIndex": 0,
+        "nameHoverPerformed": true,
+        "buttonHoverPerformed": true,
+        "normalClickAttempts": 1,
+        "forcedClick": false,
+        "scriptClick": false,
+        "financialOperations": 0,
+        "submittedForms": 0,
+        "privateValuesReturned": false,
+        "sameNativeTable": true,
+        "beforeHover": {
+          "authorized": true,
+          "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+          "selector": "div.data-container:nth-of-type(3) > div.iui-component.iui-dynamic-table > div > div.row-overlay:nth-of-type(2) > div.iui-component.iui-btn-menu > div > button.iui-component.iui-btn",
+          "visibleControlCount": 1,
+          "controls": [
+            {
+              "structure": {
+                "tag": "BUTTON",
+                "classes": [
+                  "iui-component",
+                  "iui-btn",
+                  "_4-71-1_o6RM-",
+                  "base",
+                  "_4-71-1_ROd5l",
+                  "secondary",
+                  "regular"
+                ],
+                "pointerEvents": "auto",
+                "opacity": "1",
+                "display": "inline-flex",
+                "visibility": "visible",
+                "position": "static",
+                "zIndex": "auto",
+                "rect": {
+                  "x": 1037,
+                  "y": 285.5,
+                  "width": 30,
+                  "height": 30
+                },
+                "tabIndex": 0,
+                "disabled": false,
+                "focused": false
+              },
+              "withinMenuComponent": true,
+              "centerInsideViewport": true,
+              "centerReceivesPointer": true,
+              "hit": {
+                "tag": "path",
+                "classes": [],
+                "pointerEvents": "auto",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible",
+                "position": "static",
+                "zIndex": "auto",
+                "rect": {
+                  "x": 1050,
+                  "y": 298.5,
+                  "width": 4,
+                  "height": 4
+                },
+                "tabIndex": -1,
+                "disabled": false,
+                "focused": false
+              },
+              "hitWithinSameRowOverlay": true,
+              "ancestors": [
+                {
+                  "tag": "DIV",
+                  "classes": [],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "static",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 1037,
+                    "y": 285.5,
+                    "width": 30,
+                    "height": 30
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "iui-component",
+                    "iui-btn-menu"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "static",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 1037,
+                    "y": 285.5,
+                    "width": 30,
+                    "height": 30
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "row-overlay"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "flex",
+                  "visibility": "visible",
+                  "position": "absolute",
+                  "zIndex": "10",
+                  "rect": {
+                    "x": 987,
+                    "y": 245,
+                    "width": 105,
+                    "height": 111
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "static",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 32,
+                    "y": 205,
+                    "width": 1060,
+                    "height": 153
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "iui-component",
+                    "iui-dynamic-table"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "relative",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 32,
+                    "y": 205,
+                    "width": 1060,
+                    "height": 153
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "data-container"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "relative",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 32,
+                    "y": 205,
+                    "width": 1060,
+                    "height": 153
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                }
+              ]
+            }
+          ],
+          "privateValuesReturned": false,
+          "textReturned": false,
+          "attributesReturned": false,
+          "domModified": false
+        },
+        "afterHover": {
+          "authorized": true,
+          "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+          "selector": "div.data-container:nth-of-type(3) > div.iui-component.iui-dynamic-table > div > div.row-overlay:nth-of-type(2) > div.iui-component.iui-btn-menu > div > button.iui-component.iui-btn",
+          "visibleControlCount": 1,
+          "controls": [
+            {
+              "structure": {
+                "tag": "BUTTON",
+                "classes": [
+                  "iui-component",
+                  "iui-btn",
+                  "_4-71-1_o6RM-",
+                  "base",
+                  "_4-71-1_ROd5l",
+                  "secondary",
+                  "regular"
+                ],
+                "pointerEvents": "auto",
+                "opacity": "1",
+                "display": "inline-flex",
+                "visibility": "visible",
+                "position": "static",
+                "zIndex": "auto",
+                "rect": {
+                  "x": 1037,
+                  "y": 285.5,
+                  "width": 30,
+                  "height": 30
+                },
+                "tabIndex": 0,
+                "disabled": false,
+                "focused": false
+              },
+              "withinMenuComponent": true,
+              "centerInsideViewport": true,
+              "centerReceivesPointer": true,
+              "hit": {
+                "tag": "path",
+                "classes": [],
+                "pointerEvents": "auto",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible",
+                "position": "static",
+                "zIndex": "auto",
+                "rect": {
+                  "x": 1050,
+                  "y": 298.5,
+                  "width": 4,
+                  "height": 4
+                },
+                "tabIndex": -1,
+                "disabled": false,
+                "focused": false
+              },
+              "hitWithinSameRowOverlay": true,
+              "ancestors": [
+                {
+                  "tag": "DIV",
+                  "classes": [],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "static",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 1037,
+                    "y": 285.5,
+                    "width": 30,
+                    "height": 30
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "iui-component",
+                    "iui-btn-menu"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "static",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 1037,
+                    "y": 285.5,
+                    "width": 30,
+                    "height": 30
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "row-overlay"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "flex",
+                  "visibility": "visible",
+                  "position": "absolute",
+                  "zIndex": "10",
+                  "rect": {
+                    "x": 987,
+                    "y": 245,
+                    "width": 105,
+                    "height": 111
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "static",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 32,
+                    "y": 205,
+                    "width": 1060,
+                    "height": 153
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "iui-component",
+                    "iui-dynamic-table"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "relative",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 32,
+                    "y": 205,
+                    "width": 1060,
+                    "height": 153
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                },
+                {
+                  "tag": "DIV",
+                  "classes": [
+                    "data-container"
+                  ],
+                  "pointerEvents": "auto",
+                  "opacity": "1",
+                  "display": "block",
+                  "visibility": "visible",
+                  "position": "relative",
+                  "zIndex": "auto",
+                  "rect": {
+                    "x": 32,
+                    "y": 205,
+                    "width": 1060,
+                    "height": 153
+                  },
+                  "tabIndex": -1,
+                  "disabled": false,
+                  "focused": false
+                }
+              ]
+            }
+          ],
+          "privateValuesReturned": false,
+          "textReturned": false,
+          "attributesReturned": false,
+          "domModified": false
+        },
+        "baseline": {
+          "authorized": true,
+          "baselineMarked": true,
+          "visiblePopupCount": 0,
+          "openerCount": 1,
+          "openerClosed": true
+        },
+        "popup": {
+          "authorized": true,
+          "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+          "popupSelector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown",
+          "baselinePopupCount": 0,
+          "baselineOpenerClosed": true,
+          "openerCount": 1,
+          "openerReadOnly": true,
+          "openerMatchesComponent": true,
+          "visiblePopupCount": 1,
+          "newVisiblePopupCount": 1,
+          "openerRetained": true,
+          "openerMenuOpen": true,
+          "openMenuButtonCount": 1,
+          "tableMenuOpen": true,
+          "popups": [
+            {
+              "tag": "DIV",
+              "classes": [
+                "iui-component",
+                "iui-dropdown",
+                "in-btn-menu",
+                "row-action-dropdown"
+              ],
+              "directBodyChild": true,
+              "editableNodeCount": 0,
+              "formCount": 0,
+              "unclassifiedPopupTextNodeCount": 0,
+              "listCount": 1,
+              "observedListHierarchy": true,
+              "allListChildrenOptions": true,
+              "allOptionNodeCount": 3,
+              "optionCount": 3,
+              "options": [
+                {
+                  "index": 0,
+                  "tag": "LI",
+                  "role": "option",
+                  "childTags": [
+                    "DIV"
+                  ],
+                  "fixedNodes": [
+                    {
+                      "fixedLabel": "Edit",
+                      "parentTag": "SPAN",
+                      "parentClasses": [],
+                      "ownerTagPath": [
+                        "DIV",
+                        "SPAN",
+                        "REGULAR-TEXT",
+                        "SPAN"
+                      ],
+                      "directItemChild": false,
+                      "directOptionDivSpan": false,
+                      "leafTextOwner": true,
+                      "nodeIndex": 0
+                    }
+                  ],
+                  "unclassifiedTextNodeCount": 0,
+                  "disabled": false
+                },
+                {
+                  "index": 1,
+                  "tag": "LI",
+                  "role": "option",
+                  "childTags": [
+                    "DIV"
+                  ],
+                  "fixedNodes": [
+                    {
+                      "fixedLabel": "Partner Fees Document Settings",
+                      "parentTag": "SPAN",
+                      "parentClasses": [],
+                      "ownerTagPath": [
+                        "DIV",
+                        "SPAN",
+                        "REGULAR-TEXT",
+                        "SPAN"
+                      ],
+                      "directItemChild": false,
+                      "directOptionDivSpan": false,
+                      "leafTextOwner": true,
+                      "nodeIndex": 0
+                    }
+                  ],
+                  "unclassifiedTextNodeCount": 0,
+                  "disabled": false
+                },
+                {
+                  "index": 2,
+                  "tag": "LI",
+                  "role": "option",
+                  "childTags": [
+                    "DIV"
+                  ],
+                  "fixedNodes": [
+                    {
+                      "fixedLabel": "impact.com Fees Document Settings",
+                      "parentTag": "SPAN",
+                      "parentClasses": [],
+                      "ownerTagPath": [
+                        "DIV",
+                        "SPAN",
+                        "REGULAR-TEXT",
+                        "SPAN"
+                      ],
+                      "directItemChild": false,
+                      "directOptionDivSpan": false,
+                      "leafTextOwner": true,
+                      "nodeIndex": 0
+                    }
+                  ],
+                  "unclassifiedTextNodeCount": 0,
+                  "disabled": false
+                }
+              ]
+            }
+          ],
+          "privateValuesReturned": false,
+          "unknownTextReturned": false,
+          "attributesReturned": false
+        },
+        "events": {
+          "trustedClicks": 1,
+          "untrustedClicks": 0,
+          "trustedPointerOvers": 1
+        }
+      }
+    }
+  ],
+  "popup": {
+    "authorized": true,
+    "documentPath": "/secure/finance/app/billing-groups-view.ihtml",
+    "popupSelector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown",
+    "baselinePopupCount": 0,
+    "baselineOpenerClosed": true,
+    "openerCount": 1,
+    "openerReadOnly": true,
+    "openerMatchesComponent": true,
+    "visiblePopupCount": 1,
+    "newVisiblePopupCount": 1,
+    "openerRetained": true,
+    "openerMenuOpen": true,
+    "openMenuButtonCount": 1,
+    "tableMenuOpen": true,
+    "popups": [
+      {
+        "tag": "DIV",
+        "classes": [
+          "iui-component",
+          "iui-dropdown",
+          "in-btn-menu",
+          "row-action-dropdown"
+        ],
+        "directBodyChild": true,
+        "editableNodeCount": 0,
+        "formCount": 0,
+        "unclassifiedPopupTextNodeCount": 0,
+        "listCount": 1,
+        "observedListHierarchy": true,
+        "allListChildrenOptions": true,
+        "allOptionNodeCount": 3,
+        "optionCount": 3,
+        "options": [
+          {
+            "index": 0,
+            "tag": "LI",
+            "role": "option",
+            "childTags": [
+              "DIV"
+            ],
+            "fixedNodes": [
+              {
+                "fixedLabel": "Edit",
+                "parentTag": "SPAN",
+                "parentClasses": [],
+                "ownerTagPath": [
+                  "DIV",
+                  "SPAN",
+                  "REGULAR-TEXT",
+                  "SPAN"
+                ],
+                "directItemChild": false,
+                "directOptionDivSpan": false,
+                "leafTextOwner": true,
+                "nodeIndex": 0
+              }
+            ],
+            "unclassifiedTextNodeCount": 0,
+            "disabled": false
+          },
+          {
+            "index": 1,
+            "tag": "LI",
+            "role": "option",
+            "childTags": [
+              "DIV"
+            ],
+            "fixedNodes": [
+              {
+                "fixedLabel": "Partner Fees Document Settings",
+                "parentTag": "SPAN",
+                "parentClasses": [],
+                "ownerTagPath": [
+                  "DIV",
+                  "SPAN",
+                  "REGULAR-TEXT",
+                  "SPAN"
+                ],
+                "directItemChild": false,
+                "directOptionDivSpan": false,
+                "leafTextOwner": true,
+                "nodeIndex": 0
+              }
+            ],
+            "unclassifiedTextNodeCount": 0,
+            "disabled": false
+          },
+          {
+            "index": 2,
+            "tag": "LI",
+            "role": "option",
+            "childTags": [
+              "DIV"
+            ],
+            "fixedNodes": [
+              {
+                "fixedLabel": "impact.com Fees Document Settings",
+                "parentTag": "SPAN",
+                "parentClasses": [],
+                "ownerTagPath": [
+                  "DIV",
+                  "SPAN",
+                  "REGULAR-TEXT",
+                  "SPAN"
+                ],
+                "directItemChild": false,
+                "directOptionDivSpan": false,
+                "leafTextOwner": true,
+                "nodeIndex": 0
+              }
+            ],
+            "unclassifiedTextNodeCount": 0,
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "privateValuesReturned": false,
+    "unknownTextReturned": false,
+    "attributesReturned": false
+  },
+  "nativeMenuComplete": true,
+  "status": "OBSERVED"
+}

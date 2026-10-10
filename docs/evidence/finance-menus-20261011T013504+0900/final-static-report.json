@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "mode": "CURRENT_SOURCE_SYNTAX_AND_BASELINE_COMPARISON",
+  "syntaxFiles": [
+    "impact-cn-mod/background.js",
+    "impact-cn-mod/content.js",
+    "impact-cn-mod/dict.js",
+    "impact-cn-mod/popup.js",
+    "impact-cn-mod/site-config.js",
+    "scripts/finance-session.mjs",
+    "scripts/finance-extra-capture.mjs",
+    "scripts/finance-deep-capture.mjs",
+    "scripts/finance-live-checks.mjs",
+    "scripts/finance-menu-checks.mjs",
+    "tests/finance-menu-regression.mjs",
+    "tests/finance-menu-mv3-regression.mjs",
+    "tests/finance-capture-regression.mjs"
+  ],
+  "syntaxPassed": 13,
+  "version": "0.5.3",
+  "totalEntries": 699,
+  "financeEntries": 442,
+  "totalTopics": 66,
+  "originalEntriesUnchanged": 694,
+  "originalTopicsUnchanged": 66,
+  "newMenuEntries": 5,
+  "unchangedRuntimeFiles": [
+    "site-config.js",
+    "content.js",
+    "content.css",
+    "background.js",
+    "popup.js",
+    "popup.css",
+    "popup.html"
+  ],
+  "sourceFingerprints": {
+    "impact-cn-mod/background.js": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+    "impact-cn-mod/content.js": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd",
+    "impact-cn-mod/dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+    "impact-cn-mod/popup.js": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+    "impact-cn-mod/site-config.js": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+    "scripts/finance-session.mjs": "1eb451b8b42c0accbeea83a03d31e277ca07e152e68ef17d3dc4fcb80c28de86",
+    "scripts/finance-extra-capture.mjs": "821534d4819b2dd168fb453da690ed0a248d96e76abc685e2e108e34b1902fd7",
+    "scripts/finance-deep-capture.mjs": "05e877f02c5dd497f64dd8370e5287de7bfcfd1c6c0812716c9369cdddfde9b1",
+    "scripts/finance-live-checks.mjs": "f54c35393fb8362e44a509c0f4f0b823cb0df9897896a94ef584ccce4a46aa1e",
+    "scripts/finance-menu-checks.mjs": "a520a6139307c805a1f1e612ceff55937629a654a814d5f9b9c49f0f2b1684aa",
+    "tests/finance-menu-regression.mjs": "91a2f8cb6029cc7be570270aa41716a3766cbdfc3513cbd5fcf256b6fe186f02",
+    "tests/finance-menu-mv3-regression.mjs": "0cae4e5493d4a8bf65d78b26f1ff6f37963b88c69119395a2fa97094cd2c8644",
+    "tests/finance-capture-regression.mjs": "cad96f7acda63585a5e452c1f4d884b8b0b569713ec4fbd4338c92aeb8abbc6d"
+  }
+}

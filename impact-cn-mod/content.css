@@ -1,0 +1,50 @@
+#impact-cn-assistant {
+  all: initial;
+  position: fixed;
+  z-index: 2147483000;
+  right: 24px;
+  bottom: 140px;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #183128;
+  letter-spacing: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+#impact-cn-assistant *, #impact-cn-assistant *::before, #impact-cn-assistant *::after { box-sizing: border-box; }
+#impact-cn-assistant[data-ai-active="true"], #impact-cn-assistant[data-native-overlay="true"] { right: auto; left: 24px; }
+#impact-cn-assistant [hidden] { display: none !important; }
+#impact-cn-assistant button, #impact-cn-assistant input { font: inherit; }
+#impact-cn-assistant button { cursor: pointer; }
+#impact-cn-assistant button:focus-visible, #impact-cn-assistant input:focus-visible { outline: 3px solid #5bbaa7; outline-offset: 3px; }
+#impact-cn-assistant .impact-cn-launcher {
+  display: flex; align-items: center; gap: 10px; margin-left: auto;
+  background: #183b32; color: #fff; border: 1px solid #365b50; border-radius: 999px;
+  padding: 10px 16px 10px 10px; font-weight: 600; box-shadow: 0 7px 22px #0d2c3229;
+}
+#impact-cn-assistant .impact-cn-launcher-row { display: flex; align-items: center; gap: 5px; width: max-content; margin-left: auto; }
+#impact-cn-assistant .impact-cn-drag-handle { display: grid; place-items: center; width: 28px; height: 38px; padding: 0; border: 1px solid #45675a; border-radius: 14px; background: #183b32; color: #c8e1d4; font-size: 22px; line-height: 1; cursor: grab; touch-action: none; user-select: none; }
+#impact-cn-assistant[data-dragging="true"] .impact-cn-drag-handle { cursor: grabbing; background: #2a5644; }
+#impact-cn-assistant .impact-cn-launcher-icon { width: 27px; height: 27px; background: #c8f2da; color: #153b2b; border-radius: 50%; display: grid; place-items: center; font-size: 15px; }
+#impact-cn-assistant .impact-cn-launcher-dot { width: 6px; height: 6px; border-radius: 50%; background: #b8e4a5; }
+#impact-cn-assistant[data-enabled="false"] .impact-cn-launcher-dot { background: #a7b8af; }
+#impact-cn-assistant .impact-cn-panel { position: absolute; right: 0; bottom: calc(100% + 12px); width: 300px; max-width: calc(100vw - 16px); max-height: calc(100vh - 100px); overflow-y: auto; background: #fff; border: 1px solid #d9e4df; border-radius: 18px; padding: 20px; box-shadow: 0 16px 48px #213f3524; }
+#impact-cn-assistant[data-panel-align="left"] .impact-cn-panel { left: 0; right: auto; }
+#impact-cn-assistant[data-panel-side="below"] .impact-cn-panel { top: calc(100% + 12px); bottom: auto; }
+#impact-cn-assistant .impact-cn-panel-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+#impact-cn-assistant .impact-cn-panel-title { display: block; font-size: 16px; font-weight: 650; }
+#impact-cn-assistant .impact-cn-panel-version { display: block; margin-top: 5px; color: #788b80; font-size: 11px; }
+#impact-cn-assistant .impact-cn-close { padding: 0; background: transparent; border: 0; color: #718478; font-size: 25px; line-height: 1; width: 24px; height: 24px; }
+#impact-cn-assistant .impact-cn-switch-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; margin-top: 12px; border-top: 1px solid #edf1ee; border-bottom: 1px solid #edf1ee; font-weight: 600; }
+#impact-cn-assistant .impact-cn-switch-row + .impact-cn-switch-row { margin-top: 0; border-top: 0; }
+#impact-cn-assistant .impact-cn-switch, #impact-cn-assistant .impact-cn-ai-switch { width: 18px; height: 18px; accent-color: #237259; cursor: pointer; margin: 0; }
+#impact-cn-assistant .impact-cn-reset-position { display: block; margin-top: 13px; padding: 0; border: 0; background: transparent; color: #49755e; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
+#impact-cn-assistant .impact-cn-panel-intro { margin: 14px 0; color: #728277; font-size: 12px; line-height: 1.7; }
+#impact-cn-assistant .impact-cn-status { margin: 14px 0 0; padding: 10px 11px; border-radius: 8px; background: #f5f7f5; color: #687d6d; font-size: 12px; overflow-wrap: anywhere; }
+#impact-cn-assistant .impact-cn-status[data-type="error"] { background: #fff0ec; color: #a0422f; }
+#impact-cn-assistant .impact-cn-status[data-type="warning"] { background: #fff6e6; color: #96712b; }
+#impact-cn-assistant .impact-cn-status[data-type="success"] { background: #eaf7ed; color: #347148; }
+#impact-cn-assistant .impact-cn-panel-note { margin: 12px 0 0; color: #89978e; font-size: 10px; line-height: 1.65; }
+@media (max-width: 600px) {
+  #impact-cn-assistant { right: 16px; bottom: 140px; }
+  #impact-cn-assistant[data-ai-active="true"], #impact-cn-assistant[data-native-overlay="true"] { left: 16px; }
+}

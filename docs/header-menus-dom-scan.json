@@ -1,0 +1,323 @@
+{
+  "mode": "REAL_DOM_CAPTURE",
+  "capturedAt": "2026-10-10",
+  "sourcePage": "https://demo.impact.com/secure/advertiser/engage/discover/radius/fr/partner_ui.ihtml#stage=Joined",
+  "hosts": [
+    "demo.impact.com",
+    "app.impact.com"
+  ],
+  "path": "/secure/advertiser/",
+  "shadowHost": "#adv-navigation impact-style-isolator",
+  "scope": "header-help-and-finance-dropdowns-only",
+  "sensitiveValuesSaved": false,
+  "help": {
+    "openerSelector": "[data-testid=\"nav-help-btn\"]",
+    "rootSelector": ".help-menu-item",
+    "entries": [
+      {
+        "source": "PXA",
+        "tag": "SPAN",
+        "selector": ".help-menu-item#PXA > span:first-child",
+        "itemId": "PXA",
+        "match": "exact"
+      },
+      {
+        "source": "Walkthroughs",
+        "tag": "SPAN",
+        "selector": ".help-menu-item#guideCenter > span:first-child",
+        "itemId": "guideCenter",
+        "match": "exact"
+      },
+      {
+        "source": "Help Docs",
+        "tag": "SPAN",
+        "selector": ".help-menu-item#HELP_DOCS > span:first-child",
+        "itemId": "HELP_DOCS",
+        "match": "exact"
+      },
+      {
+        "source": "Chat",
+        "tag": "SPAN",
+        "selector": ".help-menu-item#IN_APP_LIVE_CHAT > span:first-child",
+        "itemId": "IN_APP_LIVE_CHAT",
+        "match": "exact"
+      },
+      {
+        "source": "Tickets",
+        "tag": "SPAN",
+        "selector": ".help-menu-item#TICKETS > span:first-child",
+        "itemId": "TICKETS",
+        "match": "exact"
+      },
+      {
+        "source": "What's New",
+        "tag": "SPAN",
+        "selector": ".help-menu-item#WHATS_NEW > span:first-child",
+        "itemId": "WHATS_NEW",
+        "match": "exact"
+      }
+    ]
+  },
+  "finance": {
+    "openerSelector": "#adv-finance-btn",
+    "rootSelector": ".finance-bubble",
+    "entries": [
+      {
+        "source": "Finance",
+        "tag": "DIV",
+        "selector": ".finance-bubble .sub-header",
+        "kind": "card",
+        "match": "exact"
+      },
+      {
+        "source": "Make Deposit",
+        "tag": "BUTTON",
+        "selector": ".finance-bubble .top button",
+        "kind": "card",
+        "match": "exact"
+      },
+      {
+        "source": "Required funding",
+        "tag": "DIV",
+        "selector": ".finance-bubble .funding-header",
+        "kind": "card",
+        "match": "exact"
+      },
+      {
+        "source": "Past due",
+        "tag": "DIV",
+        "selector": ".finance-bubble .bottom .row > div:first-child",
+        "kind": "card",
+        "match": "exact"
+      },
+      {
+        "source": "Pending deposits",
+        "tag": "DIV",
+        "selector": ".finance-bubble .bottom .row > div:first-child",
+        "kind": "card",
+        "match": "exact"
+      },
+      {
+        "source": "Pending payments",
+        "tag": "DIV",
+        "selector": ".finance-bubble .bottom .row > div:first-child",
+        "kind": "card",
+        "match": "exact"
+      },
+      {
+        "source": "(Due since",
+        "tag": "SPAN",
+        "selector": ".finance-bubble .bottom .row > div:first-child > span.due-date",
+        "kind": "date-prefix",
+        "match": "prefix",
+        "dynamicSuffix": " <original-date>)"
+      },
+      {
+        "source": "(Due through",
+        "tag": "SPAN",
+        "selector": ".finance-bubble .bottom .row > div:first-child > span.due-date",
+        "kind": "date-prefix",
+        "match": "prefix",
+        "dynamicSuffix": " <original-date>)"
+      },
+      {
+        "source": "overview",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": "/secure/advertiser/finance/fr/finance-overview.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Fbrand-overview-view.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "reports",
+        "tag": "BUTTON",
+        "selector": ".finance-bubble button.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": null,
+        "match": "exact"
+      },
+      {
+        "source": "make deposit",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": "/secure/advertiser/finance/fr/make-deposit/ui.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "transfers",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": "/secure/advertiser/finance/fr/partner-funds-transfer.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Fmanage-partner-funds-transfer-flow.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "documents",
+        "tag": "BUTTON",
+        "selector": ".finance-bubble button.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": null,
+        "match": "exact"
+      },
+      {
+        "source": "subscription",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": "/secure/advertiser/finance/fr/finance-subscription.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Fview-subscription-flow.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "settings",
+        "tag": "BUTTON",
+        "selector": ".finance-bubble button.fin-menu-item.fin-menu-parent",
+        "kind": "parent",
+        "href": null,
+        "match": "exact"
+      },
+      {
+        "source": "Monthly Close",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "reports",
+        "href": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report?handle=adv_gaap_summary_action",
+        "match": "exact"
+      },
+      {
+        "source": "Upcoming Partner Payments",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "reports",
+        "href": "/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report?handle=adv_upcoming_payouts",
+        "match": "exact"
+      },
+      {
+        "source": "Cash Flow History",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "reports",
+        "href": "/secure/advertiser/Adv_Finance_Report/r2/report/viewReport.report?handle=adv_cash_flow_recon",
+        "match": "exact"
+      },
+      {
+        "source": "Partner Payments Invoices",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "documents",
+        "href": "/secure/advertiser/finance/fr/partner-invoices.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Flist-adv-invoices-flow.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "impact.com Invoices",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "documents",
+        "href": "/secure/advertiser/finance/fr/finance-impact-invoices.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Flist-adv-impact-invoices-flow.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "General",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "settings",
+        "href": "/secure/advertiser/finance/fr/customer-settings-general-view.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Fcustomer-settings-general-view.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "Legal Entities",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "settings",
+        "href": "/secure/advertiser/finance/fr/legal-entities-view.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Flegal-entities-view.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "Billing Groups",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "settings",
+        "href": "/secure/advertiser/finance/fr/billing-groups.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Fbilling-groups-view.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "Funding Accounts",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "settings",
+        "href": "/secure/advertiser/finance/fr/funding-accounts.ihtml?u=%2Fsecure%2Ffinance%2Fapp%2Flist-digital-wallets-flow.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "Payment Methods",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "settings",
+        "href": "/secure/advertiser/finance/fr/payment-methods/ui.ihtml",
+        "match": "exact"
+      },
+      {
+        "source": "Automatic Payments",
+        "tag": "A",
+        "selector": ".finance-bubble a.fin-menu-item.fin-menu-child",
+        "kind": "child",
+        "group": "settings",
+        "href": "/secure/advertiser/finance/fr/automatic-payments/ui.ihtml",
+        "match": "exact"
+      }
+    ],
+    "groups": [
+      {
+        "source": "reports",
+        "openerSelector": ".finance-bubble button.fin-menu-item.fin-menu-parent",
+        "labels": [
+          "Monthly Close",
+          "Upcoming Partner Payments",
+          "Cash Flow History"
+        ]
+      },
+      {
+        "source": "documents",
+        "openerSelector": ".finance-bubble button.fin-menu-item.fin-menu-parent",
+        "labels": [
+          "Partner Payments Invoices",
+          "impact.com Invoices"
+        ]
+      },
+      {
+        "source": "settings",
+        "openerSelector": ".finance-bubble button.fin-menu-item.fin-menu-parent",
+        "labels": [
+          "General",
+          "Legal Entities",
+          "Billing Groups",
+          "Funding Accounts",
+          "Payment Methods",
+          "Automatic Payments"
+        ]
+      }
+    ],
+    "privateSelectors": [
+      ".finance-bubble .account-name",
+      ".finance-bubble .funding-amount",
+      ".finance-bubble .amount",
+      "#adv-finance-btn"
+    ]
+  },
+  "notes": [
+    "All labels and selectors observed through the existing authenticated in-app browser; no business links were activated.",
+    "Text nodes retain source capitalization; rendered finance menu text uses CSS text-transform.",
+    "Finance account names, currency/amount values and actual due dates are omitted. Only fixed date prefixes are captured.",
+    "No finance page body or payment/deposit operation is included."
+  ]
+}

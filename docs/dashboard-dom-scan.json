@@ -1,0 +1,178 @@
+{
+  "version": "0.2.0",
+  "capturedAt": "2026-10-10",
+  "timezone": "Asia/Seoul",
+  "source": "用户已登录的内置浏览器；只读采集实际 DOM 和开放 Shadow DOM",
+  "target": "https://demo.impact.com/secure/advertiser/engage/aview.ihtml?t=u",
+  "redaction": "不保存登录凭据、cookies、token、完整 HTML、账户 ID、用户姓名或聊天历史",
+  "roots": [
+    {
+      "selector": "#vueInstance",
+      "type": "light-dom",
+      "purpose": "Dashboard 布局、欢迎语、功能区标题、推荐伙伴"
+    },
+    {
+      "selector": "#adv-navigation impact-style-isolator",
+      "type": "open-shadow-dom",
+      "purpose": "产品入口、主导航、个人设置与通知菜单"
+    },
+    {
+      "selector": "snapshot-chart-shadow",
+      "type": "open-shadow-dom",
+      "purpose": "Program Health 六个指标和图表"
+    },
+    {
+      "selector": "#ask-impact-shadow-host",
+      "type": "open-shadow-dom",
+      "purpose": "真实 Ask Impact 问答控件"
+    },
+    {
+      "selector": ".iui-calendar-range",
+      "type": "light-dom-portal",
+      "purpose": "Dashboard 日期范围弹层：通过真实日期控件动态挂载到 body"
+    }
+  ],
+  "observedText": [
+    {
+      "selector": ".product-name",
+      "shadowHost": "#adv-navigation impact-style-isolator",
+      "texts": [
+        "Engage",
+        "Discover",
+        "Optimize",
+        "Protect"
+      ]
+    },
+    {
+      "selector": ".subitem-label",
+      "shadowHost": "#adv-navigation impact-style-isolator",
+      "texts": [
+        "Dashboard",
+        "Partners",
+        "Campaign Manager",
+        "Amplification",
+        "Reports",
+        "Transactions",
+        "Content",
+        "Contracts",
+        "Refer & Earn"
+      ]
+    },
+    {
+      "selector": "#vueInstance .welcome-back",
+      "textTemplate": "Welcome Back, <display-name>",
+      "preserveSuffix": true
+    },
+    {
+      "selector": "#vueInstance h3.dashboard-container-title",
+      "texts": [
+        "Program Health",
+        "Partners you'll love"
+      ],
+      "hiddenObservedTexts": [
+        "To Do List"
+      ]
+    },
+    {
+      "selector": "#vueInstance .partnerSnapshotContainer .filterSection a",
+      "texts": [
+        "Show Compare"
+      ]
+    },
+    {
+      "selector": "#vueInstance .partnerSnapshotContainer btn.tertiary",
+      "texts": [
+        "Edit"
+      ]
+    },
+    {
+      "selector": "[class*=secondaryFieldLabel]",
+      "shadowHost": "snapshot-chart-shadow",
+      "texts": [
+        "Clicks",
+        "Actions",
+        "Action Cost",
+        "Revenue",
+        "Total Cost",
+        "Conversion Rate"
+      ]
+    },
+    {
+      "selector": "#vueInstance .partner-size .size-label",
+      "texts": [
+        "Extra Large"
+      ]
+    },
+    {
+      "selector": "#vueInstance .partner-category .text-ellipsis",
+      "texts": [
+        "Apparel, Shoes & Accessories"
+      ]
+    },
+    {
+      "selector": "#vueInstance .discover-link a",
+      "texts": [
+        "Go to Discover"
+      ]
+    },
+    {
+      "selector": ".iui-calendar-range .presets, .iui-calendar-range .footer",
+      "texts": [
+        "Today",
+        "Yesterday",
+        "This Week",
+        "Last Week",
+        "Last 7 Days",
+        "Last 14 Days",
+        "This Month",
+        "Last 30 Days",
+        "Last Month",
+        "This Year",
+        "Clear Dates",
+        "(Mon - Today)",
+        "(Sun - Today)",
+        "(Mon - Fri)",
+        "(Sun - Sat)"
+      ]
+    }
+  ],
+  "observedNativeChineseNav": {
+    "capturedAt": "2026-10-10",
+    "evidence": "0.3.0真实测试截图与扫描；用户确认曾切换平台原生中文，随后恢复英文",
+    "selector": ".subitem-label",
+    "shadowHost": "#adv-navigation impact-style-isolator",
+    "texts": ["面板", "伙伴", "项目经理", "放大", "报表", "交易", "内容", "合同", "推荐并赚取"],
+    "use": "0.3.1完整别名校准，仅限上述已核实导航组件"
+  },
+  "ai": {
+    "mode": "native-ask-impact",
+    "rootSelectors": [
+      "#ask-impact-shadow-host"
+    ],
+    "inputSelectors": [
+      "textarea[placeholder='ask impact...']"
+    ],
+    "sendSelectors": [
+      "button[aria-label='Send']"
+    ],
+    "openerSelectors": [
+      "button[aria-label='Open Ask Impact']"
+    ],
+    "verified": "已在用户真实页面发送1条功能解释问题，并收到简体中文回复与对应官方 Dashboard 文档链接；插件自动发送结果另见实网验收报告",
+    "verifiedReplySelector": "#ask-impact-shadow-host .OtDgU",
+    "replySelectorNote": "基于实页官方帮助链接所在的原生Markdown回复容器；类名可能随站点版本变化，仅用于本轮测试断言"
+  },
+  "preserve": [
+    ".partner-name",
+    ".avatar-container",
+    ".account-btn",
+    ".profileBtn",
+    "所有数值、金额、日期、属性、链接地址、编辑字段和 Ask Impact 消息正文"
+  ],
+  "limitations": [
+    "只读扫描不等于全站验收",
+    "app.impact.com 共享结构适配仍需在对应账号页面验证",
+    "不复制完整页面作为新 demo",
+    "不在 Shadow DOM 中重建宿主组件"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+  "date": "2026-10-10T17:09:58.524Z",
+  "version": "0.5.3",
+  "dictionarySha256": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+  "operation": "runtime",
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "savedSettings": 0,
+  "privateValuesReturned": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "runtime": {
+    "manifestVersion": "0.5.3",
+    "contentVersion": "0.5.3",
+    "translationEnabled": true,
+    "aiEnabled": true,
+    "errorPresent": false,
+    "extensionIdMatches": true,
+    "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml"
+  },
+  "loadedExtension": {
+    "cardCount": 1,
+    "expectedCardCount": 1,
+    "cards": [
+      {
+        "expectedId": true,
+        "version": "0.5.3",
+        "sourcePathMatches": true,
+        "enabled": true,
+        "unpacked": true,
+        "pathFieldPresent": true
+      }
+    ]
+  },
+  "status": "OBSERVED",
+  "pageErrors": 0
+}

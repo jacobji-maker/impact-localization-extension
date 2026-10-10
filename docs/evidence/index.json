@@ -1,0 +1,360 @@
+{
+  "purpose": "Selected sanitized authoritative evidence; unchanged historical bytes, not a new acceptance run",
+  "recordedAt": "2026-10-11",
+  "fullAcceptanceComplete": false,
+  "files": [
+    {
+      "path": "finance-menus-20261011T013504+0900/FINAL_REPORT.md",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/FINAL_REPORT.md",
+      "bytes": 5269,
+      "sha256": "91b252e9008f764875ad6ccfa3cef5b7326979312622fc41917bd22b5e2057af",
+      "version": null,
+      "mode": null,
+      "status": null,
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/final-stage-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/final-stage-report.json",
+      "bytes": 15962,
+      "sha256": "aa8a54b69292d4da14bdd12d407c52a589d805c3f09836074593b2ae4832897b",
+      "version": "0.5.3",
+      "mode": "CURRENT_SOURCE_PARTIAL_REAL_NETWORK_ENTITY_MENU_STAGE",
+      "status": null,
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/baseline-fingerprints.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/baseline-fingerprints.json",
+      "version": null,
+      "mode": "protected-baseline-no-test-executed",
+      "status": null,
+      "copyBytesUnchanged": false,
+      "originalSHA256": "dec9a3a74286a48d8a22c458becc4c7f5b7faefb4ad6aec08091d2c8e2152b54",
+      "originalBytes": 4465,
+      "bytes": 4394,
+      "sha256": "f0d5459851d24945450870bbc0860c896a27ffcae55c38e63e52532b74afc007",
+      "redactedField": "stageDirectory: personal absolute directory replaced with original repository-relative path; fingerprints unchanged"
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/billing-053-final-review.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review.json",
+      "bytes": 8995,
+      "sha256": "e839cbcd1546b54289f5159d1c266885d34fec2bf6c7e9ed22ee2fbffd4c779e",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "FAIL",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/funding-053-final-review.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review.json",
+      "bytes": 7188,
+      "sha256": "4850ab85a3c2987340c68ad4a1212978c46430c4577262a4f54e47b10bea02d0",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "FAIL",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/billing-053-native-attribute-writer.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/billing-053-native-attribute-writer.json",
+      "bytes": 1739,
+      "sha256": "591713cd294efd03b8e2a3ed83143119479abe691b0ad03ae24999b8958d5ce5",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/funding-053-native-attribute-writer.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/funding-053-native-attribute-writer.json",
+      "bytes": 1740,
+      "sha256": "a1caa37c30513ecfb29fde0d9e43f0f672cf51f60a06c8ae83be336b98fef8b1",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/runtime-current.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/runtime-current.json",
+      "bytes": 1022,
+      "sha256": "0040216dc16146a443235b187a37024f7d2c07e6ef76567402a86e92ce1fe2a2",
+      "version": "0.5.2",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/runtime-final.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/runtime-final.json",
+      "bytes": 1054,
+      "sha256": "120036ebda8509d5c4590920533b2e4e22c0808a11bd5da1d02937dae13f5cd1",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/capture-merge-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/capture-merge-report.json",
+      "bytes": 644,
+      "sha256": "07c7867ea9cc1c3818a7562889e01b5270842f77374e12cfe41605b2341add4e",
+      "version": null,
+      "mode": "SANITIZED_CURRENT_MENU_MERGE",
+      "status": null,
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/final-static-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/final-static-report.json",
+      "bytes": 2359,
+      "sha256": "1d89ddf2bfd1155fe89e866dbbd6025d73d19ae73689308bf924cf9396f801b6",
+      "version": "0.5.3",
+      "mode": "CURRENT_SOURCE_SYNTAX_AND_BASELINE_COMPARISON",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/final-privacy-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/final-privacy-report.json",
+      "bytes": 21257,
+      "sha256": "79f98ed7b46b0bfca1e1d49c8ca8c2467d05a11c02e46bbde7a600f634471bdb",
+      "version": null,
+      "mode": "SELECTED_CONTENT_PATTERN_AND_CAPTURE_SAFETY_CHECK",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/package-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/package-report.json",
+      "bytes": 1724,
+      "sha256": "45d660075e8d6f863539e39f0c9789087069e4b3edd43b4144bdce599616159e",
+      "version": "0.5.3",
+      "mode": "NEW_TEST_PACKAGE_SOURCE_BYTE_VERIFICATION",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/final-menu-contract-tests/menu-regression-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/final-menu-contract-tests/menu-regression-report.json",
+      "bytes": 8538,
+      "sha256": "ba5c755d7794a66f920feccbc47873c7b9cf0dd4d935a089e2320fdf1f582c6c",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_ENTITY_MENU_CONTRACTS_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/mv3-scope-tests/finance-menu-mv3-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/mv3-scope-tests/finance-menu-mv3-report.json",
+      "bytes": 10754,
+      "sha256": "422e49ff936913c4d6dd9ca13d13aa86583de6f51dc6b8b6caf1aef5b2cb45b4",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_CURRENT_SHIPPED_FINANCE_MENUS_MV3",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/final-replay-contract-tests/capture-regression-report.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/final-replay-contract-tests/capture-regression-report.json",
+      "bytes": 4199,
+      "sha256": "c62fa45c377b352675d3ab2780a972a107d4d15e367f62c70868b70c08ace3b5",
+      "version": null,
+      "mode": "SYNTHETIC_FINANCE_CAPTURE_REPLAY_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/billing-053-final-review-native-off.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-off.json",
+      "bytes": 22470,
+      "sha256": "b419a982e009dd33cf88c67ecb748305b20fb6c03ae409f3849c5962356ad62f",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/billing-053-final-review-native-on.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-on.json",
+      "bytes": 22470,
+      "sha256": "c3c82a7f8bf56d63ace4f8a295b254459f65fcadfbe70a17213f5a5750119e2c",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/funding-053-final-review-native-off.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-off.json",
+      "bytes": 20936,
+      "sha256": "82edcd185b2b214630cbc969334266efd260f413077fa640ed41b6d96ea80845",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-menus-20261011T013504+0900/funding-053-final-review-native-on.json",
+      "originalLocalPath": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-on.json",
+      "bytes": 20938,
+      "sha256": "2527d556eff2a0a6f43bd932a41f3fda1886f1c22960497ab035cad2fa252b1f",
+      "version": "0.5.3",
+      "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+      "status": "OBSERVED",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-acceptance-20261010/after-replay-fixes-15/live-report.json",
+      "originalLocalPath": "artifacts/finance-acceptance-20261010/after-replay-fixes-15/live-report.json",
+      "bytes": 110507,
+      "sha256": "275f5bb6591dbe2baf26bff09a7209cdd19c3843de93baae3168b48dafe28aca",
+      "version": "0.5.2",
+      "mode": "REAL_NETWORK_FINANCE",
+      "status": "FAIL",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-acceptance-20261010/ach-final-package-layout.json",
+      "originalLocalPath": "artifacts/finance-acceptance-20261010/ach-final-package-layout.json",
+      "bytes": 32488,
+      "sha256": "8327b953eb97f2169edd867a81d0418b010f8d8d15a1c8c077b65c8dfc5baa62",
+      "version": "0.5.2",
+      "mode": "REAL_NETWORK_ACH_LAYOUT",
+      "status": null,
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "finance-acceptance-20261010/cash-after-single-query-structure.json",
+      "originalLocalPath": "artifacts/finance-acceptance-20261010/cash-after-single-query-structure.json",
+      "bytes": 77306,
+      "sha256": "73c51f6a3f16a6331fa10020a24ae8ca0032f912ceb1a695933f7c81d4d45f97",
+      "version": "0.5.2",
+      "mode": "REAL_NETWORK_REPORT_STRUCTURE_ONLY",
+      "status": null,
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/engineering-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/engineering-report.json",
+      "bytes": 23649,
+      "sha256": "b2fbef4f2c09c80855dbfe3a13ac8c9e26435c8de4878304bb0b2a77f822d115",
+      "version": "0.5.3",
+      "mode": "ISOLATED_SYNTHETIC_ENGINEERING_CHECKS",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/shadow-unit-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/shadow-unit-report.json",
+      "bytes": 3672,
+      "sha256": "aad4afa2468c9aa87eb82df319401618785125f5f86861acd21b7c8a4d406f49",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_UNIT_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/extension-controls-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/extension-controls-report.json",
+      "bytes": 1693,
+      "sha256": "53fb5e6b4d8a8605dcc86b7c9c8d16181e0762d48510d3d070902be1c949a851",
+      "version": "0.5.3",
+      "mode": "REAL_EXTENSION_SYNTHETIC_HOST",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/header-menu-unit-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/header-menu-unit-report.json",
+      "bytes": 1688,
+      "sha256": "b838a0403bb474b76a0b92a98552fde5235115e8e05879fb910f1abf0e3d44bd",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_HEADER_MECHANISM_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/finance-tests/unit-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/finance-tests/unit-report.json",
+      "bytes": 4318,
+      "sha256": "77974bd7ddc7f907c4ebf2ecdccb1734defccdaff9fb34b718db78eb73251f3c",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_FINANCE_IFRAME_MECHANISM_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/finance-phase1-20261010T083045525902Z/form-readiness-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/finance-phase1-20261010T083045525902Z/form-readiness-report.json",
+      "bytes": 3466,
+      "sha256": "2e4ff13c862a2e599505ec5a91e343c644b70ca9a297b2e8169fd9a1422a0997",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_CAPTURE_FORM_READINESS",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/isolated/new-entries/new-entries-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/isolated/new-entries/new-entries-report.json",
+      "bytes": 9224,
+      "sha256": "6eb0b95b0f5d876e10fbbf0b76040e9d58dd714a4b71f9a4991d426ff4697617",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_CURRENT_SHIPPED_FINANCE_NEW_ENTRIES",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/isolated/capture/capture-regression-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/isolated/capture/capture-regression-report.json",
+      "bytes": 4199,
+      "sha256": "c2694486cd9022bf863f849151b49bc22388ed61fed5e01c96b1d9ed61a6651e",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_FINANCE_CAPTURE_REPLAY_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/isolated/menu/menu-regression-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/isolated/menu/menu-regression-report.json",
+      "bytes": 8538,
+      "sha256": "fec25dfe153c7c9c6784551c38c671f190f08bab3d7571b63ee288380560c87f",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_ENTITY_MENU_CONTRACTS_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/isolated/menu-mv3/finance-menu-mv3-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/isolated/menu-mv3/finance-menu-mv3-report.json",
+      "bytes": 10754,
+      "sha256": "540fec67fcfac5498507a5730783590c5f96a41a834d2208d76422be1af6ed67",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_CURRENT_SHIPPED_FINANCE_MENUS_MV3",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/privacy-unit-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/privacy-unit-report.json",
+      "bytes": 512,
+      "sha256": "87841154d22ab8ac23100d18416d7f146b70ca0a3d62bcc393ba127e848a59a2",
+      "version": "0.5.3",
+      "mode": "PRIVACY_UNIT_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    },
+    {
+      "path": "engineering-20261011/workspace/artifacts/isolated/package-protection/package-regression-report.json",
+      "originalLocalPath": "artifacts/engineering-checks-2026-10-10T18-10-41-669Z-PLUFmC/workspace/artifacts/isolated/package-protection/package-regression-report.json",
+      "bytes": 654,
+      "sha256": "3c9949e508424dd6b03b73ac87dcb9f571813787775130d7d5e1b7e9c81863f2",
+      "version": "0.5.3",
+      "mode": "SYNTHETIC_ISOLATED_PACKAGE_ONLY",
+      "status": "PASS",
+      "copyBytesUnchanged": true
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "mode": "SYNTHETIC_ENTITY_MENU_CONTRACTS_ONLY",
+  "status": "PASS",
+  "date": "2026-10-10T18:12:33.536Z",
+  "version": "0.5.3",
+  "sourceFingerprints": {
+    "dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+    "site-config.js": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+    "content.js": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd"
+  },
+  "currentMenuRuleIds": [
+    "finance-billing-groups-actions-edit-observed",
+    "finance-billing-groups-actions-partner-fees-document-settings-observed",
+    "finance-billing-groups-actions-impact-com-fees-document-settings-observed",
+    "finance-funding-accounts-actions-edit-observed",
+    "finance-funding-accounts-actions-funding-account-document-settings-observed"
+  ],
+  "ruleEngineMode": "CURRENT_CONTENT_CODE_INJECTED_IN_ROUTED_FIXTURES",
+  "actualMV3RuleTests": false,
+  "realSiteAcceptance": false,
+  "realNetworkQueries": false,
+  "submittedForms": 0,
+  "financialOperations": 0,
+  "privateValuesReturned": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "results": [
+    {
+      "name": "Both exact entity documents support a unique new portal after one trusted native menu click",
+      "status": "PASS"
+    },
+    {
+      "name": "Inspectors reject the wrong host, protocol, body document and mismatched path argument",
+      "status": "PASS"
+    },
+    {
+      "name": "Read-only popup and pointer inspections preserve Text, nodes, attributes, handlers, fields and links",
+      "status": "PASS"
+    },
+    {
+      "name": "A missing baseline, pre-existing visible portal or opener already open at baseline cannot certify completion",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: missing-portal",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: hidden-portal",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: duplicate-portal",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: nested-portal",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-portal-component",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: missing-list",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: duplicate-list",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: nested-list",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-list-role",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: extra-list-child",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: missing-option",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: extra-option",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-option-role",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: nested-option",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-option-order",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: duplicate-fixed-node",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: unknown-option-text",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: unknown-popup-text",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: disabled-option",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: aria-disabled-option",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-option-wrapper",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: direct-option-text",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: option-editor",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: missing-menu-open",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: missing-table-menu-open",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: replaced-opener",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: duplicate-opener",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-button-component",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: wrong-button-tag",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: disabled-button",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: aria-disabled-button",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: submit-button",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: form-owned-button",
+      "status": "PASS"
+    },
+    {
+      "name": "A malformed or unsafe entity menu is rejected: associated-form-button",
+      "status": "PASS"
+    },
+    {
+      "name": "An exact document cannot use the other entity menu contract or an unsupported page ID",
+      "status": "PASS"
+    },
+    {
+      "name": "Completion rejects every removed required field and inconsistent option evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Pointer diagnostics omit arbitrary CSS selector attribute values and private DOM attributes",
+      "status": "PASS"
+    },
+    {
+      "name": "The five shipped menu entries retain exact document, top shell, query, light DOM and option scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "All five current menu entries translate in both hosts and restore originals with Text, nodes, native events and private data retained (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-document (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-shell (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: missing-query (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-query (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: duplicate-query (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-popup (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: nested-popup (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-list-role (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-owner (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-option-index (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: shadow (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Current shipped menu entries leave the exact scope negative unchanged: wrong-host (injected engine)",
+      "status": "PASS"
+    },
+    {
+      "name": "Menu completion and completed report captures do not certify the three new editor states or complete finance acceptance",
+      "status": "PASS"
+    }
+  ]
+}

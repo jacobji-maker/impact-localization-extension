@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "汉化助手",
+  "version": "0.5.3",
+  "description": "按功能语境校准 Impact 页面术语，并将预设问题发送给页面已有的 AI 助手。",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "汉化助手",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.impact.com/*",
+        "https://demo.impact.com/*"
+      ],
+      "js": [
+        "dict.js",
+        "site-config.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

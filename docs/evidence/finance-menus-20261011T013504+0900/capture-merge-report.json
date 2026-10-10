@@ -1,0 +1,18 @@
+{
+  "mode": "SANITIZED_CURRENT_MENU_MERGE",
+  "beforeSha256": "e9ea878f61e9eebb07aac9b6f12efdac1b5ff8a3dd7267244838847ff938b29c",
+  "afterSha256": "1fdbd6a3cac74b782dab2e51a76a4aaa01273aab1911856326fd8d4183d15a12",
+  "beforeCandidateCount": 437,
+  "afterCandidateCount": 442,
+  "originalCandidatesRetainedUnchanged": 437,
+  "newFixedCandidates": 5,
+  "newEnglishSources": [
+    "Partner Fees Document Settings",
+    "impact.com Fees Document Settings",
+    "Funding Account Document Settings"
+  ],
+  "twoOriginalActionSequencesRetained": true,
+  "newMenuStateIsNotNewEditor": true,
+  "phaseMenuComplete": false,
+  "completeAcceptance": false
+}

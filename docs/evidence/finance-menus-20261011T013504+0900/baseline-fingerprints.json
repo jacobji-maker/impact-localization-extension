@@ -1,0 +1,137 @@
+{
+  "stageDirectory": "artifacts/finance-menus-20261011T013504+0900",
+  "createdAt": "2026-10-10T16:35:04.779836+00:00",
+  "mode": "protected-baseline-no-test-executed",
+  "files": [
+    {
+      "file": "docs/finance-dom-scan.json",
+      "sha256": "e9ea878f61e9eebb07aac9b6f12efdac1b5ff8a3dd7267244838847ff938b29c",
+      "bytes": 1538076
+    },
+    {
+      "file": "artifacts/finance-tests/live-report.json",
+      "sha256": "275f5bb6591dbe2baf26bff09a7209cdd19c3843de93baae3168b48dafe28aca",
+      "bytes": 110507
+    },
+    {
+      "file": "finance-live-test-report.md",
+      "sha256": "3452b45de05f43b655dbfad89af56fbeadfc2921f2ef434912f56203a26b6874",
+      "bytes": 3035
+    },
+    {
+      "file": "PROJECT_STATE.md",
+      "sha256": "2dd698219ff8b35523cdfe44e0e443bcbdabb8a1bdcaa7b5ebee556f6b22a310",
+      "bytes": 9179
+    },
+    {
+      "file": "NEXT_TASK.md",
+      "sha256": "33ec6fc46a07e1c77d8cb5c788756bfe57a21ba4b25c17992ed28c007b923684",
+      "bytes": 4979
+    },
+    {
+      "file": "docs/NEXT_CHAT_HANDOFF.md",
+      "sha256": "86e9f4671c734e751a3a6db14305a900a7b83a031d10452bbf4504d83a7f9965",
+      "bytes": 17609
+    },
+    {
+      "file": "impact-cn-mod/CHANGELOG.md",
+      "sha256": "ee9cd55c4bcd7821e7e88aa9ce1c2764fb6b9beb3c3426aa764e7ad35a0d0996",
+      "bytes": 17792
+    },
+    {
+      "file": "impact-cn-mod/INSTALL.md",
+      "sha256": "03c7ac88998aa9a44ac4f6ef79d21a3ef633a7a1b66194c2a8a95178d8b7a709",
+      "bytes": 5064
+    },
+    {
+      "file": "impact-cn-mod/LOCALIZATION_GUIDE.md",
+      "sha256": "6798c1c8ee91cb73edfcd24863d4c40a5be977b41c916294f88e074aa76e1408",
+      "bytes": 97356
+    },
+    {
+      "file": "impact-cn-mod/background.js",
+      "sha256": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+      "bytes": 2544
+    },
+    {
+      "file": "impact-cn-mod/content.css",
+      "sha256": "7da0ac591f4d7a06ba353d9988892b503f70139d168fb5602049f0f5fe7b5cfb",
+      "bytes": 4729
+    },
+    {
+      "file": "impact-cn-mod/content.js",
+      "sha256": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd",
+      "bytes": 54249
+    },
+    {
+      "file": "impact-cn-mod/dict.js",
+      "sha256": "d1dc3b519bf396f7ac359b941d526df59f17e1440cd382e638c8617daddcf868",
+      "bytes": 931316
+    },
+    {
+      "file": "impact-cn-mod/manifest.json",
+      "sha256": "cccdcb69891420ad1d594ddc83da89872b7ac8b00eef04ca5045b622cd6eaa3e",
+      "bytes": 718
+    },
+    {
+      "file": "impact-cn-mod/popup.css",
+      "sha256": "0719286c4485a25c1bc1a5a9ae489e8179c1ca26f5ec9bbfb9b11a092389cfb0",
+      "bytes": 1086
+    },
+    {
+      "file": "impact-cn-mod/popup.html",
+      "sha256": "598bf19ab6a8917d4b00075123565e4231a2b422f151c5cfc6ec0c2686e75945",
+      "bytes": 988
+    },
+    {
+      "file": "impact-cn-mod/popup.js",
+      "sha256": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+      "bytes": 2379
+    },
+    {
+      "file": "impact-cn-mod/site-config.js",
+      "sha256": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+      "bytes": 2188
+    },
+    {
+      "file": "dist/impact-cn-mod-0.1.0.zip",
+      "sha256": "4725d95a5b32644a7f55a900413e558fd5d2ab60db57735eeef3a14ab49737fa",
+      "bytes": 27794
+    },
+    {
+      "file": "dist/impact-cn-mod-0.2.0.zip",
+      "sha256": "a9e4723468bc8faa211c81e632d33fee625a76c916bf1e741ee2c9eb382944f5",
+      "bytes": 34954
+    },
+    {
+      "file": "dist/impact-cn-mod-0.3.1.zip",
+      "sha256": "538e2191a5ca142091f17c3d632b9c38dd3f47b7c0ff6ca28eb793c2fd9b0838",
+      "bytes": 41942
+    },
+    {
+      "file": "dist/impact-cn-mod-0.4.0.zip",
+      "sha256": "f5e90de6655c31f1127e65a7e7b3a9e034f9bde7692b802421b04feb1982ba93",
+      "bytes": 68333
+    },
+    {
+      "file": "dist/impact-cn-mod-0.4.1.zip",
+      "sha256": "31adee272d112957b17824f0928d43af92aadabb0cb0d5df1c4a77a2ed7514eb",
+      "bytes": 76180
+    },
+    {
+      "file": "dist/impact-cn-mod-0.5.0.zip",
+      "sha256": "1ce5bd541ec1dfc5f8777f6b32c8644b341d63cfa2c9b6a08571c4a34a3ba405",
+      "bytes": 121636
+    },
+    {
+      "file": "dist/impact-cn-mod-0.5.1.zip",
+      "sha256": "66f3bd993e5bbf899ebaedd81af6d82b2b61642f51d0c6a298355b3851db8fa3",
+      "bytes": 129992
+    },
+    {
+      "file": "dist/impact-cn-mod-0.5.2.zip",
+      "sha256": "94c085b423598b4e2369c728dd4762f1fa319531f5b26689b34c222bbc56bde5",
+      "bytes": 131226
+    }
+  ]
+}

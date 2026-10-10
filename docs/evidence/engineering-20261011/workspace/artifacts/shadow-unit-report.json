@@ -1,0 +1,115 @@
+{
+  "mode": "SYNTHETIC_UNIT_ONLY",
+  "realSiteAcceptance": false,
+  "dictionaryVersion": "0.5.3",
+  "dictionaryEntries": 699,
+  "nativeEntries": 124,
+  "lastPartialRecheck": null,
+  "status": "PASS",
+  "results": [
+    {
+      "name": "Initial nested open Shadow DOM translation retains Text identities",
+      "status": "PASS"
+    },
+    {
+      "name": "Native original button handler and numeric values remain intact",
+      "status": "PASS"
+    },
+    {
+      "name": "Dynamic additions and text updates inside observed shadow roots",
+      "status": "PASS"
+    },
+    {
+      "name": "Late open ShadowRoot discovered without patching attachShadow",
+      "status": "PASS"
+    },
+    {
+      "name": "Composed ancestor exclusions protect user names and native AI replies",
+      "status": "PASS"
+    },
+    {
+      "name": "Disable restores shadow originals and re-enable translates them",
+      "status": "PASS"
+    },
+    {
+      "name": "Native-style Shadow DOM textarea receives input event and one send",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing shadow editor draft is preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "A pending AI send stays cancelled through a rapid off-on toggle and preserves the filled draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Native AI visible children can send when they override an ancestor visibility hidden",
+      "status": "PASS"
+    },
+    {
+      "name": "Destroy restores text and stops future shadow translation",
+      "status": "PASS"
+    },
+    {
+      "name": "A rapid native Close then inline question waits for the stale editor and sends only through the new instance",
+      "status": "PASS"
+    },
+    {
+      "name": "An AI off-on toggle during native closing permanently cancels the question without opening or sending",
+      "status": "PASS"
+    },
+    {
+      "name": "Current dictionary schema, official links and native scope requirements",
+      "status": "PASS"
+    },
+    {
+      "name": "All 124 actual native-dictionary entries translate only inside verified components",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual dictionary preserves welcome-name suffix, partner name and wrong-shadow metric",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual dictionary translates a late body date portal and preserves submitted dates",
+      "status": "PASS"
+    },
+    {
+      "name": "Nine native Chinese mistranslation aliases calibrate only verified navigation scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "Inline questions map only individual concepts and render visibly inside native Shadow DOM",
+      "status": "PASS"
+    },
+    {
+      "name": "Refresh is idempotent and questions beside native buttons never nest another button",
+      "status": "PASS"
+    },
+    {
+      "name": "Inline pointer and click events send one concept question without triggering the native card",
+      "status": "PASS"
+    },
+    {
+      "name": "Translation and AI are independent in all four combinations; AI off blocks sending",
+      "status": "PASS"
+    },
+    {
+      "name": "A changed or detached term loses its question and restores one question when the original term returns",
+      "status": "PASS"
+    },
+    {
+      "name": "Dedicated drag handle requires movement threshold and keeps its position through state and AI changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Dragged assistant is clamped after resize and resetPosition restores the default 140px bottom",
+      "status": "PASS"
+    },
+    {
+      "name": "Native path scope restores all translations outside advertiser page",
+      "status": "PASS"
+    }
+  ]
+}

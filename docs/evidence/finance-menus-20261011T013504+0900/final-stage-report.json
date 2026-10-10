@@ -1,0 +1,437 @@
+{
+  "mode": "CURRENT_SOURCE_PARTIAL_REAL_NETWORK_ENTITY_MENU_STAGE",
+  "date": "2026-10-10T17:23:17.741302+00:00",
+  "version": "0.5.3",
+  "stage": "Billing Groups and Funding Accounts Actions menus only",
+  "workArchived": true,
+  "phaseMenuComplete": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "menuNativeFlowsReached": {
+    "off": 2,
+    "on": 2,
+    "expectedMenus": 2
+  },
+  "strictMenuAcceptance": {
+    "pass": 0,
+    "fail": 2
+  },
+  "realNetwork": [
+    {
+      "pageId": "billing-groups",
+      "realNetworkNativeMenuOff": "PASS",
+      "realNetworkNativeMenuOn": "PASS",
+      "nativeFlow": "verified Name click, Name hover, current unique Actions hover, one normal trusted Actions click",
+      "offEvents": {
+        "trustedClicks": 1,
+        "untrustedClicks": 0,
+        "trustedPointerOvers": 1
+      },
+      "onEvents": {
+        "trustedClicks": 1,
+        "untrustedClicks": 0,
+        "trustedPointerOvers": 1
+      },
+      "sameNativeTable": true,
+      "fixedMenuTextCount": 3,
+      "textTranslationAndOffRestoration": "PASS",
+      "identityStates": [
+        {
+          "state": "OFF",
+          "baselinePresent": true,
+          "menuTextNodes": 3,
+          "entryIds": [
+            "finance-billing-groups-actions-edit-observed",
+            "finance-billing-groups-actions-partner-fees-document-settings-observed",
+            "finance-billing-groups-actions-impact-com-fees-document-settings-observed"
+          ],
+          "textNodesRetained": true,
+          "nativeElementsRetained": true,
+          "nativeChildrenRetained": true,
+          "changedNativeAttributes": 0,
+          "attributeChanges": [],
+          "targetMatchedNodes": 0,
+          "originalTextRestored": true,
+          "privateDataNodeCount": 11,
+          "privateDataUnchanged": true,
+          "inputCount": 6,
+          "inputsUnchanged": true,
+          "linkCount": 0,
+          "linksUnchanged": true,
+          "privateValuesReturned": false,
+          "inputValuesReturned": false
+        },
+        {
+          "state": "ON",
+          "baselinePresent": true,
+          "menuTextNodes": 3,
+          "entryIds": [
+            "finance-billing-groups-actions-edit-observed",
+            "finance-billing-groups-actions-partner-fees-document-settings-observed",
+            "finance-billing-groups-actions-impact-com-fees-document-settings-observed"
+          ],
+          "textNodesRetained": true,
+          "nativeElementsRetained": true,
+          "nativeChildrenRetained": true,
+          "changedNativeAttributes": 1,
+          "attributeChanges": [
+            {
+              "tag": "DIV",
+              "popupRoot": true,
+              "name": "style",
+              "changedStyleProperties": [
+                "left"
+              ],
+              "valuesReturned": false
+            }
+          ],
+          "targetMatchedNodes": 3,
+          "originalTextRestored": false,
+          "privateDataNodeCount": 11,
+          "privateDataUnchanged": true,
+          "inputCount": 6,
+          "inputsUnchanged": true,
+          "linkCount": 0,
+          "linksUnchanged": true,
+          "privateValuesReturned": false,
+          "inputValuesReturned": false
+        },
+        {
+          "state": "OFF_RESTORED",
+          "baselinePresent": true,
+          "menuTextNodes": 3,
+          "entryIds": [
+            "finance-billing-groups-actions-edit-observed",
+            "finance-billing-groups-actions-partner-fees-document-settings-observed",
+            "finance-billing-groups-actions-impact-com-fees-document-settings-observed"
+          ],
+          "textNodesRetained": true,
+          "nativeElementsRetained": true,
+          "nativeChildrenRetained": true,
+          "changedNativeAttributes": 0,
+          "attributeChanges": [],
+          "targetMatchedNodes": 0,
+          "originalTextRestored": true,
+          "privateDataNodeCount": 11,
+          "privateDataUnchanged": true,
+          "inputCount": 6,
+          "inputsUnchanged": true,
+          "linkCount": 0,
+          "linksUnchanged": true,
+          "privateValuesReturned": false,
+          "inputValuesReturned": false
+        }
+      ],
+      "nativeAttributeGate": "FAIL",
+      "nativeRootStyleChangedProperty": "left",
+      "attributeWriter": {
+        "mode": "READ_ONLY_CDP_ATTRIBUTE_BREAKPOINT",
+        "pauseCount": 1,
+        "pauses": [
+          {
+            "reason": "DOM",
+            "frames": [
+              {
+                "source": "native-impact",
+                "line": 3,
+                "column": 122455
+              }
+            ]
+          }
+        ],
+        "directExtensionWrites": 0,
+        "directNativeImpactWrites": 1,
+        "sourceURLsReturned": false,
+        "pageTextReturned": false
+      },
+      "phaseMenuComplete": false,
+      "finalEvidence": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review.json",
+      "attributeWriterEvidence": "artifacts/finance-menus-20261011T013504+0900/billing-053-native-attribute-writer.json",
+      "newEditorOpened": false
+    },
+    {
+      "pageId": "funding-accounts",
+      "realNetworkNativeMenuOff": "PASS",
+      "realNetworkNativeMenuOn": "PASS",
+      "nativeFlow": "verified Name click, Name hover, current unique Actions hover, one normal trusted Actions click",
+      "offEvents": {
+        "trustedClicks": 1,
+        "untrustedClicks": 0,
+        "trustedPointerOvers": 1
+      },
+      "onEvents": {
+        "trustedClicks": 1,
+        "untrustedClicks": 0,
+        "trustedPointerOvers": 1
+      },
+      "sameNativeTable": true,
+      "fixedMenuTextCount": 2,
+      "textTranslationAndOffRestoration": "PASS",
+      "identityStates": [
+        {
+          "state": "OFF",
+          "baselinePresent": true,
+          "menuTextNodes": 2,
+          "entryIds": [
+            "finance-funding-accounts-actions-edit-observed",
+            "finance-funding-accounts-actions-funding-account-document-settings-observed"
+          ],
+          "textNodesRetained": true,
+          "nativeElementsRetained": true,
+          "nativeChildrenRetained": true,
+          "changedNativeAttributes": 0,
+          "attributeChanges": [],
+          "targetMatchedNodes": 0,
+          "originalTextRestored": true,
+          "privateDataNodeCount": 6,
+          "privateDataUnchanged": true,
+          "inputCount": 6,
+          "inputsUnchanged": true,
+          "linkCount": 0,
+          "linksUnchanged": true,
+          "privateValuesReturned": false,
+          "inputValuesReturned": false
+        },
+        {
+          "state": "ON",
+          "baselinePresent": true,
+          "menuTextNodes": 2,
+          "entryIds": [
+            "finance-funding-accounts-actions-edit-observed",
+            "finance-funding-accounts-actions-funding-account-document-settings-observed"
+          ],
+          "textNodesRetained": true,
+          "nativeElementsRetained": true,
+          "nativeChildrenRetained": true,
+          "changedNativeAttributes": 1,
+          "attributeChanges": [
+            {
+              "tag": "DIV",
+              "popupRoot": true,
+              "name": "style",
+              "changedStyleProperties": [
+                "left"
+              ],
+              "valuesReturned": false
+            }
+          ],
+          "targetMatchedNodes": 2,
+          "originalTextRestored": false,
+          "privateDataNodeCount": 6,
+          "privateDataUnchanged": true,
+          "inputCount": 6,
+          "inputsUnchanged": true,
+          "linkCount": 0,
+          "linksUnchanged": true,
+          "privateValuesReturned": false,
+          "inputValuesReturned": false
+        },
+        {
+          "state": "OFF_RESTORED",
+          "baselinePresent": true,
+          "menuTextNodes": 2,
+          "entryIds": [
+            "finance-funding-accounts-actions-edit-observed",
+            "finance-funding-accounts-actions-funding-account-document-settings-observed"
+          ],
+          "textNodesRetained": true,
+          "nativeElementsRetained": true,
+          "nativeChildrenRetained": true,
+          "changedNativeAttributes": 0,
+          "attributeChanges": [],
+          "targetMatchedNodes": 0,
+          "originalTextRestored": true,
+          "privateDataNodeCount": 6,
+          "privateDataUnchanged": true,
+          "inputCount": 6,
+          "inputsUnchanged": true,
+          "linkCount": 0,
+          "linksUnchanged": true,
+          "privateValuesReturned": false,
+          "inputValuesReturned": false
+        }
+      ],
+      "nativeAttributeGate": "FAIL",
+      "nativeRootStyleChangedProperty": "left",
+      "attributeWriter": {
+        "mode": "READ_ONLY_CDP_ATTRIBUTE_BREAKPOINT",
+        "pauseCount": 1,
+        "pauses": [
+          {
+            "reason": "DOM",
+            "frames": [
+              {
+                "source": "native-impact",
+                "line": 1,
+                "column": 24087
+              }
+            ]
+          }
+        ],
+        "directExtensionWrites": 0,
+        "directNativeImpactWrites": 1,
+        "sourceURLsReturned": false,
+        "pageTextReturned": false
+      },
+      "phaseMenuComplete": false,
+      "finalEvidence": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review.json",
+      "attributeWriterEvidence": "artifacts/finance-menus-20261011T013504+0900/funding-053-native-attribute-writer.json",
+      "newEditorOpened": false
+    }
+  ],
+  "runtimeEvidence": "artifacts/finance-menus-20261011T013504+0900/runtime-final.json",
+  "runtime": {
+    "manifestVersion": "0.5.3",
+    "contentVersion": "0.5.3",
+    "translationEnabled": true,
+    "aiEnabled": true,
+    "errorPresent": false,
+    "extensionIdMatches": true,
+    "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml"
+  },
+  "loadedExtension": {
+    "cardCount": 1,
+    "expectedCardCount": 1,
+    "cards": [
+      {
+        "expectedId": true,
+        "version": "0.5.3",
+        "sourcePathMatches": true,
+        "enabled": true,
+        "unpacked": true,
+        "pathFieldPresent": true
+      }
+    ]
+  },
+  "pageErrors": 0,
+  "initialAndRestoredToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  },
+  "syntheticTests": [
+    {
+      "report": "artifacts/finance-menus-20261011T013504+0900/final-menu-contract-tests/menu-regression-report.json",
+      "mode": "SYNTHETIC_ENTITY_MENU_CONTRACTS_ONLY",
+      "status": "PASS",
+      "passed": 56,
+      "realNetworkAcceptance": false
+    },
+    {
+      "report": "artifacts/finance-menus-20261011T013504+0900/mv3-scope-tests/finance-menu-mv3-report.json",
+      "mode": "SYNTHETIC_CURRENT_SHIPPED_FINANCE_MENUS_MV3",
+      "status": "PASS",
+      "passed": 10,
+      "realNetworkAcceptance": false
+    },
+    {
+      "report": "artifacts/finance-menus-20261011T013504+0900/final-replay-contract-tests/capture-regression-report.json",
+      "mode": "SYNTHETIC_FINANCE_CAPTURE_REPLAY_ONLY",
+      "status": "PASS",
+      "passed": 26,
+      "realNetworkAcceptance": false
+    }
+  ],
+  "staticVerification": {
+    "passed": 13,
+    "report": "artifacts/finance-menus-20261011T013504+0900/final-static-report.json"
+  },
+  "privacyVerification": {
+    "status": "PASS",
+    "selectedFileCount": 95,
+    "report": "artifacts/finance-menus-20261011T013504+0900/final-privacy-report.json",
+    "pixelOrAllHistoryScan": false,
+    "privacyUnitRerun": false
+  },
+  "captureMerge": {
+    "mode": "SANITIZED_CURRENT_MENU_MERGE",
+    "beforeSha256": "e9ea878f61e9eebb07aac9b6f12efdac1b5ff8a3dd7267244838847ff938b29c",
+    "afterSha256": "1fdbd6a3cac74b782dab2e51a76a4aaa01273aab1911856326fd8d4183d15a12",
+    "beforeCandidateCount": 437,
+    "afterCandidateCount": 442,
+    "originalCandidatesRetainedUnchanged": 437,
+    "newFixedCandidates": 5,
+    "newEnglishSources": [
+      "Partner Fees Document Settings",
+      "impact.com Fees Document Settings",
+      "Funding Account Document Settings"
+    ],
+    "twoOriginalActionSequencesRetained": true,
+    "newMenuStateIsNotNewEditor": true,
+    "phaseMenuComplete": false,
+    "completeAcceptance": false
+  },
+  "package": {
+    "status": "PASS",
+    "mode": "NEW_TEST_PACKAGE_SOURCE_BYTE_VERIFICATION",
+    "version": "0.5.3",
+    "zip": "dist/impact-cn-mod-0.5.3.zip",
+    "extracted": "dist/impact-cn-mod-0.5.3",
+    "bytes": 132785,
+    "sha256": "513d77a17235a5ddec56145e0653fed8d483783a1c8298f120d022b1e9987d41",
+    "fileCount": 12,
+    "manifestAtRoot": true,
+    "resourceCountIncludingManifest": 9,
+    "crcValid": true,
+    "sourceZipExtractedBytesEqual": true,
+    "frozenSourceHashes": {
+      "popup.js": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+      "site-config.js": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+      "content.css": "7da0ac591f4d7a06ba353d9988892b503f70139d168fb5602049f0f5fe7b5cfb",
+      "CHANGELOG.md": "1e6960a02c1fec1e95faa4f83f4afd78ade21eade46b9238bd464bae1790807c",
+      "background.js": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+      "popup.html": "598bf19ab6a8917d4b00075123565e4231a2b422f151c5cfc6ec0c2686e75945",
+      "LOCALIZATION_GUIDE.md": "2cfa70b74c75af1746b807bf164aa36ae0bb37f7d845411c4efc1cb6e0056138",
+      "INSTALL.md": "110103aabf6d45eb6eb873a601f8f33ec800a85d25de6f014670a678e9d1ece0",
+      "dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+      "manifest.json": "6ed3278a5c2715c6de0241bc70a4f248b06a6910ca7b53bfadd325ae72b8a356",
+      "popup.css": "0719286c4485a25c1bc1a5a9ae489e8179c1ca26f5ec9bbfb9b11a092389cfb0",
+      "content.js": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd"
+    },
+    "previousZipHashesRetained": 8,
+    "realNetworkLoadedPath": "impact-cn-mod",
+    "actualMV3SyntheticLoadedExactSourceBytes": true,
+    "extractedPackageRealNetworkLoginNotPerformed": true,
+    "completeAcceptance": false
+  },
+  "latestComplete15": {
+    "version": "0.5.2",
+    "passed": 13,
+    "failed": 2,
+    "pageErrors": 0,
+    "completeAcceptance": false,
+    "report": "artifacts/finance-acceptance-20261010/after-replay-fixes-15/live-report.json",
+    "sha256": "275f5bb6591dbe2baf26bff09a7209cdd19c3843de93baae3168b48dafe28aca",
+    "notRerunOrCombinedWithCurrentPartial": true
+  },
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "settingsWrites": 0,
+  "uploads": 0,
+  "reportQueries": 0,
+  "aiQuestionsSent": 0,
+  "credentialsOrSessionExported": false,
+  "privateRowsSaved": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "otherUsersBrowsersClosed": false,
+  "gitCommitCreated": false,
+  "knownRemaining": [
+    "Strict native menu root attribute condition remains unmet; native left reposition is proved but not exempted",
+    "Three new entity editor forms",
+    "Two complete report results",
+    "Two new native finance assistant replies with exact official links",
+    "Production app domain and account unavailable ranges"
+  ],
+  "nextStep": "Read-only native placement diagnosis for the strict attribute condition; retain the gate and stop before other P0 work.",
+  "currentFingerprints": {
+    "impact-cn-mod/dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+    "docs/finance-dom-scan.json": "1fdbd6a3cac74b782dab2e51a76a4aaa01273aab1911856326fd8d4183d15a12",
+    "artifacts/finance-tests/live-report.json": "275f5bb6591dbe2baf26bff09a7209cdd19c3843de93baae3168b48dafe28aca",
+    "finance-live-test-report.md": "3452b45de05f43b655dbfad89af56fbeadfc2921f2ef434912f56203a26b6874",
+    "PROJECT_STATE.md": "a030e6b46a5e679beb6ee03d8edf266c6954211df781a2888a6487cc548e2af1",
+    "NEXT_TASK.md": "74659f26a2a45a2f568ba210c218ec32d6f52acd88df5b950adfd4fefc22dfd5",
+    "docs/NEXT_CHAT_HANDOFF.md": "1926fc1334f9875744d63bfee19c5e0fbffc3519075d5ac6579617488eb9e3a5",
+    "README.md": "c6dae883b43b3b1d2cc9eacfeaf453b6f613cddcd9dfce8a23e859f68377b367",
+    "package.json": "27f12452da92a540c1654bd36739940ce3067af01592be2839360edec4fb821a"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "mode": "SYNTHETIC_CURRENT_SHIPPED_FINANCE_NEW_ENTRIES",
+  "date": "2026-10-10T18:11:33.683Z",
+  "version": "0.5.3",
+  "dictionaryEntries": 699,
+  "entryIds": [
+    "finance-upcoming-partner-payments-finalized-payouts-observed",
+    "finance-transfers-overdue-funding-status-observed",
+    "finance-payment-methods-new-credit-card-description-observed",
+    "finance-payment-methods-new-engage-reports-navigation-observed",
+    "finance-monthly-close-clear-all-3c6c781"
+  ],
+  "unchangedShippedDictionary": true,
+  "unchangedShippedAdapter": true,
+  "unchangedShippedEngine": true,
+  "actualUnpackedMV3": true,
+  "realSiteAcceptance": false,
+  "realNetworkQueries": false,
+  "userBrowserOperated": false,
+  "credentialsSaved": false,
+  "fullConversationSaved": false,
+  "assetSHA256": {
+    "manifest.json": "6ed3278a5c2715c6de0241bc70a4f248b06a6910ca7b53bfadd325ae72b8a356",
+    "dict.js": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+    "site-config.js": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+    "content.js": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd",
+    "content.css": "7da0ac591f4d7a06ba353d9988892b503f70139d168fb5602049f0f5fe7b5cfb",
+    "background.js": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+    "popup.html": "598bf19ab6a8917d4b00075123565e4231a2b422f151c5cfc6ec0c2686e75945",
+    "popup.js": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+    "popup.css": "0719286c4485a25c1bc1a5a9ae489e8179c1ca26f5ec9bbfb9b11a092389cfb0"
+  },
+  "results": [
+    {
+      "name": "Current 699-entry MV3 assets load without fixture dictionary or adapter replacements",
+      "status": "PASS",
+      "evidence": "Entire extension directory copied unchanged; current real dictionary, adapter, engine and worker retained byte-for-byte"
+    },
+    {
+      "name": "Finalized Payouts correct r1 handle and report H3 preserve native identity through ON/OFF/ON on both domains",
+      "status": "PASS",
+      "evidence": "Observed reportContainer H3 translates and restores exact original Text, element, attributes and native click listener on demo/app"
+    },
+    {
+      "name": "Finalized Payouts wrong handle, r2, duplicate handle, missing report container and non-H3 stay English",
+      "status": "PASS",
+      "evidence": "Five route/query/component negatives retain the original English node under actual shipped rules"
+    },
+    {
+      "name": "Finalized Payouts correct child report under a different top report stays English",
+      "status": "PASS",
+      "evidence": "Correct source document cannot translate beneath an unapproved report top path/handle"
+    },
+    {
+      "name": "Overdue sixth Funding Status exclusively focused translates the observed UL while preserving same-name business cells",
+      "status": "PASS",
+      "evidence": "Actual nth-of-type(6) focused native filter and observed li:nth-of-type(2) structure translate only the enum; ON/OFF/ON preserves source nodes on demo/app"
+    },
+    {
+      "name": "Overdue without Funding Status focus or with Partner/User focus stays English",
+      "status": "PASS",
+      "evidence": "No focus, Partner-only, User-only and simultaneous Partner/User plus Funding Status cannot trigger enum translation"
+    },
+    {
+      "name": "The same Overdue Text restores English when a reused menu changes from Funding Status to Partner or User focus",
+      "status": "PASS",
+      "evidence": "Class-only Funding Status to Partner/User transitions restore the reused native Text without changing its identity or business names"
+    },
+    {
+      "name": "Overdue correct focused source under wrong or duplicate top query stays English",
+      "status": "PASS",
+      "evidence": "Verified enum component cannot escape its single exact top-shell routing query"
+    },
+    {
+      "name": "Observed credit-card fixed description preserves $100, native Text/events and adjacent private values on both shipped MV3 domains",
+      "status": "PASS",
+      "evidence": "Actual unchanged MV3 sources translate only the observed entire description; ON/OFF/ON preserves $100 bytes, Text/element/attributes/listener, adjacent private text and editor value"
+    },
+    {
+      "name": "Credit-card description wrong document/top, same-path child, selector, Shadow and changed $200 source remain untouched",
+      "status": "PASS",
+      "evidence": "Six actual shipped route/top/same-path-child/component/Shadow/currency-source negatives preserve exact source nodes and private adjacent data"
+    },
+    {
+      "name": "Observed new-payment Reports DIV translates only in the exact native navigation Shadow while preserving light DOM and native identity",
+      "status": "PASS",
+      "evidence": "Actual shipped demo/app MV3 translates and restores only the observed DIV under the exact native Shadow host; same-label light DOM, Text, structure, attributes and native click listener remain intact"
+    },
+    {
+      "name": "New-payment Reports light DOM, wrong Shadow host, different finance component and wrong document/top/child remain English",
+      "status": "PASS",
+      "evidence": "Six route/top/child/Shadow/component negatives preserve Reports; fixtures use plain DIVs without generic a/span/subitem-label selectors to avoid false negatives against existing legitimate navigation rules"
+    },
+    {
+      "name": "Monthly Clear all uses the observed four-level first-tool scope without either generated popup ID",
+      "status": "PASS",
+      "evidence": {
+        "entryId": "finance-monthly-close-clear-all-3c6c781",
+        "popupIds": [
+          "fnDEnDPX",
+          "AVlWhJk6"
+        ],
+        "selector": "div[class*=\"baseFilterPopup--\"] > ul[class*=\"content--\"][class*=\"multipleSelectionFilter--\"] > li[class*=\"selectionLink--\"]:nth-of-type(1) > a",
+        "documentPath": "/secure/advertiser/Adv_Finance_Report/r3/report/viewReport.report",
+        "singleHandle": "adv_gaap_summary_action",
+        "shadowHost": null
+      }
+    },
+    {
+      "name": "Both observed Monthly popup IDs preserve ON/OFF/ON Text, native events and private neighbors on demo/app",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          {
+            "host": "demo.impact.com",
+            "popupId": "fnDEnDPX",
+            "cycle": [
+              "ON",
+              "OFF",
+              "ON"
+            ],
+            "nativeClicks": 1,
+            "privateClicks": 1,
+            "exactTextIdentityPreserved": true,
+            "structureAttributesAndPrivateValuesPreserved": true
+          },
+          {
+            "host": "demo.impact.com",
+            "popupId": "AVlWhJk6",
+            "cycle": [
+              "ON",
+              "OFF",
+              "ON"
+            ],
+            "nativeClicks": 1,
+            "privateClicks": 1,
+            "exactTextIdentityPreserved": true,
+            "structureAttributesAndPrivateValuesPreserved": true
+          },
+          {
+            "host": "app.impact.com",
+            "popupId": "fnDEnDPX",
+            "cycle": [
+              "ON",
+              "OFF",
+              "ON"
+            ],
+            "nativeClicks": 1,
+            "privateClicks": 1,
+            "exactTextIdentityPreserved": true,
+            "structureAttributesAndPrivateValuesPreserved": true
+          },
+          {
+            "host": "app.impact.com",
+            "popupId": "AVlWhJk6",
+            "cycle": [
+              "ON",
+              "OFF",
+              "ON"
+            ],
+            "nativeClicks": 1,
+            "privateClicks": 1,
+            "exactTextIdentityPreserved": true,
+            "structureAttributesAndPrivateValuesPreserved": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Monthly Clear all rejects wrong document/top, missing/wrong/duplicate document handle and wrong/duplicate top handle",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          "wrong-document",
+          "missing-document-handle",
+          "wrong-document-handle",
+          "duplicate-document-handle",
+          "correct-child-under-wrong-top-document",
+          "correct-child-under-wrong-top-handle",
+          "correct-child-under-missing-top-handle",
+          "correct-child-under-duplicate-top-handle",
+          "duplicate-child-handle-under-correct-top"
+        ],
+        "originalEnglishTextAndPrivateValuesPreserved": true
+      }
+    },
+    {
+      "name": "Monthly Clear all rejects different popup/list classes, broken direct hierarchy and any non-first or non-tool LI",
+      "status": "PASS",
+      "evidence": {
+        "cases": [
+          "wrong-popup",
+          "wrong-content",
+          "single-selection",
+          "wrong-selection-link",
+          "nested-anchor",
+          "nested-list",
+          "non-first-li"
+        ],
+        "originalEnglishTextNativeEventsAndPrivateValuesPreserved": true
+      }
+    },
+    {
+      "name": "All shipped test-loaded assets remain identical to current source after the suite",
+      "status": "PASS",
+      "evidence": "No dictionary, adapter, manifest, engine, worker, CSS or popup mutation during synthetic validation"
+    }
+  ]
+}

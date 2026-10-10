@@ -1,0 +1,508 @@
+{
+  "status": "PASS",
+  "mode": "SELECTED_CONTENT_PATTERN_AND_CAPTURE_SAFETY_CHECK",
+  "patternsChecked": [
+    "email_identifier",
+    "private_key",
+    "bearer_value",
+    "url_auth_query"
+  ],
+  "selectedFileCount": 95,
+  "files": [
+    {
+      "file": "docs/finance-dom-scan.json",
+      "sha256": "1fdbd6a3cac74b782dab2e51a76a4aaa01273aab1911856326fd8d4183d15a12",
+      "status": "PASS"
+    },
+    {
+      "file": "PROJECT_STATE.md",
+      "sha256": "a030e6b46a5e679beb6ee03d8edf266c6954211df781a2888a6487cc548e2af1",
+      "status": "PASS"
+    },
+    {
+      "file": "NEXT_TASK.md",
+      "sha256": "74659f26a2a45a2f568ba210c218ec32d6f52acd88df5b950adfd4fefc22dfd5",
+      "status": "PASS"
+    },
+    {
+      "file": "docs/NEXT_CHAT_HANDOFF.md",
+      "sha256": "1926fc1334f9875744d63bfee19c5e0fbffc3519075d5ac6579617488eb9e3a5",
+      "status": "PASS"
+    },
+    {
+      "file": "README.md",
+      "sha256": "c6dae883b43b3b1d2cc9eacfeaf453b6f613cddcd9dfce8a23e859f68377b367",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/popup.js",
+      "sha256": "427589f851e31dcced70f4fac0ee6399b4ba4ac245f1f8018d86757bca06bd9e",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/site-config.js",
+      "sha256": "dee61e5a530e439fc3ff4e573e497e8a25a7b1e1d4c88809e6a904165f7756fa",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/content.css",
+      "sha256": "7da0ac591f4d7a06ba353d9988892b503f70139d168fb5602049f0f5fe7b5cfb",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/CHANGELOG.md",
+      "sha256": "1e6960a02c1fec1e95faa4f83f4afd78ade21eade46b9238bd464bae1790807c",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/background.js",
+      "sha256": "a08f5d3d18fb86192d964d27d9a4aee99f27dd117c47e239c7211de96d902314",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/popup.html",
+      "sha256": "598bf19ab6a8917d4b00075123565e4231a2b422f151c5cfc6ec0c2686e75945",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/LOCALIZATION_GUIDE.md",
+      "sha256": "2cfa70b74c75af1746b807bf164aa36ae0bb37f7d845411c4efc1cb6e0056138",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/INSTALL.md",
+      "sha256": "110103aabf6d45eb6eb873a601f8f33ec800a85d25de6f014670a678e9d1ece0",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/dict.js",
+      "sha256": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/manifest.json",
+      "sha256": "6ed3278a5c2715c6de0241bc70a4f248b06a6910ca7b53bfadd325ae72b8a356",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/popup.css",
+      "sha256": "0719286c4485a25c1bc1a5a9ae489e8179c1ca26f5ec9bbfb9b11a092389cfb0",
+      "status": "PASS"
+    },
+    {
+      "file": "impact-cn-mod/content.js",
+      "sha256": "ece78af8591e1e458297808784391fc60d96f3f9ab63794086744bcc28a0a3cd",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-native-flow-strict.json",
+      "sha256": "6b9d50b7d425eadad7a0101b7e398a28e02d94a93bdce69d86ca96dcc99467ac",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-native-flow-strict-hover.json",
+      "sha256": "1b397297db589844a77c49987e51baaeaaa3958788726521b35f68b91801c1ab",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-off.json",
+      "sha256": "b419a982e009dd33cf88c67ecb748305b20fb6c03ae409f3849c5962356ad62f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/capture-merge-report.json",
+      "sha256": "07c7867ea9cc1c3818a7562889e01b5270842f77374e12cfe41605b2341add4e",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-on-observe.json",
+      "sha256": "fa786a4b6171b50c2cced3a09ccebe51e2ab8961b479c267e6f8a1fa782ad3e3",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-current-acceptance-native-off-observe.json",
+      "sha256": "df29e864acfffe96a785f0ad8e159688bf3c13f6d6ee121decdc655bdeb2799f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-native-flow-strict-hover-name.json",
+      "sha256": "901d2ecd1aff29b8bb0524eee5ebfb88ecd59594cbd187370478369f22f83253",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/runtime-final.json",
+      "sha256": "120036ebda8509d5c4590920533b2e4e22c0808a11bd5da1d02937dae13f5cd1",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-current-acceptance-native-off.json",
+      "sha256": "9af6820cc15fbafc44a7d6e5f25923d265e3297e0c7b513d16422679698b75b1",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-off-replay-menu.json",
+      "sha256": "865640277e1477620a7f97aa4ac9c262a11f2cd132a0b763bc9f2dae8077d627",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-identity-acceptance.json",
+      "sha256": "34fee25315e46b43d5c5a0609b4e81c41ab571913a9d0c284c82564e02f4ab1e",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-off-observe.json",
+      "sha256": "0940841ed7c6fd17a3099bdedf89c9c35dfdc2dfb28a42c46886950762a08ff5",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-off-observe.json",
+      "sha256": "fa9adee743abb75539cead8ffa340521dd89766abd79c063ddc0b3038bd9f7be",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-identity-acceptance-native-off-observe.json",
+      "sha256": "f3e4a1e658f543718851ad7f40cc398a18add31d75cd58c3a62ae9038d540443",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-native-flow-baseline.json",
+      "sha256": "3240465d9a32034ee1e9840f45c32d954a3117d2f4050c27ab75c21bca57e315",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/runtime-billing-stage.json",
+      "sha256": "a8781d8a6d1abeb48a1cbec2703116784764398de771a1278c7ff446ff2e212d",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-attribute-acceptance-native-off-replay-menu.json",
+      "sha256": "18396c8c15977440ffe96766ff114c27f6811290e5157893a76131d8b95de43f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-acceptance-native-off-hover-name.json",
+      "sha256": "c60d3339023f3dcfe74318859bb445682f1f00fbd59f5e4f5224516b5e034bfd",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-acceptance-native-off-click.json",
+      "sha256": "bf6a8f5ea2d6e2120b32fc6b560481097b34a9019dada7a531a8e7629d284567",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-native-attribute-writer.json",
+      "sha256": "591713cd294efd03b8e2a3ed83143119479abe691b0ad03ae24999b8958d5ce5",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review.json",
+      "sha256": "4850ab85a3c2987340c68ad4a1212978c46430c4577262a4f54e47b10bea02d0",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-acceptance-native-off.json",
+      "sha256": "3a9de501e86651188b73d9fbb39008592001bd69f022370f878c372fc5d6ebd1",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-popup-owner-tag-path.json",
+      "sha256": "503f49e72581f4bb1a3394d14495f8bae4b15425decff632f53654a25088e627",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-off-replay-menu.json",
+      "sha256": "23ceff872ad341bd59210eb55d692b571e9177fdf599279beb69d4a7fc0f43d9",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-native-flow-baseline-hover.json",
+      "sha256": "35825d9885c5d11df9924a4527fa9d5c1615a7b0c1928c86fcff7db7784d42c2",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-off-observe.json",
+      "sha256": "d8e1a1f0673cc8050ac42420b176c4d466cdcf8ffc62b3fe7ec41a9a7740d648",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-on-replay-menu.json",
+      "sha256": "60962649c68ef7182593c5b9c5d08655ff77279437dac785cdb132ad3d07051b",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review.json",
+      "sha256": "e839cbcd1546b54289f5159d1c266885d34fec2bf6c7e9ed22ee2fbffd4c779e",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-native-flow-baseline-hover-name.json",
+      "sha256": "29bb390dbc668100310e98aff6453de2f04a2cb1ad59f7e819f3ceaf43f77d29",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-attribute-acceptance.json",
+      "sha256": "f9f788b7640efb8559a0fedfd8fcf308879ff51133f3949244219b4c7f11c090",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-native-flow-baseline-observe.json",
+      "sha256": "5567c2173aab99202e4a0fd2c9489adf098ddceab35938eb1ec2496389d4a9b7",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-acceptance-native-off.json",
+      "sha256": "a0aa335909c7958b54dc59c0cabcf472defbcfa41399130c70b0f31dfdce2c7b",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-attribute-acceptance-native-off.json",
+      "sha256": "170420811bc94657e19e10dbc691693ea4b9ad40315bb85e7b3e0629139403d2",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/runtime-current.json",
+      "sha256": "0040216dc16146a443235b187a37024f7d2c07e6ef76567402a86e92ce1fe2a2",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-popup-exact-text-owners.json",
+      "sha256": "0520cd93acee573c762290ea3ea205b46b3d40a75698240b150acba062a985dc",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-hover-name-current.json",
+      "sha256": "ba08f4b38997fc7c770a283ed3675c588707925e966b07b1d795060601446e84",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/package-report.json",
+      "sha256": "45d660075e8d6f863539e39f0c9789087069e4b3edd43b4144bdce599616159e",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-attribute-acceptance-native-off-replay-menu.json",
+      "sha256": "6df8be0c69122d1cc4a2e3be5427291810c54425e3f3e1bc30512de61408a656",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-acceptance.json",
+      "sha256": "0b08a104665db71bdab21a84905d4fa972d328cb84fea39951cf618ddd517fb6",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-off-name-hover.json",
+      "sha256": "d9732625bdd4e49f245c43c89f2816d7665730ddd14874818cc2103b63a36981",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-observe-syntax-location.json",
+      "sha256": "b2cfc5f56d6d975ee2ea4f7f9f98a9c563f4852180eff87b0c3b453f37788cf3",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-off-observe.json",
+      "sha256": "a3cf8ac72bcb6ba1a8ecf18aac62d8ebaeef66ab15348758ec227d6bb10cfeb5",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-popup-fixed-structure.json",
+      "sha256": "834df0afd0168c73d872bc924c17e8d1e92672ba82058211d7dfd0a2af146ca2",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-off-normal-button-hover.json",
+      "sha256": "848acf6a2dbcda8542636ea36f293371f081b8d9b81c790e50481cedc32d6569",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/baseline-fingerprints.json",
+      "sha256": "dec9a3a74286a48d8a22c458becc4c7f5b7faefb4ad6aec08091d2c8e2152b54",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-native-attribute-writer.json",
+      "sha256": "a1caa37c30513ecfb29fde0d9e43f0f672cf51f60a06c8ae83be336b98fef8b1",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-native-flow-strict-click.json",
+      "sha256": "360792c672c8d5ff7edb8752d177343af22fa4cb3c02b594fc2c276bbc1fab0f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-attribute-acceptance-native-off.json",
+      "sha256": "88fd18f573fd29193c5b464acb44ff6ece87a69f983547854c00d39171fce584",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-identity-acceptance-native-off.json",
+      "sha256": "dea18bd3981f5b14a6ba9c5fff3062d679cc5298a4753eb8d3ae46e9ecf63a78",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-acceptance.json",
+      "sha256": "3c21d1ff61b83759fd90540c18fdb96e8b610a15dec0b943eb6b28be1de883f8",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-attribute-acceptance-native-off-observe.json",
+      "sha256": "c715276ed0d7afee855efdc6869c354028275b66cd82c2156eaca10e2fc140fd",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-menu-normal-hover.json",
+      "sha256": "26f126c54013be498d990461dc5d96380a6310fe2801fc1b33de6aa79e0f35e3",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-on-replay-menu.json",
+      "sha256": "bdc67b821dd1e4dc7a178e4b9c24d27c464760398be03466c04e2a03466b0dd9",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-off-single-normal-click.json",
+      "sha256": "be6a51bc63536dbd0e324a3db5653af35cc1bf03d72768c00c1e2bbf38bc2ca5",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-attribute-acceptance.json",
+      "sha256": "677b70507b0e2404dfd3a3d1d66a966d8d8df40499f651b5f515a8cec244465f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-on.json",
+      "sha256": "2527d556eff2a0a6f43bd932a41f3fda1886f1c22960497ab035cad2fa252b1f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-off-menu-hover.json",
+      "sha256": "0c89476fb37d36c8b973dedf1d5821aae2e32df2ed95ac140656993748f648f4",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-on.json",
+      "sha256": "c3c82a7f8bf56d63ace4f8a295b254459f65fcadfbe70a17213f5a5750119e2c",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-acceptance-native-off-replay-menu.json",
+      "sha256": "39e430ae0e500e2accdd8caec38c01570c8c434b23947c58d5e8e18ab1144cc3",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-native-flow-baseline-click.json",
+      "sha256": "941b9db1e7e96656fad33fe5577f927f2058be4e1d26667bd00daeceb1de7d48",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-acceptance-native-off-observe.json",
+      "sha256": "0f942a05a53358db94fe2ba3948de79025842416c7a615456a0e2e068617d1cb",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/final-static-report.json",
+      "sha256": "1d89ddf2bfd1155fe89e866dbbd6025d73d19ae73689308bf924cf9396f801b6",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-attribute-acceptance-native-off-observe.json",
+      "sha256": "0d5cd301852048779afb0f065fb4c734dba1c440e060e1f9943ddf74a417cb84",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-acceptance-native-off-hover.json",
+      "sha256": "0a2b04566267475af53b19c7ca2c8bdc8ce0d3e93124916c4b0532f057e14e7e",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-off-single-normal-click.json",
+      "sha256": "07134de2b5e8136cf09f886028754d5938398c8546c42db0c4a39e327c4f90da",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-053-final-review-native-off.json",
+      "sha256": "82edcd185b2b214630cbc969334266efd260f413077fa640ed41b6d96ea80845",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-current-acceptance-native-off-replay-menu.json",
+      "sha256": "7f963d64b25dc4430ef5ff33ab6fea3333d64206d85fee8a5c72131c45ccc3a6",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-off-on-compare.json",
+      "sha256": "b39c19bfb36a42efb1395b16979c5489e1b6d402f3c576ec22337689746cf6b9",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-acceptance-native-off-observe.json",
+      "sha256": "7cb7e165c94c3e56c2017fdc089ce21f00889078f98ce215418bf4d89af396a9",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-current-acceptance.json",
+      "sha256": "fe9521f97af3f0a1f96446ba588c71a42df0e1f1d717567a2555b622ccb5da42",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-hover-name.json",
+      "sha256": "ed79404298706eccc4451f1c21e2e11f48ab9f11bd3c00bd4efc61bd6357b6e4",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/funding-native-flow-strict-observe.json",
+      "sha256": "3f5b74dc458ffe4a177b96255d495fbd15d14e80947c423d57f827e2e4ae338f",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/billing-053-final-review-native-on-observe.json",
+      "sha256": "9967a0fff73e8085c9ea77ff745408722426f56e167917bae4ed465517f4c438",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/menu-contract-tests/menu-regression-report.json",
+      "sha256": "3688f471d0b4d054ee9b1c9ab7e706db89c9e63c51d787d70f34920f771185f8",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/final-replay-contract-tests/capture-regression-report.json",
+      "sha256": "c62fa45c377b352675d3ab2780a972a107d4d15e367f62c70868b70c08ace3b5",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/mv3-scope-tests/finance-menu-mv3-report.json",
+      "sha256": "422e49ff936913c4d6dd9ca13d13aa86583de6f51dc6b8b6caf1aef5b2cb45b4",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/replay-contract-tests/capture-regression-report.json",
+      "sha256": "e01948bcd98b11c7438e6cf8d6595f05cb6383ef2661a128bdc8f9a47d953f09",
+      "status": "PASS"
+    },
+    {
+      "file": "artifacts/finance-menus-20261011T013504+0900/final-menu-contract-tests/menu-regression-report.json",
+      "sha256": "ba5c755d7794a66f920feccbc47873c7b9cf0dd4d935a089e2320fdf1f582c6c",
+      "status": "PASS"
+    }
+  ],
+  "captureCandidateCount": 442,
+  "newMenuCandidatesFixedAllowlistOnly": 5,
+  "originalCandidatesPreserved": 437,
+  "captureSafetyFlagsVerified": true,
+  "protectedCompleteReportsAndPreviousZipBytesUnchanged": [
+    "artifacts/finance-tests/live-report.json",
+    "finance-live-test-report.md",
+    "dist/impact-cn-mod-0.1.0.zip",
+    "dist/impact-cn-mod-0.2.0.zip",
+    "dist/impact-cn-mod-0.3.1.zip",
+    "dist/impact-cn-mod-0.4.0.zip",
+    "dist/impact-cn-mod-0.4.1.zip",
+    "dist/impact-cn-mod-0.5.0.zip",
+    "dist/impact-cn-mod-0.5.1.zip",
+    "dist/impact-cn-mod-0.5.2.zip"
+  ],
+  "screenshotsOrPixelsScanned": false,
+  "allHistoricalMaterialsScanned": false,
+  "privacyUnitTestsRerun": false,
+  "limits": "Selected UTF-8 content and safety flags only. No credentials, private rows, conversation or browser profile was exported. Historical or image content is not certified."
+}

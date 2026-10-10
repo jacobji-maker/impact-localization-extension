@@ -1,0 +1,241 @@
+{
+  "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+  "date": "2026-10-10T17:07:56.678Z",
+  "version": "0.5.3",
+  "dictionarySha256": "546fe5096aca3ecf351519e76433c90700521e2aed4d2611eba7f35f8db90229",
+  "operation": "acceptance",
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "savedSettings": 0,
+  "privateValuesReturned": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "initialSettingsSource": "coordinator verified initial runtime report",
+  "sessionRuntime": {
+    "runtime": {
+      "manifestVersion": "0.5.3",
+      "contentVersion": "0.5.3",
+      "translationEnabled": true,
+      "aiEnabled": true,
+      "errorPresent": false,
+      "extensionIdMatches": true,
+      "topPath": "/secure/advertiser/finance/fr/funding-accounts.ihtml"
+    },
+    "loadedExtension": {
+      "cardCount": 1,
+      "expectedCardCount": 1,
+      "cards": [
+        {
+          "expectedId": true,
+          "version": "0.5.3",
+          "sourcePathMatches": true,
+          "enabled": true,
+          "unpacked": true,
+          "pathFieldPresent": true
+        }
+      ]
+    }
+  },
+  "currentToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  },
+  "candidates": [
+    {
+      "source": "Edit",
+      "text": "Edit",
+      "normalizedText": "Edit",
+      "selector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown > div > div > ul.iui-list[role=\"listbox\"] > li:nth-of-type(1)[role=\"option\"] > div > span > regular-text > span",
+      "tag": "SPAN",
+      "frameURL": "https://demo.impact.com/secure/finance/app/billing-groups-view.ihtml",
+      "frameQuery": {},
+      "framePath": [
+        {
+          "selector": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > iframe:nth-of-type(1)",
+          "parentPath": "https://demo.impact.com/secure/advertiser/finance/fr/billing-groups.ihtml",
+          "framePath": "https://demo.impact.com/secure/finance/app/billing-groups-view.ihtml"
+        }
+      ],
+      "shadowPath": [],
+      "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "topPaths": [
+        "/secure/advertiser/finance/fr/billing-groups.ihtml"
+      ],
+      "topQuery": {
+        "u": "/secure/finance/app/billing-groups-view.ihtml"
+      },
+      "route": "billing-groups",
+      "kind": "control-label",
+      "observedStates": [
+        "deep-existing-entity-actions-menu"
+      ],
+      "menuEvidence": "unique new native Actions portal with fixed option sequence and one trusted opener click",
+      "ruleId": "finance-billing-groups-actions-edit-observed",
+      "privateValuesSaved": false
+    },
+    {
+      "source": "Partner Fees Document Settings",
+      "text": "Partner Fees Document Settings",
+      "normalizedText": "Partner Fees Document Settings",
+      "selector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown > div > div > ul.iui-list[role=\"listbox\"] > li:nth-of-type(2)[role=\"option\"] > div > span > regular-text > span",
+      "tag": "SPAN",
+      "frameURL": "https://demo.impact.com/secure/finance/app/billing-groups-view.ihtml",
+      "frameQuery": {},
+      "framePath": [
+        {
+          "selector": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > iframe:nth-of-type(1)",
+          "parentPath": "https://demo.impact.com/secure/advertiser/finance/fr/billing-groups.ihtml",
+          "framePath": "https://demo.impact.com/secure/finance/app/billing-groups-view.ihtml"
+        }
+      ],
+      "shadowPath": [],
+      "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "topPaths": [
+        "/secure/advertiser/finance/fr/billing-groups.ihtml"
+      ],
+      "topQuery": {
+        "u": "/secure/finance/app/billing-groups-view.ihtml"
+      },
+      "route": "billing-groups",
+      "kind": "control-label",
+      "observedStates": [
+        "deep-existing-entity-actions-menu"
+      ],
+      "menuEvidence": "unique new native Actions portal with fixed option sequence and one trusted opener click",
+      "ruleId": "finance-billing-groups-actions-partner-fees-document-settings-observed",
+      "privateValuesSaved": false
+    },
+    {
+      "source": "impact.com Fees Document Settings",
+      "text": "impact.com Fees Document Settings",
+      "normalizedText": "impact.com Fees Document Settings",
+      "selector": "body > div.iui-dropdown.in-btn-menu.row-action-dropdown > div > div > ul.iui-list[role=\"listbox\"] > li:nth-of-type(3)[role=\"option\"] > div > span > regular-text > span",
+      "tag": "SPAN",
+      "frameURL": "https://demo.impact.com/secure/finance/app/billing-groups-view.ihtml",
+      "frameQuery": {},
+      "framePath": [
+        {
+          "selector": "html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > iframe:nth-of-type(1)",
+          "parentPath": "https://demo.impact.com/secure/advertiser/finance/fr/billing-groups.ihtml",
+          "framePath": "https://demo.impact.com/secure/finance/app/billing-groups-view.ihtml"
+        }
+      ],
+      "shadowPath": [],
+      "topPath": "/secure/advertiser/finance/fr/billing-groups.ihtml",
+      "topPaths": [
+        "/secure/advertiser/finance/fr/billing-groups.ihtml"
+      ],
+      "topQuery": {
+        "u": "/secure/finance/app/billing-groups-view.ihtml"
+      },
+      "route": "billing-groups",
+      "kind": "control-label",
+      "observedStates": [
+        "deep-existing-entity-actions-menu"
+      ],
+      "menuEvidence": "unique new native Actions portal with fixed option sequence and one trusted opener click",
+      "ruleId": "finance-billing-groups-actions-impact-com-fees-document-settings-observed",
+      "privateValuesSaved": false
+    }
+  ],
+  "identityStates": [
+    {
+      "state": "OFF",
+      "baselinePresent": true,
+      "menuTextNodes": 3,
+      "entryIds": [
+        "finance-billing-groups-actions-edit-observed",
+        "finance-billing-groups-actions-partner-fees-document-settings-observed",
+        "finance-billing-groups-actions-impact-com-fees-document-settings-observed"
+      ],
+      "textNodesRetained": true,
+      "nativeElementsRetained": true,
+      "nativeChildrenRetained": true,
+      "changedNativeAttributes": 0,
+      "attributeChanges": [],
+      "targetMatchedNodes": 0,
+      "originalTextRestored": true,
+      "privateDataNodeCount": 11,
+      "privateDataUnchanged": true,
+      "inputCount": 6,
+      "inputsUnchanged": true,
+      "linkCount": 0,
+      "linksUnchanged": true,
+      "privateValuesReturned": false,
+      "inputValuesReturned": false
+    },
+    {
+      "state": "ON",
+      "baselinePresent": true,
+      "menuTextNodes": 3,
+      "entryIds": [
+        "finance-billing-groups-actions-edit-observed",
+        "finance-billing-groups-actions-partner-fees-document-settings-observed",
+        "finance-billing-groups-actions-impact-com-fees-document-settings-observed"
+      ],
+      "textNodesRetained": true,
+      "nativeElementsRetained": true,
+      "nativeChildrenRetained": true,
+      "changedNativeAttributes": 1,
+      "attributeChanges": [
+        {
+          "tag": "DIV",
+          "popupRoot": true,
+          "name": "style",
+          "changedStyleProperties": [
+            "left"
+          ],
+          "valuesReturned": false
+        }
+      ],
+      "targetMatchedNodes": 3,
+      "originalTextRestored": false,
+      "privateDataNodeCount": 11,
+      "privateDataUnchanged": true,
+      "inputCount": 6,
+      "inputsUnchanged": true,
+      "linkCount": 0,
+      "linksUnchanged": true,
+      "privateValuesReturned": false,
+      "inputValuesReturned": false
+    },
+    {
+      "state": "OFF_RESTORED",
+      "baselinePresent": true,
+      "menuTextNodes": 3,
+      "entryIds": [
+        "finance-billing-groups-actions-edit-observed",
+        "finance-billing-groups-actions-partner-fees-document-settings-observed",
+        "finance-billing-groups-actions-impact-com-fees-document-settings-observed"
+      ],
+      "textNodesRetained": true,
+      "nativeElementsRetained": true,
+      "nativeChildrenRetained": true,
+      "changedNativeAttributes": 0,
+      "attributeChanges": [],
+      "targetMatchedNodes": 0,
+      "originalTextRestored": true,
+      "privateDataNodeCount": 11,
+      "privateDataUnchanged": true,
+      "inputCount": 6,
+      "inputsUnchanged": true,
+      "linkCount": 0,
+      "linksUnchanged": true,
+      "privateValuesReturned": false,
+      "inputValuesReturned": false
+    }
+  ],
+  "nativeOffComplete": true,
+  "nativeOnComplete": true,
+  "status": "FAIL",
+  "failure": {
+    "errorType": "Error",
+    "reason": "Menu translation changed native identity, attributes or protected data"
+  },
+  "restoredToggles": {
+    "translationEnabled": true,
+    "aiEnabled": true
+  }
+}

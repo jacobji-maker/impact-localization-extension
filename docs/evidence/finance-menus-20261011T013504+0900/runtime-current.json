@@ -1,0 +1,39 @@
+{
+  "mode": "REAL_NETWORK_ENTITY_MENU_DIAGNOSTIC",
+  "date": "2026-10-10T16:38:46.217Z",
+  "version": "0.5.2",
+  "dictionarySha256": "d1dc3b519bf396f7ac359b941d526df59f17e1440cd382e638c8617daddcf868",
+  "operation": "runtime",
+  "financialOperations": 0,
+  "submittedForms": 0,
+  "savedSettings": 0,
+  "privateValuesReturned": false,
+  "screenshotsSaved": 0,
+  "fullConversationSaved": false,
+  "completePageCoverage": false,
+  "completeAcceptance": false,
+  "runtime": {
+    "manifestVersion": "0.5.2",
+    "contentVersion": "0.5.2",
+    "translationEnabled": true,
+    "aiEnabled": true,
+    "errorPresent": false,
+    "extensionIdMatches": true,
+    "topPath": "/secure/advertiser/engage/aview.ihtml"
+  },
+  "loadedExtension": {
+    "cardCount": 1,
+    "expectedCardCount": 1,
+    "cards": [
+      {
+        "expectedId": true,
+        "version": "0.5.2",
+        "sourcePathMatches": true,
+        "enabled": true,
+        "unpacked": true,
+        "pathFieldPresent": true
+      }
+    ]
+  },
+  "status": "OBSERVED"
+}

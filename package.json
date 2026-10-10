@@ -1,0 +1,35 @@
+{
+  "name": "impact-cn-extension",
+  "version": "0.5.3",
+  "private": true,
+  "description": "Impact 真实站点精细汉化插件与浏览器回归",
+  "scripts": {
+    "test": "node scripts/verify-project.mjs",
+    "verify": "node scripts/verify-project.mjs",
+    "verify:static": "node scripts/verify-project.mjs --skip-browser",
+    "test:shadow": "node scripts/verify-project.mjs --only shadow",
+    "test:extension": "node scripts/verify-project.mjs --only controls",
+    "test:header": "node scripts/verify-project.mjs --only header",
+    "test:finance": "node scripts/verify-project.mjs --only finance",
+    "test:form": "node scripts/verify-project.mjs --only form",
+    "test:new-entries": "node scripts/verify-project.mjs --only new-entries",
+    "test:capture": "node scripts/verify-project.mjs --only capture",
+    "test:menu": "node scripts/verify-project.mjs --only menu",
+    "test:menu:mv3": "node scripts/verify-project.mjs --only menu-mv3",
+    "test:privacy": "node scripts/verify-project.mjs --only privacy",
+    "test:package": "python3 tests/package-regression.py",
+    "browser:install": "playwright-core install chromium",
+    "test:live": "node scripts/live-impact-test.mjs --manual-login",
+    "test:header:live": "node scripts/header-live-test.mjs --manual-login",
+    "test:finance:live": "node scripts/finance-session.mjs --manual-login",
+    "test:legacy-fixture": "node tests/run.mjs",
+    "serve:legacy-demo": "python3 scripts/serve-demo.py",
+    "package": "python3 scripts/package-extension.py"
+  },
+  "devDependencies": {
+    "playwright-core": "1.62.1"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

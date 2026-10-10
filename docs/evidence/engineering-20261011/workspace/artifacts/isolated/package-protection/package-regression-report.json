@@ -1,0 +1,23 @@
+{
+  "mode": "SYNTHETIC_ISOLATED_PACKAGE_ONLY",
+  "status": "PASS",
+  "version": "0.5.3",
+  "realSiteAcceptance": false,
+  "realNetworkQueries": false,
+  "originalDistAccessed": false,
+  "packageSHA256": "513d77a17235a5ddec56145e0653fed8d483783a1c8298f120d022b1e9987d41",
+  "results": [
+    {
+      "name": "New ZIP has root manifest, twelve source-identical files and valid CRC",
+      "status": "PASS"
+    },
+    {
+      "name": "Identical same-version package is reused without changing mtime",
+      "status": "PASS"
+    },
+    {
+      "name": "Different same-version package is rejected and original ZIP retained",
+      "status": "PASS"
+    }
+  ]
+}
