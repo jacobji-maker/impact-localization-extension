@@ -185,6 +185,12 @@
       }
       if (scope.topOnly === true && window !== window.top) return false;
       if (scope.lightDOMOnly === true && element.getRootNode() !== document) return false;
+      if (scope.contextText && !scope.contextText.every((context) => {
+        const root = context.closest ? element.closest(context.closest) : element.getRootNode();
+        if (!root || !Array.isArray(context.texts) || !context.texts.length) return false;
+        const matches = root.querySelectorAll(context.selector);
+        return matches.length === 1 && context.texts.some((text) => normalize(text) === normalize(matches[0].textContent || ""));
+      })) return false;
       if (scope.shadowHost) {
         let root = element.getRootNode();
         let matched = false;
@@ -422,8 +428,18 @@
     if (observedRoots.has(root)) return false;
     const observer = new MutationObserver((mutations) => {
       for (const mutation of mutations) {
-        if (mutation.type === "attributes") { schedule(mutation.target); continue; }
+        if (mutation.type === "attributes") {
+          schedule(mutation.target);
+          // Native IUI menus can be pre-mounted outside their focused button.
+          // Recheck their existing Text when that button changes menu scope.
+          if (mutation.attributeName === "class" && mutation.target.matches("button.iui-multi-select-input-button")) {
+            for (const portal of root.querySelectorAll(".iui-dropdown.in-multiselect-input, #app ~ .iui-dropdown")) schedule(portal);
+          }
+          continue;
+        }
         if (skipped(mutation.target)) continue;
+        const fieldButton = elementFor(mutation.target)?.closest(".uicc-grouped-input");
+        if (fieldButton) schedule(fieldButton.closest(".uicc-partner-input-row"));
         if (mutation.type === "characterData") schedule(mutation.target);
         else {
           for (const node of mutation.addedNodes) schedule(node);

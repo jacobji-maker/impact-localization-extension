@@ -1,4 +1,4 @@
-/* Forward a finance iframe's concept question to the existing top-level AI. */
+/* Forward an observed iframe's concept question to the existing top-level AI. */
 "use strict";
 
 importScripts("dict.js");
@@ -31,7 +31,13 @@ chrome.runtime.onMessage.addListener((message, sender, respond) => {
   try { url = new URL(sender.url); } catch { respond({ ok: false, reason: "invalid-frame" }); return false; }
   const allowed = sender.id === chrome.runtime.id && sender.tab?.id !== undefined && sender.frameId > 0
     && ["app.impact.com", "demo.impact.com"].includes(url.hostname) && url.protocol === "https:"
-    && ["/secure/finance/app/", "/secure/advertiser/finance/", "/secure/advertiser/Adv_Finance_Report/"].some((path) => url.pathname.startsWith(path))
+    && (["/secure/finance/app/", "/secure/advertiser/finance/", "/secure/advertiser/Adv_Finance_Report/"].some((path) => url.pathname.startsWith(path))
+      || [
+        "/secure/compliance/data/social-listening-flow.ihtml",
+        "/secure/compliance/view/paid-search-monitor-controller.ihtml",
+        "/secure/compliance/view/search-monitor-violations-controller.ihtml",
+        "/secure/compliance/view/policy-controller.ihtml"
+      ].includes(url.pathname))
     && typeof message.topicId === "string" && /^[a-z0-9-]{1,100}$/u.test(message.topicId);
   if (!allowed) { respond({ ok: false, reason: "invalid-frame" }); return false; }
   let top;

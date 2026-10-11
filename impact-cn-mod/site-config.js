@@ -22,9 +22,9 @@ globalThis.IMPACT_CN_CONFIG = {
   assistant: true,
   assistantAvoidSelectors: [".finance-bubble"],
   localization: {
-    rootSelectors: ["#vueInstance", "#uitk-container", "#adv-navigation impact-style-isolator", "snapshot-chart-shadow", ".iui-calendar-range"],
+    rootSelectors: ["#vueInstance", "#uitk-container", "#custom-report-builder", "#impact-reporting", ".modal[role=\"dialog\"]", ".modal-container", ".popup--E5fa0", ".baseFilterPopup--ie_2Y", ".reportPopWindow", ".DropdownMenuContent[role=\"dialog\"]", ".iui-side-modal", "[data-testid=\"uicl-manage-label-widget\"]", "[data-testid=\"uicl-side-modal\"]", ".uicc-grouped-dropdown", "#sb_widget #NEW_CHAT .chat-board-footer", "#sb_widget #NEW_CHAT > .top .buttons", ".custom_filter_slideout", "[data-testid=\"table-view-select-list\"]", ".iui-dropdown.in-multiselect-input", ".iui-dropdown.in-btn-menu", ".x-menu", "#impact-ap-shadow", "#impact-offers-shadow-host", "#adv-navigation impact-style-isolator", "snapshot-chart-shadow", ".iui-calendar-range"],
     financePaths: ["/secure/advertiser/finance/", "/secure/advertiser/Adv_Finance_Report/", "/secure/finance/app/"],
-    ignoreSelectors: [".partner-name", ".avatar-container", ".account-btn", ".profileBtn", "#ask-impact-shadow-host"]
+    ignoreSelectors: [".partner-name", ".avatar-container", ".account-btn", ".profileBtn", ".fr-element", ".fr-view", "#ask-impact-shadow-host"]
   },
   ai: {
     rootSelectors: ["#ask-impact-shadow-host"],
