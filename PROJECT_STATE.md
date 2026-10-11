@@ -25,6 +25,6 @@ Mac 仍锁屏，浏览器实际运行 **0.5.6**；两个开关已恢复 **ON/ON*
 
 财务暂放下：不查询、不选择付款账户、不进入 Pending Payouts。保留已译固定标题，不追查 demo 财务结果。尊重草稿、禁用状态和取消请求；不点击业务最终提交。
 
-用户已授权本轮上传私有 GitHub。默认仍不擅自提交后续工作，不回滚、stash 或清理 artifacts/dist；旧包和报告保留。GitHub main 的实际上传结果在交付后核对，不以本文件猜测远端状态。
+本轮已按用户授权上传私有 GitHub `main`，0.6.0 源码提交 `c68091f`。远端树与本地文件一致，本地 main 同步，工作区干净。默认不擅自提交后续工作，不回滚、stash 或清理 artifacts/dist；旧包和报告保留。
 
 历史财务结论仍为 0.5.2 的 13 PASS / 2 FAIL；0.5.3 严格菜单属性 FAIL 保留，不阻塞开发。[旧覆盖记录](docs/product-pages-coverage-20261011.md) 和 [合同记录](docs/contracts-menu-coverage-20261011.md) 按需阅读，不默认加载全部历史报告。
