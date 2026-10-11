@@ -6,7 +6,7 @@
  * stage/verification 只表示采集范围，不能替代扩展实网验收。
  */
 globalThis.IMPACT_CN_DICTIONARY = Object.freeze({
-  "version": "0.6.0",
+  "version": "0.6.1",
   "locale": "zh-CN",
   "updatedAt": "2026-10-11",
   "context": "真实品牌侧Dashboard、共享导航/顶栏、财务已观察正文及本轮Engage/Discover/Contribution固定控件；精确document与顶层路径、必要查询、DOM组件与Shadow宿主限定，保留业务数据，原生Ask Impact解释单一概念。",
@@ -65597,7 +65597,7 @@ globalThis.IMPACT_CN_DICTIONARY = Object.freeze({
         "topOnly": true,
         "lightDOMOnly": true,
         "pathExact": "/secure/advertiser/fr/ps-bar-ui.ihtml",
-        "selector": "button[data-testid=\"uicl-button\"],button[data-testid=\"buttonTabsTab\"],[data-testid^=\"uicl-data-table-column-label-\"]",
+        "selector": "button[data-testid=\"uicl-button\"],button[data-testid=\"buttonTabsTab\"],[data-testid^=\"uicl-data-table-column-label-\"],#main-content button[data-testid=\"uicl-multi-select-input-button\"]",
         "query": {
           "route": "/workflows"
         }
@@ -112201,6 +112201,29 @@ globalThis.IMPACT_CN_DICTIONARY = Object.freeze({
         ]
       },
       "match": "exact"
+    },
+    {
+      "id": "engage-workflows-sort-label-order",
+      "source": "Order",
+      "target": "排序",
+      "reason": "工作流列表实际排序控件的固定标题，保留选中值及业务名称。",
+      "reviewStatus": "reviewed",
+      "stage": "native-engage",
+      "verification": "observed-dom",
+      "match": "exact",
+      "scope": {
+        "hosts": [
+          "demo.impact.com",
+          "app.impact.com"
+        ],
+        "pathExact": "/secure/advertiser/fr/ps-bar-ui.ihtml",
+        "query": {
+          "route": "/workflows"
+        },
+        "topOnly": true,
+        "lightDOMOnly": true,
+        "selector": "#main-content button[data-testid=\"uicl-multi-select-input-button\"]"
+      }
     }
   ],
   "helpTopics": [

@@ -33,6 +33,7 @@ chrome.runtime.onMessage.addListener((message, sender, respond) => {
     && ["app.impact.com", "demo.impact.com"].includes(url.hostname) && url.protocol === "https:"
     && (["/secure/finance/app/", "/secure/advertiser/finance/", "/secure/advertiser/Adv_Finance_Report/"].some((path) => url.pathname.startsWith(path))
       || [
+        "/secure/datalab/datalab.html",
         "/secure/compliance/data/social-listening-flow.ihtml",
         "/secure/compliance/view/paid-search-monitor-controller.ihtml",
         "/secure/compliance/view/search-monitor-violations-controller.ihtml",
