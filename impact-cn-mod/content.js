@@ -435,6 +435,9 @@
           if (mutation.attributeName === "class" && mutation.target.matches("button.iui-multi-select-input-button")) {
             for (const portal of root.querySelectorAll(".iui-dropdown.in-multiselect-input, #app ~ .iui-dropdown")) schedule(portal);
           }
+          if (mutation.attributeName === "class" && mutation.target.matches("#templateContainer .iui-tab-item button")) {
+            for (const portal of root.querySelectorAll(".iui-dropdown.in-btn-menu")) schedule(portal);
+          }
           continue;
         }
         if (skipped(mutation.target)) continue;

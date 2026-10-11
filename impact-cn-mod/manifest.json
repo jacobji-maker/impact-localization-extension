@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "汉化助手",
-  "version": "0.6.1",
+  "version": "0.6.5",
   "description": "按功能语境校准 Impact 页面术语，并将预设问题发送给页面已有的 AI 助手。",
   "permissions": [
     "storage"

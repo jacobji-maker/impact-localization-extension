@@ -1,6 +1,6 @@
 {
   "name": "impact-cn-extension",
-  "version": "0.6.1",
+  "version": "0.6.5",
   "private": true,
   "description": "Impact 真实站点精细汉化插件与浏览器回归",
   "scripts": {

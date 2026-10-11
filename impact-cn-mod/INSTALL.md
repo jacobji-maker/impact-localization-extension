@@ -1,6 +1,6 @@
 # 汉化助手安装与使用
 
-版本：0.6.1 · Chrome Manifest V3
+版本：0.6.5 · Chrome Manifest V3
 
 为 Impact 品牌端提供中文界面和术语帮助，支持 `demo.impact.com` 与 `app.impact.com`。汉化在本地执行，概念问号使用页面已有的 Ask Impact。
 
@@ -8,7 +8,7 @@
 
 ## 安装
 
-1. 将 `impact-cn-mod-0.6.1.zip` 解压到固定位置，或使用仓库中的 `impact-cn-mod/`。
+1. 将 `impact-cn-mod-0.6.5.zip` 解压到固定位置，或使用仓库中的 `impact-cn-mod/`。
 2. 在 Chrome 地址栏输入 `chrome://extensions/`。
 3. 开启右上角“开发者模式”，点击“加载已解压的扩展程序”。
 4. 选择直接包含 `manifest.json` 的文件夹。
