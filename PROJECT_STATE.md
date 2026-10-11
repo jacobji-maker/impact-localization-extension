@@ -25,6 +25,6 @@
 
 财务暂放下：不查询、不选择付款账户、不进入 Pending Payouts。保留已译固定标题，不追查 demo 财务结果。尊重草稿、禁用状态和取消请求；不点击业务最终提交。
 
-GitHub `main` 本节点将同步已核对的 0.6.2–0.6.5 源码和说明；2026-10-11 用户已明确授权完成必要检查后提交并推送现有 `jacobji-maker/impact-localization-extension`，无需重复询问。提交/推送实际结果在本节点完成后记录。只包含本项目已核对的修改，凭据、会话、私人业务材料和忽略的 artifacts/dist 不纳入；不强推、不回滚、stash 或清理旧包和报告。
+2026-10-11，已按用户授权通过现有 GitHub 连接将 0.6.2–0.6.5 已核对源码与说明提交并同步至 `jacobji-maker/impact-localization-extension` 的 `main`，源码提交 [`8782b8c`](https://github.com/jacobji-maker/impact-localization-extension/commit/8782b8cec886390d30deb1ca37a0d0cfe834b7d9)。远端按预期旧 SHA 校验并向前更新，本地导入同一提交对象，文件树一致；CLI HTTPS 缺少认证，因此实际同步使用 GitHub 连接。此交付记录随后单独提交同步。只包含 15 个已核对项目文件，凭据、会话、私人业务材料及忽略的 artifacts/dist 未纳入；未强推、回滚、stash 或清理旧包和报告。
 
 历史财务结论仍为 0.5.2 的 13 PASS / 2 FAIL；0.5.3 严格菜单属性 FAIL 保留，不阻塞开发。[旧覆盖记录](docs/product-pages-coverage-20261011.md) 和 [合同记录](docs/contracts-menu-coverage-20261011.md) 按需阅读，不默认加载全部历史报告。

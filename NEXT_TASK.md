@@ -11,6 +11,6 @@
 
 默认只做语法、直接受影响功能和必要隐私/交付包检查。新版本用 python3 scripts/package-extension.py 打包并保留旧包；核对根 manifest、资源、源码字节一致和脱敏。打包前冻结扩展目录，不覆盖旧 ZIP。
 
-本节点已获用户授权同步 0.6.2–0.6.5 的已确认源码与说明到 GitHub main；实际提交/推送结果见 PROJECT_STATE.md 并核对 Git。不得强推或提交 artifacts/dist、会话和私人材料，不回滚、stash 或清理旧证据。Coordinator 独占共享文件和浏览器；旧采集入口需 fresh import，避免覆盖已净化记录。
+本节点按用户授权已通过现有 GitHub 连接将 0.6.2–0.6.5 的已确认源码与说明同步至 main，源码提交 8782b8c；交付记录另行同步。开始下一轮仍核对 PROJECT_STATE.md 和 Git。不得强推或提交 artifacts/dist、会话和私人材料，不回滚、stash 或清理旧证据。Coordinator 独占共享文件和浏览器；旧采集入口需 fresh import，避免覆盖已净化记录。
 
 0.6.4 的追踪、Creator、Marketplace 和零售短查保留为历史；0.5.2 财务 13 PASS / 2 FAIL、0.5.3 严格菜单属性 FAIL 不作当前版本验收，也不阻塞功能开发。app.impact.com 和全量回归未检查。

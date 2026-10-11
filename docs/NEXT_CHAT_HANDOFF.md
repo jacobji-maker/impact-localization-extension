@@ -25,6 +25,6 @@ Data Lab 自定义报表补 288 个标准字段、条件编辑器和 5 个比较
 
 财务暂放下，不查询、不选择付款或资助账户、不进入 Pending Payouts。合同可看未提交表单，保留“分组设置佣金”“（从下个月月初开始）”。问号使用平台原生 Ask Impact，尊重草稿、禁用状态和取消请求。
 
-2026-10-11 用户已明确授权在此可用版本节点完成必要检查和打包后，将已核对的 0.6.2–0.6.5 源码与说明提交、推送至现有 `jacobji-maker/impact-localization-extension` main；无需重复询问。实际结果记录在 PROJECT_STATE.md，并重新核对 Git。忽略的 artifacts/dist、凭据、会话和私人材料不纳入；不强推、不回滚、stash 或清理旧证据。打包前冻结源码，子 Agent 仅写独占候选文件；旧采集工具需 fresh import。
+2026-10-11 按用户已有授权完成必要检查和打包后，已通过现有 GitHub 连接将核对的 0.6.2–0.6.5 源码与说明提交、同步至 `jacobji-maker/impact-localization-extension` main，源码提交 8782b8c，本地与远端文件树一致；交付记录另行同步。CLI HTTPS 缺少认证，没有索取或导出凭据。实际结果见 PROJECT_STATE.md，下一轮仍重新核对 Git。忽略的 artifacts/dist、凭据、会话和私人材料未纳入；未强推、回滚、stash 或清理旧证据。扩展打包后冻结；旧采集工具需 fresh import。
 
 历史 0.5.2 财务 13 PASS / 2 FAIL、0.5.3 菜单严格属性 FAIL 保留，不阻塞开发。生产域与全量回归未检查，不做自动验收扩展。
