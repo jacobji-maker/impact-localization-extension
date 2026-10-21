@@ -193,8 +193,31 @@ try{
   await page.evaluate(()=>{const li=document.createElement('li');const a=document.createElement('a');a.textContent='Other Fixture Account';li.append(a);document.querySelector('ul div div').append(li);});const duplicate=await page.evaluate(inspectFinanceControls,{kind:'new-option'});assert.equal(duplicate.candidates.length,2);
  });
  await check('Persistent loaders and stale headers cannot complete a read-only query and never retry Apply',async()=>{
-  const handle='adv_upcoming_payouts';await page.goto('https://demo.impact.com'+reportPaths[handle]+'?handle='+handle);await page.evaluate(inspectFinanceControls,{kind:'mark-report-query-baseline'});await page.evaluate(()=>{document.querySelector('.loader--XmNTN').hidden=false;document.querySelector('.headerRowSolo--FHRlr').textContent='';});await assert.rejects(()=>waitForReadOnlyReportResult({page,frame:page.mainFrame(),inspectControls:inspectFinanceControls,timeoutMs:450}),/completed result/);assert.equal(await page.evaluate(()=>window.counts.queries),0);
-  await page.goto('https://demo.impact.com'+reportPaths[handle]+'?handle='+handle);await page.evaluate(()=>{const header=document.createElement('div');header.textContent='Payouts';document.querySelector('.headerRowSolo--FHRlr').append(header);});await page.evaluate(inspectFinanceControls,{kind:'mark-report-query-baseline'});await assert.rejects(()=>waitForReadOnlyReportResult({page,frame:page.mainFrame(),inspectControls:inspectFinanceControls,timeoutMs:450}),/completed result/);assert.equal(await page.evaluate(()=>window.counts.queries),0);
+  const handle='adv_upcoming_payouts';
+  for(const variant of ['persistent-loader','stale-header']){
+   await page.goto('https://demo.impact.com'+reportPaths[handle]+'?handle='+handle);
+   if(variant==='stale-header')await page.evaluate(()=>{const header=document.createElement('div');header.textContent='Payouts';document.querySelector('.headerRowSolo--FHRlr').append(header);});
+   await page.evaluate(inspectFinanceControls,{kind:'mark-report-query-baseline'});
+   if(variant==='persistent-loader')await page.evaluate(()=>{document.querySelector('.loader--XmNTN').hidden=false;document.querySelector('.headerRowSolo--FHRlr').textContent='';});
+   const frame=page.mainFrame(),initial=await frame.evaluate(inspectFinanceControls,{kind:'report-query-state'});
+   const assertIncomplete=state=>{assert.equal(state.authorizedReport,true);assert.equal(state.queryCompleted,false);assert.equal(state.loaderVisibleCount,variant==='persistent-loader'?1:0);assert.equal(state.fixedHeaderNodeCount,variant==='stale-header'?1:0);assert.equal(state.resultChanged,variant==='persistent-loader');};
+   assertIncomplete(initial);let inspections=0;
+   const observedFrame={evaluate:async(fn,args)=>{inspections++;const state=await frame.evaluate(fn,args);assertIncomplete(state);return state;}};
+   // Near the deadline, the remaining budget can expire during the next DOM round trip.
+   // Both precise fail-closed exits are valid; neither is a completed query or an Apply retry.
+   await assert.rejects(()=>waitForReadOnlyReportResult({page,frame:observedFrame,inspectControls:inspectFinanceControls,timeoutMs:450}),error=>error.safeFinanceAssertion===true&&/^Read-only report (?:Apply did not render a completed result within the bounded wait|DOM inspection timed out); no query retry performed$/u.test(error.message));
+   assert(inspections>0);assert.equal(await page.evaluate(()=>window.counts.queries),0);assert.equal(await page.evaluate(()=>window.counts.writes),0);
+  }
+ });
+ await check('Read-only report deadlines reject incomplete and stalled inspections through their distinct safe exits',async()=>{
+  for(const stalled of [false,true]){
+   let inspections=0,waits=0;
+   const frame={evaluate:()=>{inspections++;return stalled?new Promise(()=>{}):Promise.resolve({authorizedReport:true,queryCompleted:false});}};
+   const boundedPage={waitForTimeout:async()=>{waits++;await new Promise(resolve=>setTimeout(resolve,60));}};
+   const expected=stalled?'Read-only report DOM inspection timed out; no query retry performed':'Read-only report Apply did not render a completed result within the bounded wait; no query retry performed';
+   await assert.rejects(()=>waitForReadOnlyReportResult({page:boundedPage,frame,inspectControls:inspectFinanceControls,timeoutMs:25}),error=>error.safeFinanceAssertion===true&&error.message===expected);
+   assert.equal(inspections,1);assert.equal(waits,stalled?0:1);
+  }
  });
  await check('Fixed Type enums require baseline/control/path evidence and User Initiated never receives an enum exemption',async()=>{
   await page.goto('https://demo.impact.com/secure/finance/app/manage-partner-funds-transfer-flow.ihtml');await page.evaluate(()=>{const button=document.createElement('button');button.type='button';button.textContent='Type';button.id='type-filter';document.body.append(button);});

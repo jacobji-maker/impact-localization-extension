@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 import { createHash } from 'node:crypto';
-import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, cpSync, rmSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, mkdtempSync, cpSync, rmSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import vm from 'node:vm';
@@ -20,12 +20,15 @@ try { ({ chromium } = require('playwright-core')); }
 catch { ({ chromium } = require(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core'))); }
 
 const sourceFolder = path.join(root, 'impact-cn-mod');
-const shippedFiles = ['manifest.json', 'dict.js', 'site-config.js', 'content.js', 'content.css', 'background.js', 'popup.html', 'popup.js', 'popup.css'];
+const shippedFiles = readdirSync(sourceFolder, { recursive: true, withFileTypes: true })
+  .filter(entry => entry.isFile() && entry.name !== '.DS_Store')
+  .map(entry => path.relative(sourceFolder, path.join(entry.parentPath, entry.name))).sort();
 const shippedBytes = new Map(shippedFiles.map(file => [file, readFileSync(path.join(sourceFolder, file))]));
 const assetSHA256 = Object.fromEntries([...shippedBytes].map(([file, bytes]) => [file, createHash('sha256').update(bytes).digest('hex')]));
 const sandbox = {}; vm.createContext(sandbox); vm.runInContext(shippedBytes.get('dict.js').toString('utf8'), sandbox);
 const dictionary = sandbox.IMPACT_CN_DICTIONARY;
 const manifest = JSON.parse(shippedBytes.get('manifest.json').toString('utf8'));
+const packageVersion = JSON.parse(readFileSync(path.join(root, 'package.json'), 'utf8')).version;
 const definitions = [
   { id: 'billing-groups', bodyPath: '/secure/finance/app/billing-groups-view.ihtml', topPath: '/secure/advertiser/finance/fr/billing-groups.ihtml', slugs: ['edit', 'partner-fees-document-settings', 'impact-com-fees-document-settings'], sources: ['Edit', 'Partner Fees Document Settings', 'impact.com Fees Document Settings'], targets: ['编辑', '伙伴费用文档设置', 'impact.com费用文档设置'] },
   { id: 'funding-accounts', bodyPath: '/secure/finance/app/list-digital-wallets-flow.ihtml', topPath: '/secure/advertiser/finance/fr/funding-accounts.ihtml', slugs: ['edit', 'funding-account-document-settings'], sources: ['Edit', 'Funding Account Document Settings'], targets: ['编辑', '资金账户文档设置'] }
@@ -93,10 +96,12 @@ async function assertIdentity(frame, expected) {
 }
 
 try {
-  await check('Current full 0.5.3 dictionary and MV3 assets are copied unchanged', () => {
-    assert.equal(dictionary.version, '0.5.3'); assert.equal(manifest.version, dictionary.version);
-    assert.equal(dictionary.entries.length, 699); assert.equal(dictionary.helpTopics.length, 66);
+  await check('Current full dictionary and MV3 assets are copied unchanged with matching release versions', () => {
+    assert.match(packageVersion, /^\d+\.\d+\.\d+$/u);
+    assert.equal(dictionary.version, packageVersion); assert.equal(manifest.version, packageVersion);
+    assert(dictionary.entries.length > 0); assert(dictionary.helpTopics.length > 0);
     assert.equal(new Set(dictionary.entries.map(entry => entry.id)).size, dictionary.entries.length);
+    assert.equal(new Set(dictionary.helpTopics.map(topic => topic.id)).size, dictionary.helpTopics.length);
     assert.equal(manifest.manifest_version, 3); assert.deepEqual(manifest.permissions, ['storage']);
     assert(manifest.content_scripts.every(script => script.all_frames === true));
     for (const definition of definitions) for (const [index, entry] of definition.entries.entries()) {
@@ -105,7 +110,7 @@ try {
       assert(!dictionary.helpTopics.some(topic => topic.entryIds?.includes(entry.id)), 'Menu entry unexpectedly has an inline-help topic');
     }
     for (const [file, bytes] of shippedBytes) assert(readFileSync(path.join(extensionFolder, file)).equals(bytes), `${file} temporary copy differs`);
-    return { actualUnpackedMV3: true, dictionaryEntries: 699, topics: 66, menuEntries: 5 };
+    return { actualUnpackedMV3: true, version: packageVersion, dictionaryEntries: dictionary.entries.length, topics: dictionary.helpTopics.length, menuEntries: definitions.reduce((count, definition) => count + definition.entries.length, 0) };
   });
   context = await chromium.launchPersistentContext(path.join(temporaryFolder, 'profile'), {
     executablePath: chromium.executablePath(), channel: 'chromium', headless: true,

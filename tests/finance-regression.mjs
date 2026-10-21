@@ -15,6 +15,9 @@ try { ({ chromium } = require('playwright-core')); }
 catch { ({ chromium } = require(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core'))); }
 const sandbox = {}; vm.createContext(sandbox); vm.runInContext(readFileSync(path.join(root, 'impact-cn-mod/dict.js'), 'utf8'), sandbox);
 const shipped = sandbox.IMPACT_CN_DICTIONARY;
+const configSandbox = {}; vm.createContext(configSandbox); vm.runInContext(readFileSync(path.join(root, 'impact-cn-mod/site-config.js'), 'utf8'), configSandbox);
+const shippedGuidance = configSandbox.IMPACT_CN_CONFIG.guidance;
+assert(shippedGuidance?.targets?.['6a']?.openedPaths && shippedGuidance.testsPaths, 'The fixture must retain the current guidance adapter contract');
 const manifest = JSON.parse(readFileSync(path.join(root, 'impact-cn-mod/manifest.json'), 'utf8'));
 const folder = path.join(root, 'artifacts/finance-tests'); mkdirSync(folder, { recursive: true });
 const workspace = mkdtempSync(path.join(os.tmpdir(), 'impact-finance-mechanism-'));
@@ -41,9 +44,11 @@ const otherTop='/secure/advertiser/finance/fr/another-shell.ihtml';
 for(const [id,topicId,scope]of[['finance-unit-other-shell-entry',otherTopic.id,{...baseScope,topPaths:[otherTop]}],['finance-unit-split-source',splitTopic.id,{...baseScope,topPaths:[otherTop]}],['finance-unit-split-top',splitTopic.id,{...baseScope,pathExact:'/secure/finance/app/another-document.ihtml'}]])unitEntries.push({id,source:'Unrendered fixture concept',target:'未渲染概念',match:'exact',helpTopicId:topicId,scope:{...scope,selector:'.unrendered-fixture'}});
 for(const entry of unitEntries)if(topic.entryIds.includes(entry.id))entry.helpTopicId=topic.id;
 const malformedCounts=['Displaying: 10,20 - 30 of 100','Displaying: 1,,000 - 2 of 3','Displaying: 1, - 2 of 3','Displaying: 1 - 2 of ,100','Displaying: 1234,567 - 8 of 9'];
-// Only the test dictionary and adapter differ. Shipped engine/worker/manifest are copied byte-for-byte.
+// Only the test dictionary and finance/AI adapter differ. Keep the shipped
+// guidance adapter alongside its unchanged manifest-loaded guidance module.
+// Shipped engine/worker/manifest are copied byte-for-byte.
 writeFileSync(path.join(extensionPath, 'dict.js'), `globalThis.IMPACT_CN_DICTIONARY=${JSON.stringify({ version: shipped.version, entries: unitEntries, helpTopics: [topic,otherTopic,splitTopic,topOnlyTopic] })};\n`);
-writeFileSync(path.join(extensionPath, 'site-config.js'), `globalThis.IMPACT_CN_CONFIG=${JSON.stringify({ assistant: true, assistantAvoidSelectors: ['.finance-bubble'], localization: { rootSelectors: ['#unit-finance-root'], ignoreSelectors: ['#ask-impact-shadow-host'] }, ai: { rootSelectors: ['#ask-impact-shadow-host'], openerIndicatesClosed: false, inputSelectors: ['textarea[placeholder="ask impact..."]'], sendSelectors: ['button[aria-label="Send"]'], openerSelectors: ['button[aria-label="Open Ask Impact"]'] } })};
+writeFileSync(path.join(extensionPath, 'site-config.js'), `globalThis.IMPACT_CN_CONFIG=${JSON.stringify({ assistant: true, guidance: shippedGuidance, assistantAvoidSelectors: ['.finance-bubble'], localization: { rootSelectors: ['#unit-finance-root'], ignoreSelectors: ['#ask-impact-shadow-host'] }, ai: { rootSelectors: ['#ask-impact-shadow-host'], openerIndicatesClosed: false, inputSelectors: ['textarea[placeholder="ask impact..."]'], sendSelectors: ['button[aria-label="Send"]'], openerSelectors: ['button[aria-label="Open Ask Impact"]'] } })};
 // Isolated fixture adapter exposes only test messages, never a product API.
 window.addEventListener('message',async event=>{if(event.source!==window||event.origin!==location.origin||!event.data?.__financeUnitProbe)return;const {token,topicId}=event.data.__financeUnitProbe;const result=await chrome.runtime.sendMessage({type:'impact-cn:frame-ask-topic',topicId,ignoredFixtureField:'discard-me'});window.postMessage({__financeUnitResult:{token,result}},location.origin);});\n`);
 const results = [];
