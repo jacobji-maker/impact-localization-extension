@@ -1,6 +1,6 @@
 {
   "name": "impact-cn-extension",
-  "version": "0.6.5",
+  "version": "0.9.10",
   "private": true,
   "description": "Impact 真实站点精细汉化插件与浏览器回归",
   "scripts": {
@@ -18,6 +18,8 @@
     "test:menu:mv3": "node scripts/verify-project.mjs --only menu-mv3",
     "test:privacy": "node scripts/verify-project.mjs --only privacy",
     "test:package": "python3 tests/package-regression.py",
+    "test:account-settings": "node tests/account-settings-regression.mjs",
+    "test:onboarding": "node tests/onboarding-regression.mjs",
     "browser:install": "playwright-core install chromium",
     "test:live": "node scripts/live-impact-test.mjs --manual-login",
     "test:header:live": "node scripts/header-live-test.mjs --manual-login",

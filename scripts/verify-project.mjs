@@ -132,11 +132,14 @@ archive=root/'dist'/('impact-cn-mod-'+manifest['version']+'.zip')
 expected={p.relative_to(source).as_posix():p.read_bytes() for p in source.rglob('*') if p.is_file() and p.name!='.DS_Store'}
 required={'manifest.json'}
 required.add(manifest['background']['service_worker']); required.add(manifest['action']['default_popup'])
+required.update(manifest.get('icons',{}).values())
+action_icons=manifest['action'].get('default_icon',{})
+required.update(action_icons.values() if isinstance(action_icons,dict) else [action_icons])
 for group in manifest['content_scripts']: required.update(group.get('js',[])); required.update(group.get('css',[]))
 html=(source/manifest['action']['default_popup']).read_text()
 for value in re.findall(r"""(?:src|href)=["']([^"']+)["']""",html):
  if not re.match(r'^(?:https?:|data:|#)',value): required.add(value)
-assert len(expected)==12 and required.issubset(expected), 'Unexpected packaged files or missing resources'
+assert required.issubset(expected), 'Missing packaged resources'
 with zipfile.ZipFile(archive) as bundle:
  assert bundle.testzip() is None, 'ZIP CRC failure'
  assert len(bundle.namelist())==len(expected) and set(bundle.namelist())==set(expected), 'ZIP resource mismatch'

@@ -9,6 +9,8 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const reportArgument = process.argv.find(argument => argument.startsWith('--report-dir='))?.slice('--report-dir='.length);
+const reportDir = reportArgument ? path.resolve(root, reportArgument) : path.join(root, 'artifacts');
 const require = createRequire(import.meta.url);
 let chromium;
 try { ({ chromium } = require('playwright-core')); }
@@ -137,15 +139,15 @@ try {
 } finally {
   if (context) await context.close(); rmSync(profile, { recursive: true, force: true });
 }
-if (onlyFilter) {
+if (onlyFilter && !reportArgument) {
   const prior = JSON.parse(readFileSync(path.join(root, 'artifacts/extension-controls-report.json'), 'utf8'));
   assert.equal(prior.version, version, 'A partial recheck requires an existing report for the same version');
   const fresh = [...results]; results.splice(0, results.length, ...prior.results.map(result => fresh.find(item => item.name === result.name) || result));
   for (const result of fresh) if (!results.some(item => item.name === result.name)) results.push(result);
 }
-const status = results.some(result => result.status === 'FAIL') ? 'FAIL' : results.length === 6 ? 'PASS' : 'FAIL';
-mkdirSync(path.join(root, 'artifacts'), { recursive: true });
-writeFileSync(path.join(root, 'artifacts/extension-controls-report.json'), JSON.stringify({ mode: 'REAL_EXTENSION_SYNTHETIC_HOST', realSiteAcceptance: false, version, lastPartialRecheck: onlyFilter || null, status, results }, null, 2));
-writeFileSync(path.join(root, 'extension-test-report.md'), `# 扩展控制回归\n\n版本：${version}\n\n结果：**${status} ${results.filter(result => result.status === 'PASS').length}/${results.length}**\n\n真实加载 Manifest V3、使用 Chrome popup/runtime/storage API；host DOM 经测试路由合成。本报告不构成 demo.impact.com 实网或真实 AI 回复验收。\n\n${results.map(result => `- **${result.status}** ${result.name}: ${result.evidence}`).join('\n')}\n`);
+const status = results.some(result => result.status === 'FAIL') ? 'FAIL' : (reportArgument ? results.length > 0 : results.length === 6) ? 'PASS' : 'FAIL';
+mkdirSync(reportDir, { recursive: true });
+writeFileSync(path.join(reportDir, 'extension-controls-report.json'), JSON.stringify({ mode: 'REAL_EXTENSION_SYNTHETIC_HOST', realSiteAcceptance: false, version, lastPartialRecheck: onlyFilter || null, status, results }, null, 2));
+writeFileSync((reportArgument ? path.join(reportDir, 'README.md') : path.join(root, 'extension-test-report.md')), `# 扩展控制回归\n\n版本：${version}\n\n结果：**${status} ${results.filter(result => result.status === 'PASS').length}/${results.length}**\n\n真实加载 Manifest V3、使用 Chrome popup/runtime/storage API；host DOM 经测试路由合成。本报告不构成 demo.impact.com 实网或真实 AI 回复验收。\n\n${results.map(result => `- **${result.status}** ${result.name}: ${result.evidence}`).join('\n')}\n`);
 console.log(`REAL EXTENSION / SYNTHETIC HOST ${status}: ${results.filter(result => result.status === 'PASS').length}/${results.length}`);
 process.exitCode = status === 'PASS' ? 0 : 1;

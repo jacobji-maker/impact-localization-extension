@@ -1,0 +1,1365 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "status": "FINAL_COORDINATOR_APPROVED_PUBLIC_TARGETS_NOT_ACCEPTANCE",
+  "sourceVersion": "0.9.9",
+  "capture": {
+    "path": "artifacts/0910-custom-field-selection-20261021/live-public-capture.json",
+    "sha256": "ef7c49c8e2beb77f0d2733d86ae93209cf3fe98af53cef999eb2518f6e83a173",
+    "captureFinal": true
+  },
+  "positionCount": 22,
+  "uniqueSourceCount": 9,
+  "hiddenTextCount": 0,
+  "expectedNewScopeEntries": 9,
+  "items": [
+    {
+      "page": "custom-selected-paragraph-0910",
+      "key": "custom-selected-paragraph-0910-6",
+      "source": "Paragraph",
+      "target": "段落文本",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-multi-select-0910",
+      "key": "custom-selected-multi-select-0910-6",
+      "source": "Multi-select",
+      "target": "多选",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-multi-select-0910",
+      "key": "custom-selected-multi-select-0910-7",
+      "source": "Options",
+      "target": "选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-multi-select-0910",
+      "key": "custom-selected-multi-select-0910-8",
+      "source": "Add Another",
+      "target": "添加选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-dropdown-list-0910",
+      "key": "custom-selected-dropdown-list-0910-6",
+      "source": "Dropdown list",
+      "target": "下拉列表",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-dropdown-list-0910",
+      "key": "custom-selected-dropdown-list-0910-7",
+      "source": "Options",
+      "target": "选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-dropdown-list-0910",
+      "key": "custom-selected-dropdown-list-0910-8",
+      "source": "Add Another",
+      "target": "添加选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-single-select-0910",
+      "key": "custom-selected-single-select-0910-6",
+      "source": "Single-select",
+      "target": "单选",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-single-select-0910",
+      "key": "custom-selected-single-select-0910-7",
+      "source": "Options",
+      "target": "选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-single-select-0910",
+      "key": "custom-selected-single-select-0910-8",
+      "source": "Add Another",
+      "target": "添加选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-datepicker-0910",
+      "key": "custom-selected-datepicker-0910-6",
+      "source": "Datepicker",
+      "target": "日期选择",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-number-0910",
+      "key": "custom-selected-number-0910-6",
+      "source": "Number",
+      "target": "数字",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-file-0910",
+      "key": "custom-selected-file-0910-6",
+      "source": "File",
+      "target": "文件",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-multi-select-two-rows-0910",
+      "key": "custom-selected-multi-select-two-rows-0910-6",
+      "source": "Multi-select",
+      "target": "多选",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-multi-select-two-rows-0910",
+      "key": "custom-selected-multi-select-two-rows-0910-7",
+      "source": "Options",
+      "target": "选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-multi-select-two-rows-0910",
+      "key": "custom-selected-multi-select-two-rows-0910-8",
+      "source": "Add Another",
+      "target": "添加选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-dropdown-list-two-rows-0910",
+      "key": "custom-selected-dropdown-list-two-rows-0910-6",
+      "source": "Dropdown list",
+      "target": "下拉列表",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-dropdown-list-two-rows-0910",
+      "key": "custom-selected-dropdown-list-two-rows-0910-7",
+      "source": "Options",
+      "target": "选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-dropdown-list-two-rows-0910",
+      "key": "custom-selected-dropdown-list-two-rows-0910-8",
+      "source": "Add Another",
+      "target": "添加选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-single-select-two-rows-0910",
+      "key": "custom-selected-single-select-two-rows-0910-6",
+      "source": "Single-select",
+      "target": "单选",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "REUSED_DECIDED_PUBLIC_TYPE_COPY"
+    },
+    {
+      "page": "custom-selected-single-select-two-rows-0910",
+      "key": "custom-selected-single-select-two-rows-0910-7",
+      "source": "Options",
+      "target": "选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    },
+    {
+      "page": "custom-selected-single-select-two-rows-0910",
+      "key": "custom-selected-single-select-two-rows-0910-8",
+      "source": "Add Another",
+      "target": "添加选项",
+      "match": "exact",
+      "visible": true,
+      "reviewStatus": "COORDINATOR_APPROVED_AFTER_ACTUAL_P101_REPLY_RETAINED"
+    }
+  ],
+  "semanticReview": {
+    "selectedTypes": "Reuse the seven actual decided P100 public-copy translations; no duplicate submission.",
+    "optionsAndAddAnother": "P101 actually submitted to designated ordinary Pro, webpage Flash; complete two-item reply retained both; coordinator adopted. Model review is separate from engineering/live/business acceptance."
+  },
+  "boundaries": [
+    "Only Text; preserve node identity, structure, attributes, values, events and native framework state.",
+    "Unique actual Create title and Display Type, Name, Description label roles; no unrelated selected values or business names.",
+    "Options/Add Another only in actual option-row repeater and one of three observed option-based types.",
+    "Exact document/brand HTTPS/top document/Light DOM; actual native field and direct Text parent.",
+    "No portal dependency and no generated styling hash.",
+    "Owned unsubmitted form selection and one Add Another per option type only; Save/upload/business actions not performed."
+  ],
+  "scopePlans": {
+    "custom-selected-paragraph-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-multi-select-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-multi-select-two-rows-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-dropdown-list-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-dropdown-list-two-rows-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-single-select-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-single-select-two-rows-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-datepicker-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-number-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-file-0910-6": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+      "textParentSelector": "span.value > span",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        }
+      ]
+    },
+    "custom-selected-multi-select-0910-7": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > label",
+      "textParentSelector": "label",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-dropdown-list-0910-7": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > label",
+      "textParentSelector": "label",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-single-select-0910-7": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > label",
+      "textParentSelector": "label",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-multi-select-two-rows-0910-7": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > label",
+      "textParentSelector": "label",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-dropdown-list-two-rows-0910-7": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > label",
+      "textParentSelector": "label",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-single-select-two-rows-0910-7": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > label",
+      "textParentSelector": "label",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-multi-select-0910-8": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > .iui-input-row-repeater > div > .add-container > button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "textParentSelector": "button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-dropdown-list-0910-8": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > .iui-input-row-repeater > div > .add-container > button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "textParentSelector": "button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-single-select-0910-8": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > .iui-input-row-repeater > div > .add-container > button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "textParentSelector": "button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-multi-select-two-rows-0910-8": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > .iui-input-row-repeater > div > .add-container > button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "textParentSelector": "button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-dropdown-list-two-rows-0910-8": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > .iui-input-row-repeater > div > .add-container > button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "textParentSelector": "button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    },
+    "custom-selected-single-select-two-rows-0910-8": {
+      "hosts": [
+        "demo.impact.com",
+        "app.impact.com"
+      ],
+      "pathExact": "/secure/advertiser/engage/fr/custom_fields.ihtml",
+      "topOnly": true,
+      "lightDOMOnly": true,
+      "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair:not([type]) > div > .input-fields.custom-fields-input-fields > .input > .input-row-repeater > .iui-field-label-pair > div > .iui-input-row-repeater > div > .add-container > button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "textParentSelector": "button[data-testid=\"uicl-input-row-repeater-add-button\"][type=\"button\"]",
+      "contextText": [
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > .iui-page-header.page-header > .iui-page-header-content > .header-container > header-text[data-testid=\"uicl-page-header-title\"]",
+          "texts": [
+            "Create Custom Field",
+            "创建自定义字段"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > label",
+          "texts": [
+            "Display Type",
+            "题型"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label",
+          "texts": [
+            "Name",
+            "名称"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label",
+          "texts": [
+            "Description",
+            "说明"
+          ]
+        },
+        {
+          "closest": "body",
+          "selector": "#templateContainer > div > div > .custom-fields-form.iframe-router-view > div > .iui-form-page.custom-fields-form[data-testid=\"uicl-form-page\"] > form.iui-component.iui-web-form[data-testid=\"uicl-web-form\"]:has( > .form-container > .field-section > .iui-field-label-pair[type=\"text\"] > div > label):has( > .form-container > .field-section > .iui-field-label-pair[type=\"TextArea\"] > div > label) > .form-container > .field-section > .iui-field-label-pair[type=\"Multiselect\"] > div > .input-fields.custom-fields-input-fields > .input > .iui-multiselect-input.multiselect-form-input[data-testid=\"uicl-multiselect-input\"] > .btn-container > button.iui-multi-select-input-button[data-testid=\"uicl-multi-select-input-button\"][type=\"button\"] > span.value > span",
+          "texts": [
+            "Multi-select",
+            "多选",
+            "Dropdown list",
+            "下拉列表",
+            "Single-select",
+            "单选"
+          ]
+        }
+      ]
+    }
+  },
+  "newScopeEntries": 9,
+  "sourceChangeStage": "Nine scoped entries and 0.9.10 metadata frozen; source/package/synthetic/live acceptance remain separate."
+}

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "汉化助手",
-  "version": "0.6.5",
-  "description": "按功能语境校准 Impact 页面术语，并将预设问题发送给页面已有的 AI 助手。",
+  "name": "impact.com助手",
+  "version": "0.9.10",
+  "description": "面向 impact.com 品牌端的第三方中文助手：本地翻译、Shopify 上线指引，通过原生 Ask Impact 询问术语。",
   "permissions": [
     "storage"
   ],
@@ -10,8 +10,12 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "汉化助手",
-    "default_popup": "popup.html"
+    "default_title": "impact.com助手",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
   },
   "content_scripts": [
     {
@@ -22,13 +26,39 @@
       "js": [
         "dict.js",
         "site-config.js",
+        "settings-contract.js",
+        "guidance.js",
+        "journey.js",
         "content.js"
       ],
       "css": [
         "content.css"
       ],
       "run_at": "document_idle",
+      "all_frames": true,
+      "match_origin_as_fallback": true
+    },
+    {
+      "matches": [
+        "https://ui.assets.impact.com/onboarding-ui/checklist-assets/production/payout-terms/default.html*",
+        "https://ui.assets.impact.com/onboarding-ui/checklist-assets/production/migrated/event-type-validation.html*",
+        "https://ui.assets.impact.com/onboarding-ui/checklist-assets/production/operator-json/linkout.html*",
+        "https://ui.assets.impact.com/onboarding-ui/checklist-assets/production/operator-json/instructions.html*"
+      ],
+      "js": [
+        "dict.js",
+        "site-config.js",
+        "settings-contract.js",
+        "content.js"
+      ],
+      "run_at": "document_idle",
       "all_frames": true
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
 }

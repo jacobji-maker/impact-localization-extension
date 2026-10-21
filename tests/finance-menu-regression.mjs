@@ -232,7 +232,7 @@ try {
       while ((node = walker.nextNode())) if (!recordNodes.has(node) && !node.parentElement.closest('script,style')) texts.push({ node, source: node.nodeValue });
       Object.assign(window.__menuRuleProof, { texts, elements: elements.map(element => ({ element, parent: element.parentNode, children: [...element.childNodes], attributes: JSON.stringify([...element.attributes].map(attribute => [attribute.name, attribute.value])) })), nativeHandler: document.querySelector('#menu').onclick, input, inputValue: input.value, attachShadow: Element.prototype.attachShadow });
     }, { variant, entries, popupSelector });
-    for (const name of ['dict.js', 'site-config.js', 'content.js']) await frame.addScriptTag({ path: path.join(root, 'impact-cn-mod', name) });
+    for (const name of ['dict.js', 'site-config.js', 'settings-contract.js', 'content.js']) await frame.addScriptTag({ path: path.join(root, 'impact-cn-mod', name) });
     await frame.evaluate(async () => { if (window.ImpactCN) { await window.ImpactCN.ready; await window.ImpactCN.setAIEnabled(false); } });
     return { frame, entries };
   };

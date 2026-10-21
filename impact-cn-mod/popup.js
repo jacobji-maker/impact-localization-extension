@@ -1,4 +1,5 @@
 "use strict";
+const settingsContract = globalThis.IMPACT_CN_SETTINGS;
 const toggle = document.getElementById("enabled");
 const aiToggle = document.getElementById("ai-enabled");
 const status = document.getElementById("status");
@@ -15,7 +16,7 @@ function renderStatus() {
 async function readPageState() {
   if (activeTab?.id === undefined) return;
   try {
-    lastState = await chrome.tabs.sendMessage(activeTab.id, { type: "impact-cn:get-state" });
+    lastState = await chrome.tabs.sendMessage(activeTab.id, { type: settingsContract.messages.getState });
     renderStatus();
   } catch {
     lastState = undefined;
@@ -24,9 +25,10 @@ async function readPageState() {
 }
 
 async function initialize() {
-  const stored = await chrome.storage.local.get(["impactCNEnabled", "impactCNAIEnabled"]);
-  toggle.checked = stored.impactCNEnabled !== false;
-  aiToggle.checked = stored.impactCNAIEnabled !== false;
+  document.querySelector("footer").textContent = `v${chrome.runtime.getManifest().version} · 精细翻译与概念解释`;
+  const stored = settingsContract.decodeStored(await chrome.storage.local.get(Object.values(settingsContract.keys)));
+  toggle.checked = stored.enabled;
+  aiToggle.checked = stored.aiEnabled;
   [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
   await readPageState();
 }
@@ -44,14 +46,15 @@ async function changeSetting(input, key, messageType) {
   } finally { input.disabled = false; }
 }
 
-toggle.addEventListener("change", () => { void changeSetting(toggle, "impactCNEnabled", "impact-cn:set-enabled"); });
-aiToggle.addEventListener("change", () => { void changeSetting(aiToggle, "impactCNAIEnabled", "impact-cn:set-ai-enabled"); });
+toggle.addEventListener("change", () => { void changeSetting(toggle, settingsContract.keys.enabled, settingsContract.messages.setEnabled); });
+aiToggle.addEventListener("change", () => { void changeSetting(aiToggle, settingsContract.keys.aiEnabled, settingsContract.messages.setAIEnabled); });
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area !== "local") return;
-  if (changes.impactCNEnabled) toggle.checked = changes.impactCNEnabled.newValue !== false;
-  if (changes.impactCNAIEnabled) aiToggle.checked = changes.impactCNAIEnabled.newValue !== false;
+  const patch = settingsContract.decodeChanges(changes, area, { enabled: toggle.checked, aiEnabled: aiToggle.checked });
+  if ("enabled" in patch) toggle.checked = patch.enabled;
+  if ("aiEnabled" in patch) aiToggle.checked = patch.aiEnabled;
   renderStatus();
   void readPageState();
 });
 
-initialize().catch(() => { status.textContent = "无法读取汉化助手状态，请关闭后重新打开。"; }).finally(() => { toggle.disabled = false; aiToggle.disabled = false; });
+initialize().catch(() => { status.textContent = "无法读取impact.com助手状态，请关闭后重新打开。"; }).finally(() => { toggle.disabled = false; aiToggle.disabled = false; });

@@ -19,6 +19,11 @@ def main():
     action = manifest.get("action", {})
     if action.get("default_popup"):
         required.append(action["default_popup"])
+    required.extend(manifest.get("icons", {}).values())
+    if isinstance(action.get("default_icon"), dict):
+        required.extend(action["default_icon"].values())
+    elif action.get("default_icon"):
+        required.append(action["default_icon"])
     for file in required:
         if not (source / file).is_file():
             raise SystemExit(f"Missing required extension asset: {file}")

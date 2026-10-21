@@ -49,7 +49,8 @@ with TemporaryDirectory(prefix="impact-package-regression-") as folder:
         assert not package.exists()
         assert build().returncode == 0
         expected = {file.relative_to(source).as_posix(): file.read_bytes() for file in source.rglob("*") if file.is_file()}
-        assert len(expected) == 12
+        required = {"manifest.json", *manifest.get("icons", {}).values()}
+        assert required.issubset(expected)
         with zipfile.ZipFile(package) as archive:
             assert archive.testzip() is None
             assert len(archive.namelist()) == len(expected)
@@ -80,7 +81,7 @@ with TemporaryDirectory(prefix="impact-package-regression-") as folder:
         assert package.read_bytes() == before
         assert package.stat().st_mtime_ns == before_mtime
 
-    check("New ZIP has root manifest, twelve source-identical files and valid CRC", fresh_package)
+    check("New ZIP has root manifest, icons, source-identical files and valid CRC", fresh_package)
     check("Identical same-version package is reused without changing mtime", identical_package)
     check("Different same-version package is rejected and original ZIP retained", different_package)
     package_digest = sha256(package.read_bytes()).hexdigest() if package.exists() else None

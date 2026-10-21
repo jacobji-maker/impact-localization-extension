@@ -44,6 +44,57 @@
 #impact-cn-assistant .impact-cn-status[data-type="warning"] { background: #fff6e6; color: #96712b; }
 #impact-cn-assistant .impact-cn-status[data-type="success"] { background: #eaf7ed; color: #347148; }
 #impact-cn-assistant .impact-cn-panel-note { margin: 12px 0 0; color: #89978e; font-size: 10px; line-height: 1.65; }
+#impact-cn-assistant .impact-cn-guide-open { display: block; width: 100%; margin-top: 16px; padding: 10px 12px; border: 1px solid #237259; border-radius: 8px; background: #183b32; color: #fff; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide { margin-top: 16px; overflow-wrap: anywhere; }
+#impact-cn-assistant .impact-cn-guide-heading { margin: 16px 0 8px; font-family: inherit; font-size: 16px; line-height: 1.5; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide-step-position { margin: 12px 0 5px; color: #566d60; font-size: 12px; }
+#impact-cn-assistant .impact-cn-guide-step-title { margin: 5px 0 12px; font-family: inherit; font-size: 15px; line-height: 1.5; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide-step-navigation { display: flex; gap: 8px; }
+#impact-cn-assistant .impact-cn-guide-step-button { flex: 1; min-width: 0; padding: 9px 4px; border: 1px solid #237259; border-radius: 7px; color: #183128; background: #fff; font: inherit; font-size: 12px; }
+#impact-cn-assistant .impact-cn-guide-step-button:disabled { opacity: .45; cursor: default; }
+#impact-cn-assistant .impact-cn-guide-step-button:focus-visible { outline: 3px solid #5bbaa7; outline-offset: 3px; }
+#impact-cn-assistant .impact-cn-guide-back, #impact-cn-assistant .impact-cn-guide-reset { padding: 4px 0; border: 0; background: transparent; color: #365f49; text-align: left; text-decoration: underline; text-underline-offset: 3px; }
+#impact-cn-assistant .impact-cn-guide-reset { margin-top: 12px; font-size: 12px; }
+#impact-cn-assistant .impact-cn-guide-context, #impact-cn-assistant .impact-cn-guide-note { margin: 10px 0; color: #566d60; font-size: 12px; line-height: 1.6; }
+#impact-cn-assistant .impact-cn-guide-field { display: block; margin: 14px 0; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide-select { display: block; width: 100%; min-width: 0; margin-top: 7px; padding: 9px 5px; border: 1px solid #b9cbc4; border-radius: 7px; background: #fff; color: #183128; font: inherit; font-weight: 400; }
+#impact-cn-assistant .impact-cn-guide-select:focus-visible, #impact-cn-assistant .impact-cn-guide-details summary:focus-visible { outline: 3px solid #5bbaa7; outline-offset: 3px; }
+#impact-cn-assistant .impact-cn-guide-purpose { margin: 12px 0; }
+#impact-cn-assistant .impact-cn-guide-details { margin: 12px 0; padding: 10px 0; border-top: 1px solid #edf1ee; border-bottom: 1px solid #edf1ee; font-size: 12px; }
+#impact-cn-assistant .impact-cn-guide-details summary { cursor: pointer; color: #365f49; }
+#impact-cn-assistant .impact-cn-guide-prerequisites { margin: 10px 0; padding-left: 18px; }
+#impact-cn-assistant .impact-cn-guide-prerequisites li { margin: 7px 0; }
+#impact-cn-assistant .impact-cn-guide-directory h3 { margin: 14px 0 7px; font-family: inherit; font-size: 12px; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide-directory ul { margin: 7px 0; padding-left: 18px; }
+#impact-cn-assistant .impact-cn-guide-directory li { margin: 7px 0; }
+#impact-cn-assistant .impact-cn-guide-action { margin: 12px 0; padding: 12px; border-radius: 8px; background: #f0f6f2; font-weight: 500; }
+#impact-cn-assistant .impact-cn-guide-caption { margin: 10px 0 -8px; color: #566d60; font-size: 12px; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide-locate { width: 100%; padding: 9px; border: 1px solid #237259; border-radius: 7px; color: #fff; background: #183b32; }
+#impact-cn-assistant .impact-cn-guide-fulltext p { margin: 12px 0; }
+#impact-cn-guide-pointer { all: initial; position: fixed; inset: 0; z-index: 2147482999; pointer-events: none; font: 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif; color: #145b42; }
+#impact-cn-guide-pointer * { box-sizing: border-box; pointer-events: none; }
+#impact-cn-guide-pointer [hidden] { display: none !important; }
+#impact-cn-guide-pointer svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+#impact-cn-guide-pointer line { stroke: #167d56; stroke-width: 3; }
+#impact-cn-guide-pointer path { fill: #167d56; }
+#impact-cn-guide-pointer .impact-cn-guide-pointer-ring { position: absolute; border: 2px solid #167d56; border-radius: 5px; }
+#impact-cn-guide-pointer .impact-cn-guide-pointer-bubble { position: absolute; padding: 9px 12px; border: 1px solid #167d56; border-radius: 8px; background: #f0fff5; color: #145b42; box-shadow: 0 3px 12px #183b3224; overflow-wrap: anywhere; }
+#impact-cn-assistant .impact-cn-guide-facts { margin: 12px 0; }
+#impact-cn-assistant .impact-cn-guide-facts dt { margin-top: 12px; font-size: 12px; color: #566d60; font-weight: 600; }
+#impact-cn-assistant .impact-cn-guide-facts dd { margin: 5px 0 0; }
+#impact-cn-assistant .impact-cn-guide-recovery { margin: 12px 0; padding: 4px 0 4px 10px; border-left: 3px solid #b9cbc4; }
+#impact-cn-assistant .impact-cn-guide-recovery p { margin: 6px 0; }
+#impact-cn-assistant .impact-cn-guide-owner { font-size: 12px; color: #365f49; }
+#impact-cn-assistant .impact-cn-guide-links { display: flex; flex-direction: column; gap: 7px; margin: 12px 0; font-size: 12px; }
+#impact-cn-assistant .impact-cn-guide-links a { color: #365f49; text-decoration: underline; text-underline-offset: 3px; }
+#impact-cn-assistant .impact-cn-guide-declarations { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+#impact-cn-assistant .impact-cn-guide-declare { padding: 8px; border: 1px solid #b9cbc4; border-radius: 7px; background: #fff; color: #183128; font-size: 12px; }
+#impact-cn-assistant .impact-cn-guide-declare[aria-pressed="true"] { background: #eaf7ed; border-color: #237259; color: #20563f; }
+#impact-cn-assistant .impact-cn-guide-progress { margin: 10px 0; color: #566d60; font-size: 12px; line-height: 1.6; }
+@media (pointer: coarse) {
+  #impact-cn-assistant .impact-cn-guide button, #impact-cn-assistant .impact-cn-guide select, #impact-cn-assistant .impact-cn-guide summary { min-height: 44px; }
+  #impact-cn-assistant .impact-cn-guide select { font-size: 16px; }
+}
 @media (max-width: 600px) {
   #impact-cn-assistant { right: 16px; bottom: 140px; }
   #impact-cn-assistant[data-ai-active="true"], #impact-cn-assistant[data-native-overlay="true"] { left: 16px; }

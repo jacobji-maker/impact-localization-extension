@@ -1,30 +1,33 @@
-# 项目状态
+# 项目当前状态
 
-更新：2026-10-11。当前版本 **0.6.5**，**6691 条词条 / 146 个概念主题**（含历史 demo；数量不代表全站验收）。本轮新增 884 条限定规则，补效果营销活动目标/类别、商品加佣资格与佣金规则、Data Lab 标准字段与条件编辑器、合作申请 238 项国家菜单和固定标签。
+更新于2026-10-21。唯一当前入口；规则见[AGENTS.md](AGENTS.md)，下一步见[NEXT_TASK.md](NEXT_TASK.md)，设计见[架构概要](docs/handoff-090/ARCHITECTURE.md)。本地实页证据与Gemini运行记录不随公开源码提交。
 
-## 功能
+## 当前版本与停止点
 
-- 本地翻译固定界面 Text，可关闭并恢复原文；保留原生页面、业务名称、数据、输入值和 AI 回复。
-- 两个独立持久化开关、可拖动助手、概念问号、开放 Shadow DOM 与各 document 翻译；问号调用平台已有 Ask Impact 并要求官方帮助链接。
-- Engage 已补伙伴管理、申请/提案、工作流、邮件、分组/联系人/调查、Retail Media、活动、九类素材与资源、Deals/Promo、商品目录/推广/Storefront、报表目录/Data Lab/计划及交易固定界面和已观察的未提交操作界面。
-- 合同用词为“分组设置佣金”和“（从下个月月初开始）”，三点菜单与对应未提交界面沿用前批覆盖。
+- **0.9.10已在正常Chrome原Demo页独立确认；本批10状态22处固定Text自动中文通过。8551词条／161主题。按用户要求停在0.9.10，不再扩展新模块或升版。** 完整平台汉化仍未完成。
+- 用户明确授权本版GitHub提交及公开；目标为[jacobji-maker/impact-localization-extension](https://github.com/jacobji-maker/impact-localization-extension)。只提交经复核的完整功能源码、必要测试与当前公开说明，保留本地交接、企业会话、历史材料和交付包。实际远端结果以GitHub读回为准。
+- 普通浏览和未提交空表单选型已用于本批验证；未保存／创建字段。Save／Next、上传、启动平台测试、订单、支付／充值、Shopify安装授权及业务审核仍未执行。
 
-本轮范围和遗漏见 [0.6.5 覆盖与必要检查](docs/engage-coverage-065-20261011.md)；[0.6.4 历史短查](docs/engage-coverage-064-20261011.md)、[0.6.3 记录](docs/engage-coverage-063-20261011.md)、[0.6.2 记录](docs/engage-coverage-062-20261011.md) 和 [0.6.1 Engage 记录](docs/engage-coverage-20261011.md) 保留为历史。源码直接加载 `impact-cn-mod/`，主要逻辑位于 dict.js、content.js/content.css、site-config.js 和 background.js。
+## 0.9.10工程、合成与交付
 
-## 当前检查状态
+- [实采](artifacts/0910-custom-field-selection-20261021/live-public-capture.json)／[目标](artifacts/0910-custom-field-selection-20261021/targets.json)：7种题型选中态及三类选项题型新增一行状态，共10态22位置／9源文。新增9个精确词条；原8542对象及161主题保持。Options译“选项”，Add Another译“添加选项”；原生schema值和输入保持，未扩大portal或运行资格。
+- [新批候选5/5](artifacts/0910-custom-field-selection-20261021/candidate-r2/test-2026-10-21T06-38-14-325Z.json)：22文字、10态开关／节点／属性／值／事件／重写重挂、126新边界通过；166请求全由166本地响应满足，漏0无redirect，20源码冻结一致。未重跑旧099／Finance整批。
+- [正确099基线](artifacts/0910-custom-field-selection-20261021/baseline-099-r2/test-2026-10-21T06-34-00-317Z.json)22/22未翻译、原生保护通过。首次投影因隐私白名单漏掉两静态外壳ID而不具资格，旧基线与中止候选保留；已在实页独立确认并补回公开#uitk-container／#main-content。另同步词典版本与P101裁决元数据后重新冻结，未凭测试失败扩大运行权限。
+- [独立源审](artifacts/0910-custom-field-selection-20261021/independent-source-review.json)与[独立包审](artifacts/0910-custom-field-selection-20261021/independent-delivery-review.json)通过；14个运行及其他资源字节不变，manifest仅升版。
+- [ZIP](dist/impact-cn-mod-0.9.10.zip)／[同版目录](dist/impact-cn-mod-0.9.10/)：592915bytes，SHA256 `cf8c5f5e6570d48ad8aba4e6c39ede52651a2a18eb9fada67ce764d5fa00a5ab`。20源码／冻结／ZIP／目录字节、CRC、根manifest及资源一致，旧包保留。此冻结包的说明写于实页验收前，最新验收事实以本入口为准。
 
-本轮确认 Demo GC - Retail 已登录，助手实际运行 0.6.4；使用独立观察页，没有重复加载或登录。未创建、保存、发送、发布、删除、上传或修改业务记录，没有发送 AI 问题。商品加佣进入参与资格和佣金设置后取消；分组弹窗仅展开，未添加最终分组。Data Lab 仅未保存配置。
+## 正常页与终态
 
-0.6.4 的追踪、Creator、Marketplace 和零售直接短查见历史记录，不继承为 0.6.5 通过。0.6.5 新增“佣金条款优先级”主题，复用“分组设置佣金”；规则字段和运算符分别限定 rule-dropdown/boolean-dropdown 的焦点菜单，业务值输入保留。Data Lab 条件弹层实际位于主容器外，已补独立翻译根节点。
+- [010实页读回](artifacts/0910-custom-field-selection-20261021/live-readback-0910.json)：Demo精确创建字段路径的10态22位置均可见并自动中文。多选二行及文件题型两代表态关译原文／重开、AI独立和原生控件完整比较通过（8／5控件）。所有空表单关闭，列表原生控件回到基线；未创建业务记录。输入框placeholder属原生属性，按Text边界保留，不计为已汉化。
+- 原Demo正常页v0.9.10，原Program、完整URL、17个已观察原生控件属性／值／Text和双开关及面板一致；翻译与AI均开启。客户原标签当前不在Chrome两份清单中，终态无法读回，未选其他页冒充。新22未在app域逐项实测。
+- [099实页读回](artifacts/099-settings-body-20261021/live-readback-099.json)：原64预设实际63挂载（51可见／12隐藏），另1个旧“折叠摘要”其实为当前未挂载编辑标签，展开时同词条已覆盖。隐藏DOM不算视觉验收。曾有Pendo按钮短暂插入导致按顺序比较失败，18原控件逐一匹配，恢复后完整一致；原失败保留。文件格式正文已截图核，导入列名与枚举代码保持。
 
-本版执行必要 JS 语法、版本、唯一 ID、词条/主题关联、新增 scope 和敏感模式检查；打包核对根 manifest、资源、CRC、源码/解压目录字节一致。0.6.5 新规则实页翻译、原文恢复和新问号发送待用户加载；AI 回复准确性、生产域和全量回归未检查。
+## Gemini与公开边界
 
-## 继续工作
+- P101两新标签实际提交指定普通Pro，提交前账号2/2原生标记核同、Pro产品与空编辑器可读，实际Flash模式；单次发送、完整两项回复、分别登记replied与decided，工程采纳两项。沿用P100七题型译文，未重复企业旧批。模型审查不替代工程／业务通过。
+- [公开前独立审查](artifacts/0910-custom-field-selection-20261021/github-publication-audit.json)检查远端唯一main对应8个历史提交、157文本blob及374当前文本，未确认凭据、客户实例、公司私会话或业务payload。残留历史Demo标签、个人路径及普通Git署名不据此擅改历史；最终暂存树另做精确核对。公开样例仅包含固定文案／公开结构，无账户、输入值或完整AI会话。
 
-先交付 0.6.5 供用户体验，再按反馈修补。效果营销活动后续步骤被原生有效封面图片校验阻断，本轮没有上传；商品加佣预览/最终提交、其他未观察国家与语言控件仍待后续导航。Amplification 当前为连接社交账户入口；Refer & Earn 空白嵌入。Products 已观察目录、推广和 Storefront。
+## 保留的未测范围
 
-财务暂放下：不查询、不选择付款账户、不进入 Pending Payouts。保留已译固定标题，不追查 demo 财务结果。尊重草稿、禁用状态和取消请求；不点击业务最终提交。
-
-2026-10-11，已按用户授权通过现有 GitHub 连接将 0.6.2–0.6.5 已核对源码与说明提交并同步至 `jacobji-maker/impact-localization-extension` 的 `main`，源码提交 [`8782b8c`](https://github.com/jacobji-maker/impact-localization-extension/commit/8782b8cec886390d30deb1ca37a0d0cfe834b7d9)。远端按预期旧 SHA 校验并向前更新，本地导入同一提交对象，文件树一致；CLI HTTPS 缺少认证，因此实际同步使用 GitHub 连接。此交付记录随后单独提交同步。只包含 15 个已核对项目文件，凭据、会话、私人业务材料及忽略的 artifacts/dist 未纳入；未强推、回滚、stash 或清理旧包和报告。
-
-历史财务结论仍为 0.5.2 的 13 PASS / 2 FAIL；0.5.3 严格菜单属性 FAIL 保留，不阻塞开发。[旧覆盖记录](docs/product-pages-coverage-20261011.md) 和 [合同记录](docs/contracts-menu-coverage-20261011.md) 按需阅读，不默认加载全部历史报告。
+- 上传后Preview／Next正文及业务结果未测；app域新增22未逐项验。此前六合规／八Protect正文不可读、风险123未完整新版实页、103指标portal缺可信归属；不计全站通过。
+- 旧包、失败、中止记录及既有未提交修改均保留。本地化在0.9.10停止，后续新范围须用户新指令。

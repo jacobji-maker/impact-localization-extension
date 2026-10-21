@@ -86,7 +86,19 @@ try {
     const entries = shipped.entries.filter(entry => entry.stage === 'native-finance' || entry.observedSource === 'docs/finance-dom-scan.json');
     assert(entries.length, 'Native finance dictionary is not ready'); assert(existsSync(path.join(root, 'docs/finance-dom-scan.json')), 'Real finance DOM capture is required');
     for (const entry of entries) {
-      assert(entry.source && entry.target && entry.reason && entry.id, 'A finance entry lacks source/target/reason/id'); assert.equal(entry.verification, 'observed-dom'); assert.equal(entry.observedSource, 'docs/finance-dom-scan.json');
+      assert(entry.source && entry.target && entry.reason && entry.id, 'A finance entry lacks source/target/reason/id'); assert.equal(entry.verification, 'observed-dom');
+      // This later observed heading has its own retained page-coverage evidence;
+      // all original finance-capture entries retain their exact capture source.
+      if (entry.id === 'finance-upcoming-finalized-payouts-current-heading') {
+        const evidencePath = 'docs/product-pages-coverage-20261011.md';
+        assert.equal(entry.observedSource, evidencePath);
+        assert.equal(entry.source, 'Finalized Payouts');
+        assert.equal(entry.scope?.pathExact, '/secure/advertiser/Adv_Finance_Report/r1/report/viewReport.report');
+        assert.equal(entry.scope?.query?.handle, 'adv_upcoming_payouts');
+        assert.equal(entry.scope?.selector, '#main-content h3');
+        assert(existsSync(path.join(root, evidencePath)), 'The retained heading evidence is required');
+        assert(readFileSync(path.join(root, evidencePath), 'utf8').includes(entry.source), 'The heading evidence must identify the observed source');
+      } else assert.equal(entry.observedSource, 'docs/finance-dom-scan.json');
       assert(entry.scope?.hosts?.includes('demo.impact.com') && entry.scope?.selector && (entry.scope?.pathExact || entry.scope?.paths?.length || entry.scope?.path), `${entry.id} lacks a verified host/path/component scope`);
       if (entry.scope?.pathExact?.startsWith('/secure/finance/')) assert(entry.scope.topPaths?.length, `${entry.id} iframe scope lacks its enclosing advertiser page`);
       if (entry.helpTopicId) { const candidate = shipped.helpTopics.find(item => item.id === entry.helpTopicId); assert(candidate, `${entry.id} references a missing topic`); const url = new URL(candidate.helpUrl); assert.equal(url.hostname, 'help.impact.com'); assert.equal(url.protocol, 'https:'); assert(candidate.question); }
@@ -104,10 +116,10 @@ try {
   const worker = context.serviceWorkers().find(item => item.url().startsWith('chrome-extension://')) || await context.waitForEvent('serviceworker', { timeout: 10000 });
   const extensionId = new URL(worker.url()).hostname;
   await worker.evaluate(() => chrome.runtime.onMessage.addListener((message, sender) => {
-    if (message?.type === 'impact-cn:frame-ask-topic') globalThis.__financeUnitSender = { url: sender.url, tabURL: sender.tab?.url, tabId: sender.tab?.id, frameId: sender.frameId };
+    if (message?.type === 'impact-cn:frame-ask-topic') globalThis.__financeUnitSender = { url: sender.url, tabURL: sender.tab?.url, tabId: sender.tab?.id, frameId: sender.frameId, documentId: sender.documentId, keys: Object.keys(message).sort() };
     return false;
   }));
-  await worker.evaluate(()=>{const send=chrome.tabs.sendMessage.bind(chrome.tabs);globalThis.__financeUnitForwarded=[];chrome.tabs.sendMessage=(tabId,message,options)=>{globalThis.__financeUnitForwarded.push({keys:Object.keys(message).sort(),topicId:message.topicId,frameId:options?.frameId});return send(tabId,message,options);};});
+  await worker.evaluate(()=>{const send=chrome.tabs.sendMessage.bind(chrome.tabs);globalThis.__financeUnitForwarded=[];chrome.tabs.sendMessage=(tabId,message,options)=>{globalThis.__financeUnitForwarded.push({type:message.type,keys:Object.keys(message).sort(),topicId:message.topicId,frameId:options?.frameId,documentId:options?.documentId});return send(tabId,message,options);};});
   const popup = await context.newPage(); await popup.goto(`chrome-extension://${extensionId}/popup.html`); await popup.waitForFunction(() => Boolean(chrome.runtime.id));
   const values = (enabled, aiEnabled) => popup.evaluate(values => chrome.storage.local.set({ impactCNEnabled: values.enabled, impactCNAIEnabled: values.aiEnabled }), { enabled, aiEnabled });
   const mount = async (url, id) => { await page.evaluate(({ url, id }) => { const frame=document.createElement('iframe');frame.id=id;frame.src=url;frame.style.cssText='width:1200px;height:360px';document.querySelector('#unit-finance-root').append(frame); }, { url, id }); const frame = await page.locator(`#${id}`).contentFrame(); await frame.locator('finance-unit-shadow .unit-label').first().waitFor(); return frame; };
@@ -183,8 +195,49 @@ try {
     const sender=await worker.evaluate(()=>globalThis.__financeUnitSender);
     const direct=await popup.evaluate(({tabId,topicId})=>chrome.tabs.sendMessage(tabId,{type:'impact-cn:top-ask-topic',topicId},{frameId:0}),{tabId:sender.tabId,topicId:otherTopic.id});assert.equal(direct.ok,false);assert.equal(direct.reason,'topic-out-of-scope');
     assert.equal(await page.evaluate(()=>window.__financeUnitTop.sends),before);assert.equal(await worker.evaluate(()=>globalThis.__financeUnitForwarded.length),forwardedBefore);
-    const valid=await probe(good,topic.id);assert.equal(valid.ok,true);assert.equal(await page.evaluate(()=>window.__financeUnitTop.sends),before+1);const forwarded=await worker.evaluate(()=>globalThis.__financeUnitForwarded.at(-1));assert.deepEqual(forwarded.keys,['topicId','type']);assert.equal(forwarded.frameId,0);assert.equal(forwarded.topicId,topic.id);
-    return 'Trusted storage-only sender.tab.url observed; unknown/mismatched source and top scopes make zero native sends; authorized relay strips extra fixture fields and sends only topicId once';
+    const inactive=await probe(good,topic.id);assert.equal(inactive.ok,false);assert.equal(inactive.reason,'source-frame-inactive');assert.equal(await page.evaluate(()=>window.__financeUnitTop.sends),before);
+    await good.locator('finance-unit-shadow label.unit-label button[data-impact-cn-help]').click();
+    await page.waitForFunction(before=>window.__financeUnitTop.sends===before+1,before);
+    const senderAfter=await worker.evaluate(()=>globalThis.__financeUnitSender);assert.deepEqual(senderAfter.keys,['topicId','type']);assert.equal(typeof senderAfter.documentId,'string');
+    const forwarded=await worker.evaluate(()=>globalThis.__financeUnitForwarded.filter(item=>item.type==='impact-cn:top-ask-topic').at(-1));assert.deepEqual(forwarded.keys,['sourceRequestId','topicId','type']);assert.equal(forwarded.frameId,0);assert.equal(forwarded.topicId,topic.id);
+    const confirmed=await worker.evaluate(()=>globalThis.__financeUnitForwarded.filter(item=>item.type==='impact-cn:confirm-frame-request').slice(-2));assert.equal(confirmed.length,2);
+    for(const record of confirmed){assert.deepEqual(record.keys,['topicId','type']);assert.equal(record.frameId,senderAfter.frameId);assert.equal(record.documentId,senderAfter.documentId);}
+    return 'Unknown/mismatched source and top scopes and an inactive caller make zero native sends; live child upload contains only topicId and type; worker binds a private request identifier and confirms the original document before fill and send';
+  });
+  await check('Source-frame navigation or reload cancels a pending forwarded question without touching the draft or reviving it',async()=>{
+    for(const mode of ['before-fill','after-fill','reload']){
+      const before=await page.evaluate(mode=>{
+        const host=document.querySelector('#ask-impact-shadow-host'),root=host.shadowRoot;
+        root.querySelector('textarea').value='';root.querySelector('[aria-label="Send"]').disabled=mode!=='before-fill';
+        host.style.display=mode==='before-fill'?'none':'';return window.__financeUnitTop.sends;
+      },mode);
+      await good.locator('finance-unit-shadow label.unit-label button[data-impact-cn-help]').click();
+      await page.waitForFunction(()=>document.querySelector('#impact-cn-assistant').hasAttribute('aria-busy'));
+      if(mode!=='before-fill')await page.waitForFunction(()=>document.querySelector('#ask-impact-shadow-host').shadowRoot.querySelector('textarea').value.length>0);
+      const draft=await page.locator('#ask-impact-shadow-host textarea').inputValue();
+      if(mode==='reload'){
+        const sourceElement=await page.locator('#finance-late-frame').elementHandle();
+        const sourceFrame=await sourceElement.contentFrame();assert(sourceFrame);
+        await sourceFrame.goto(goodURL);await good.locator('finance-unit-shadow .unit-label').first().filter({hasText:'需补充资金'}).waitFor();
+      }else await good.locator('body').evaluate(()=>{
+        const original=location.pathname+location.search+location.hash;
+        history.pushState({},'','/secure/finance/app/another-document.ihtml?view=fixture');history.replaceState({},'',original);
+      });
+      await page.evaluate(()=>{const host=document.querySelector('#ask-impact-shadow-host');host.style.display='';host.shadowRoot.querySelector('[aria-label="Send"]').disabled=false;});
+      await page.waitForFunction(()=>!document.querySelector('#impact-cn-assistant').hasAttribute('aria-busy'));
+      assert.equal(await page.evaluate(()=>window.__financeUnitTop.sends),before,mode);
+      assert.equal(await page.locator('#ask-impact-shadow-host textarea').inputValue(),draft,mode);
+      assert((await page.locator('.impact-cn-status').textContent()).includes('来源页面'),mode);
+      await values(true,false);await values(true,true);
+      await page.waitForFunction(()=>document.querySelector('#impact-cn-assistant').dataset.aiEnabled==='true');
+      await page.waitForTimeout(100);assert.equal(await page.evaluate(()=>window.__financeUnitTop.sends),before,mode);
+      assert.equal(await page.locator('#ask-impact-shadow-host textarea').inputValue(),draft,mode);
+      await page.locator('#ask-impact-shadow-host textarea').fill('');await waitHelpers(good,5);
+    }
+    const before=await page.evaluate(()=>window.__financeUnitTop.sends);
+    await good.locator('finance-unit-shadow label.unit-label button[data-impact-cn-help]').click();
+    await page.waitForFunction(before=>window.__financeUnitTop.sends===before+1,before);
+    return 'Same-tick source away-and-back before fill and before Send, and a full source document reload, all cancel; original draft bytes survive, AI off-on never revives requests, and a fresh manual helper sends once';
   });
   await check('Default assistant moves clear of native finance dropdown while manual drag position remains authoritative', async () => {
     await page.evaluate(()=>{document.querySelector('#ask-impact-shadow-host').style.display='none';const bubble=document.createElement('div');bubble.className='finance-bubble';bubble.style.cssText='position:fixed;right:0;bottom:24px;width:570px;height:650px;background:white';bubble.textContent='Finance menu fixture';document.body.append(bubble);});

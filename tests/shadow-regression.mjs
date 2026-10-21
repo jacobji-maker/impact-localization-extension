@@ -7,6 +7,8 @@ import os from 'node:os';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const reportArgument = process.argv.find(argument => argument.startsWith('--report-dir='))?.slice('--report-dir='.length);
+const reportDir = reportArgument ? path.resolve(root, reportArgument) : path.join(root, 'artifacts');
 const require = createRequire(import.meta.url);
 let chromium;
 try { ({ chromium } = require('playwright-core')); }
@@ -43,6 +45,7 @@ await page.evaluate(() => {
 await page.addScriptTag({ path: path.join(root, 'impact-cn-mod/site-config.js') });
 await page.evaluate(() => { window.IMPACT_CN_CONFIG.ai.openerIndicatesClosed = false; });
 await page.addStyleTag({ content: readFileSync(path.join(root, 'impact-cn-mod/content.css'), 'utf8') });
+await page.addScriptTag({ path: path.join(root, 'impact-cn-mod/settings-contract.js') });
 await page.addScriptTag({ path: path.join(root, 'impact-cn-mod/content.js') });
 await page.evaluate(async () => { await window.ImpactCN.ready; });
 await check('Initial nested open Shadow DOM translation retains Text identities', async () => {
@@ -167,6 +170,7 @@ async function closingDrawerFixture() {
   await fixture.addScriptTag({ path: path.join(root, 'impact-cn-mod/site-config.js') });
   await fixture.evaluate(() => { window.IMPACT_CN_CONFIG.ai.openerIndicatesClosed = true; });
   await fixture.addStyleTag({ content: readFileSync(path.join(root, 'impact-cn-mod/content.css'), 'utf8') });
+  await fixture.addScriptTag({ path: path.join(root, 'impact-cn-mod/settings-contract.js') });
   await fixture.addScriptTag({ path: path.join(root, 'impact-cn-mod/content.js') });
   await fixture.evaluate(async () => { await window.ImpactCN.ready; });
   return fixture;
@@ -192,6 +196,30 @@ await check('An AI off-on toggle during native closing permanently cancels the q
     assert(await fixture.evaluate(() => { const u = window.__closingUnit; return u.helperWhileClosing && u.oldInputs === 0 && u.oldEditor.value === '' && u.oldSends === 0 && u.opens === 0 && u.newSends === 0 && window.ImpactCN.getState().aiEnabled; }));
   } finally { await fixture.close(); }
 });
+await check('A route change during native closing cancels before filling, and reopening never revives the old question', async () => {
+  const fixture = await closingDrawerFixture();
+  try {
+    await fixture.locator('#ask-impact-shadow-host button[title="Close"]').click();
+    await fixture.evaluate(() => { window.__closingUnit.pendingRoute = window.ImpactCN.askTopic('closing-topic'); });
+    await fixture.waitForFunction(() => window.ImpactCN.getState().busy && window.__closingUnit.closing);
+    const result = await fixture.evaluate(async () => {
+      history.replaceState({}, '', '#changed-page');
+      return window.__closingUnit.pendingRoute;
+    });
+    assert.equal(result.ok, false); assert.equal(result.reason, 'page-changed'); assert.equal(result.filled, undefined);
+    await fixture.waitForFunction(() => window.__closingUnit.oldRemoved && !window.ImpactCN.getState().busy);
+    await fixture.evaluate(async () => {
+      history.replaceState({}, '', '#');
+      await window.ImpactCN.setAIEnabled(false); await window.ImpactCN.setAIEnabled(true);
+    });
+    await fixture.locator('button[aria-label="Open Ask Impact"]').click();
+    await fixture.waitForTimeout(100);
+    assert(await fixture.evaluate(() => { const u = window.__closingUnit; return u.oldInputs === 0 && u.oldSends === 0 && u.opens === 1 && u.newInputs === 0 && u.newSends === 0 && u.newEditor.value === ''; }));
+    const fresh = await fixture.evaluate(() => window.ImpactCN.askTopic('closing-topic'));
+    assert.equal(fresh.ok, true);
+    assert.equal(await fixture.evaluate(() => window.__closingUnit.newSends), 1);
+  } finally { await fixture.close(); }
+});
 // A separate synthetic page tests actual dictionary scopes. The domain below is
 // fulfilled locally for unit isolation; it is explicitly NOT a real-site visit.
 const dictionarySandbox = {};
@@ -207,7 +235,8 @@ await check('Current dictionary schema, official links and native scope requirem
   const ids = new Set();
   for (const entry of actualDictionary.entries) { assert(!ids.has(entry.id)); ids.add(entry.id); }
   for (const entry of nativeEntries) {
-    assert(entry.scope && entry.scope.selector && entry.scope.hosts.includes('demo.impact.com') && entry.scope.path);
+    assert(entry.scope && entry.scope.selector && entry.scope.hosts.includes('demo.impact.com')
+      && (entry.scope.pathExact || entry.scope.path || entry.scope.paths?.length));
     assert(entry.target && entry.reason && entry.verification === 'observed-dom');
     if (entry.helpUrl) { const url = new URL(entry.helpUrl); assert.equal(url.protocol, 'https:'); assert.equal(url.hostname, 'help.impact.com'); }
   }
@@ -231,7 +260,9 @@ await check('Current dictionary schema, official links and native scope requirem
         sources.add(item.source);
         const parent = document.createElement('div'); parent.id = 'adv-navigation';
         const host = document.createElement('impact-style-isolator'); parent.append(host);
-        const root = host.attachShadow({ mode: 'open' }); const nav = document.createElement('div'); nav.id = 'adv-nav'; root.append(nav);
+        const root = host.attachShadow({ mode: 'open' });
+        const expanded = document.createElement('div'); expanded.id = 'expanded-bar'; root.append(expanded);
+        const nav = document.createElement('div'); nav.id = 'adv-nav'; expanded.append(nav);
         let element;
         if (item.kind === 'product' || item.kind === 'main') { element = document.createElement('span'); element.className = item.kind === 'product' ? 'product-name' : 'subitem-label'; nav.append(element); }
         else {
@@ -239,6 +270,20 @@ await check('Current dictionary schema, official links and native scope requirem
           const folder = product.menus.some(menu => menu.source === item.menu.source && menu.nested === item.source);
           const span = item.source === 'Performance' && item.menu.source === 'Reports' || folder;
           element = document.createElement(item.kind === 'nested' ? 'a' : span ? 'span' : 'a'); wrapper.append(element);
+        }
+        if (product.source === 'Engage' && item.source === 'Contracts') {
+          // These two labels share source text but have distinct observed
+          // native menu identities and meanings in the current dictionary.
+          if (item.kind === 'main') {
+            element.classList.add('cursor');
+            element.dataset.testid = 'sidenav-expanded-submenu-menu_dis_contracts';
+            element.dataset.trackId = 'sidenav-product-submenu-menu_dis_contracts';
+          } else if (item.kind === 'child') {
+            const child = document.createElement('div'); child.className = 'subitem-child';
+            child.dataset.testid = 'sidenav-expanded-submenu-item-ni_2658163850';
+            element.parentNode.before(child); child.append(element.parentNode);
+            element.setAttribute('href', '/secure/advertiser/engage/contracts/library/view-contracts-flow.ihtml');
+          }
         }
         element.textContent = item.source;
         const path = `/secure/advertiser/${product.source.toLowerCase()}/`;
@@ -259,7 +304,8 @@ await scopedPage.route('**/*', route => route.fulfill({ contentType: 'text/html'
 await scopedPage.goto('https://demo.impact.com/secure/advertiser/engage/aview.ihtml?synthetic-dictionary-unit=1');
 await scopedPage.evaluate(entries => {
   const navRoot = document.querySelector('impact-style-isolator').attachShadow({ mode: 'open' });
-  const navControls = document.createElement('div'); navControls.id = 'adv-nav'; navRoot.append(navControls);
+  const expanded = document.createElement('div'); expanded.id = 'expanded-bar'; navRoot.append(expanded);
+  const navControls = document.createElement('div'); navControls.id = 'adv-nav'; expanded.append(navControls);
   const chartRoot = document.querySelector('snapshot-chart-shadow').attachShadow({ mode: 'open' });
   window.__actualDictionaryUnit = [];
   window.__inlineUnit = { nativeActions: 0, pointerActions: 0, sends: 0, prompts: [] };
@@ -280,7 +326,36 @@ await scopedPage.evaluate(entries => {
     const selector = entry.scope.selector;
     let node;
     if (entry.scope.shadowHost === '#adv-navigation impact-style-isolator') {
-      if (selector.includes('.child-menu-content')) {
+      if (entry.id.startsWith('nav-reports-compliance-') || entry.id.startsWith('nav-reports-retail-media-')) {
+        const compliance = entry.id.startsWith('nav-reports-compliance-');
+        const group = entry.id.endsWith('-group');
+        const nativeMenu = chain(navControls, [['div', 'subitem-child']]);
+        nativeMenu.dataset.testid = compliance
+          ? 'sidenav-expanded-submenu-item-compliance' : 'sidenav-expanded-submenu-item-ni_3582202891';
+        node = chain(nativeMenu, group
+          ? [['div', 'child-menu-content'], ['span', '']]
+          : [['div', 'subchild-label cursor'], ['a', '']]);
+        if (!group) {
+          const reportLinks = {
+            'nav-reports-compliance-by-media': '/secure/advertiser/report/viewReport.report?handle=adv_compliance_by_media',
+            'nav-reports-compliance-by-month': '/secure/advertiser/report/viewReport.report?handle=adv_compliance_by_month',
+            'nav-reports-compliance-violations-listing': '/secure/advertiser/report/viewReport.report?handle=violations_listing',
+            'nav-reports-retail-media-by-vendor': '/secure/advertiser/engage/insights/optimize/report/report.ihtml?handle=retailer_performance_by_vendor',
+            'nav-reports-retail-media-by-campaign': '/secure/advertiser/engage/insights/optimize/report/report.ihtml?handle=retailer_performance_by_campaign',
+            'nav-reports-retail-media-by-category-product': '/secure/advertiser/engage/insights/optimize/report/report.ihtml?handle=retailer_performance_by_category_product'
+          };
+          if (!reportLinks[entry.id]) throw new Error('Add the observed report menu link for ' + entry.id);
+          node.setAttribute('href', reportLinks[entry.id]);
+        }
+      } else if (entry.id === 'contracts-management') {
+        node = chain(navControls, [['div', 'navigation-subitems-container'], ['div', 'subitem-container'], ['div', 'subitem-label cursor']]);
+        node.dataset.testid = 'sidenav-expanded-submenu-menu_dis_contracts';
+        node.dataset.trackId = 'sidenav-product-submenu-menu_dis_contracts';
+      } else if (entry.id === 'contracts') {
+        node = chain(navControls, [['div', 'subitem-child'], ['div', 'child-menu-content'], ['a', '']]);
+        node.parentNode.parentNode.dataset.testid = 'sidenav-expanded-submenu-item-ni_2658163850';
+        node.setAttribute('href', '/secure/advertiser/engage/contracts/library/view-contracts-flow.ihtml');
+      } else if (selector.includes('.child-menu-content')) {
         const tag = /\.child-menu-content\s+span/u.test(selector) && !/\.child-menu-content\s+a(?:\W|$)/u.test(selector) ? 'span' : 'a';
         node = chain(navControls, [['div', 'child-menu-content'], [tag, '']]);
       } else if (selector.includes('.subchild-label')) node = chain(navControls, [['div', 'subchild-label'], ['a', '']]);
@@ -288,6 +363,13 @@ await scopedPage.evaluate(entries => {
       else node = chain(selector.includes('.product-name') ? navRoot : navControls, [['span', 'product-name']]);
     }
     else if (entry.scope.shadowHost === 'snapshot-chart-shadow') node = chain(chartRoot, [['span', 'secondaryFieldLabel__unit']]);
+    else if (entry.id === 'dashboard-todo-dismiss' || entry.id === 'dashboard-todo-view-applications') {
+      const buttonContainer = chain(vue, [['div', 'todo-container'], ['div', 'btn-container']]);
+      const actionContainer = entry.id === 'dashboard-todo-view-applications'
+        ? chain(buttonContainer, [['div', 'actionElements']]) : buttonContainer;
+      node = chain(actionContainer, [['button', '']]);
+      node.type = 'button'; node.dataset.testid = 'uicl-button';
+    }
     else if (selector.includes('.iui-calendar-range')) node = chain(document.querySelector('.iui-calendar-range .presets'), [['button', '']]);
     else if (selector.includes('h3.dashboard-container-title')) node = chain(vue, [['h3', 'dashboard-container-title']]);
     else if (selector.includes('btn.tertiary')) node = chain(vue, [['div', 'partnerSnapshotContainer'], ['btn', 'tertiary']]);
@@ -322,6 +404,7 @@ await scopedPage.addScriptTag({ path: path.join(root, 'impact-cn-mod/dict.js') }
 await scopedPage.addScriptTag({ path: path.join(root, 'impact-cn-mod/site-config.js') });
 await scopedPage.evaluate(() => { window.IMPACT_CN_CONFIG.ai.openerIndicatesClosed = false; });
 await scopedPage.addStyleTag({ content: readFileSync(path.join(root, 'impact-cn-mod/content.css'), 'utf8') });
+await scopedPage.addScriptTag({ path: path.join(root, 'impact-cn-mod/settings-contract.js') });
 await scopedPage.addScriptTag({ path: path.join(root, 'impact-cn-mod/content.js') });
 await scopedPage.evaluate(async () => { await window.ImpactCN.ready; });
 await check(`All ${nativeEntries.length} actual native-dictionary entries translate only inside verified components`, async () => {
@@ -498,13 +581,50 @@ await check('Dragged assistant is clamped after resize and resetPosition restore
   const reset = await scopedPage.locator('#impact-cn-assistant').boundingBox();
   assert(Math.abs(1000 - reset.y - reset.height - 140) <= 2);
 });
+for (const [kind, changedRoute] of [
+  ['pathname', '/secure/advertiser/engage/unit-next-page.ihtml?synthetic-dictionary-unit=1'],
+  ['query', '/secure/advertiser/engage/aview.ihtml?synthetic-dictionary-unit=2'],
+  ['hash', '/secure/advertiser/engage/aview.ihtml?synthetic-dictionary-unit=1#next-view'],
+  ['rapid-away-and-back', '/secure/advertiser/engage/unit-next-page.ihtml?synthetic-dictionary-unit=1#temporary']
+]) await check(`A ${kind} change while awaiting Send preserves the draft and permanently cancels the old request`, async () => {
+  const originalRoute = new URL(scopedPage.url());
+  const originalPath = originalRoute.pathname + originalRoute.search + originalRoute.hash;
+  if (kind === 'rapid-away-and-back') assert(await scopedPage.evaluate(() => Boolean(window.navigation?.addEventListener)), 'Chrome native navigation events are required for the synchronous away-and-back case');
+  const before = await scopedPage.evaluate(() => {
+    const root = document.querySelector('#ask-impact-shadow-host').shadowRoot;
+    root.querySelector('textarea').value = '';
+    root.querySelector('[aria-label="Send"]').disabled = true;
+    window.__inlineUnit.pendingRoute = window.ImpactCN.askTopic('actions');
+    return window.__inlineUnit.sends;
+  });
+  await scopedPage.waitForFunction(() => document.querySelector('#ask-impact-shadow-host').shadowRoot.querySelector('textarea').value.length > 0);
+  const draft = await scopedPage.locator('#ask-impact-shadow-host textarea').inputValue();
+  const result = await scopedPage.evaluate(async ({ route, returnRoute }) => {
+    history.pushState({}, '', route);
+    if (returnRoute) history.replaceState({}, '', returnRoute);
+    document.querySelector('#ask-impact-shadow-host').shadowRoot.querySelector('[aria-label="Send"]').disabled = false;
+    return window.__inlineUnit.pendingRoute;
+  }, { route: changedRoute, returnRoute: kind === 'rapid-away-and-back' ? originalPath : null });
+  assert.equal(result.ok, false); assert.equal(result.reason, 'page-changed'); assert.equal(result.filled, true);
+  assert.equal(await scopedPage.evaluate(() => window.__inlineUnit.sends), before);
+  assert.equal(await scopedPage.locator('#ask-impact-shadow-host textarea').inputValue(), draft);
+  await scopedPage.evaluate(async route => {
+    history.replaceState({}, '', route);
+    await window.ImpactCN.setAIEnabled(false); await window.ImpactCN.setAIEnabled(true);
+  }, originalPath);
+  await scopedPage.waitForTimeout(100);
+  assert.equal(await scopedPage.evaluate(() => window.__inlineUnit.sends), before);
+  assert.equal(await scopedPage.locator('#ask-impact-shadow-host textarea').inputValue(), draft);
+  assert.equal(await scopedPage.evaluate(() => window.ImpactCN.getState().busy), false);
+  await scopedPage.locator('#ask-impact-shadow-host textarea').fill('');
+});
 await check('Native path scope restores all translations outside advertiser page', async () => {
   await scopedPage.evaluate(() => { history.pushState({}, '', '/login.user'); window.ImpactCN.refresh(); });
   assert(await scopedPage.evaluate(() => window.__actualDictionaryUnit.every(entry => entry.textNode.nodeValue === entry.source)));
   assert.equal(await scopedPage.locator('button[data-impact-cn-help]').count(), 0);
 });
 await browser.close();
-if (onlyFilter) {
+if (onlyFilter && !reportArgument) {
   const prior = JSON.parse(readFileSync(path.join(root, 'artifacts/shadow-unit-report.json'), 'utf8'));
   assert.equal(prior.dictionaryVersion, actualDictionary.version, 'A partial recheck requires an existing report for the same version');
   const fresh = [...results];
@@ -512,9 +632,9 @@ if (onlyFilter) {
   results.splice(0, results.length, ...previous.map(result => fresh.find(item => item.name === result.name) || result));
   for (const result of fresh) if (!results.some(item => item.name === result.name)) results.push(result);
 }
-const status = results.some(r => r.status === 'FAIL') ? 'FAIL' : 'PASS';
-mkdirSync(path.join(root, 'artifacts'), { recursive: true });
-writeFileSync(path.join(root, 'artifacts/shadow-unit-report.json'), JSON.stringify({ mode: 'SYNTHETIC_UNIT_ONLY', realSiteAcceptance: false, dictionaryVersion: actualDictionary.version, dictionaryEntries: actualDictionary.entries.length, nativeEntries: nativeEntries.length, lastPartialRecheck: onlyFilter || null, status, results }, null, 2));
-writeFileSync(path.join(root, 'unit-test-report.md'), `# 合成 DOM 单元回归报告\n\n版本：${actualDictionary.version}\n\n结果：**${status} ${results.filter(r => r.status === 'PASS').length}/${results.length}**\n\n模式：SYNTHETIC_UNIT_ONLY；真实词典共 ${actualDictionary.entries.length} 条，其中已核实 Dashboard/导航适配 ${nativeEntries.length} 条。使用隔离的合成页面检验机制，不构成 demo.impact.com 实网验收，也未模拟 AI 答复作为实际 AI 证据。\n\n${results.map(r => `- **${r.status}** ${r.name}${r.evidence ? ': ' + r.evidence : ''}`).join('\n')}\n\n实网结果独立记录于 live-test-report.md。旧 test-report.md 为历史 v0.1 本地 fixture 记录。\n`);
+const status = !results.length || results.some(r => r.status === 'FAIL') ? 'FAIL' : 'PASS';
+mkdirSync(reportDir, { recursive: true });
+writeFileSync(path.join(reportDir, 'shadow-unit-report.json'), JSON.stringify({ mode: 'SYNTHETIC_UNIT_ONLY', realSiteAcceptance: false, dictionaryVersion: actualDictionary.version, dictionaryEntries: actualDictionary.entries.length, nativeEntries: nativeEntries.length, lastPartialRecheck: onlyFilter || null, status, results }, null, 2));
+writeFileSync((reportArgument ? path.join(reportDir, 'README.md') : path.join(root, 'unit-test-report.md')), `# 合成 DOM 单元回归报告\n\n版本：${actualDictionary.version}\n\n结果：**${status} ${results.filter(r => r.status === 'PASS').length}/${results.length}**\n\n模式：SYNTHETIC_UNIT_ONLY；真实词典共 ${actualDictionary.entries.length} 条，其中已核实 Dashboard/导航适配 ${nativeEntries.length} 条。使用隔离的合成页面检验机制，不构成 demo.impact.com 实网验收，也未模拟 AI 答复作为实际 AI 证据。\n\n${results.map(r => `- **${r.status}** ${r.name}${r.evidence ? ': ' + r.evidence : ''}`).join('\n')}\n\n实网结果独立记录于 live-test-report.md。旧 test-report.md 为历史 v0.1 本地 fixture 记录。\n`);
 console.log(`SYNTHETIC UNIT ${status}: ${results.filter(r => r.status === 'PASS').length}/${results.length}; this is not real-site acceptance`);
 process.exitCode = status === 'PASS' ? 0 : 1;
